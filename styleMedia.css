@@ -1,0 +1,459 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 120px;
+}
+h2{
+  color: white;
+  text-align: center;
+  font-size: 170px;
+}
+h3{
+  color: white;
+  text-align: center;
+  font-size: 45px;
+}
+
+h4{
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: normal;
+}
+body, html {
+  height: 77%;
+}
+.bgImage{
+  position: relative;
+  background-image:  linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url("./Images/MediaBG.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; 
+  background-color: rgb(85, 137, 192);
+}
+
+#overlay {
+  width: 70%;
+  position: relative;
+  top: 450px;
+  margin: 1% auto;
+  height: 900px;
+  background-color: rgba(160, 158, 158, 0.9);
+  border-radius: 40px;
+}
+
+ul{
+  text-align: right;
+  position: relative;
+  left: 1350px;
+}
+
+li{
+  text-align: right;
+  position: relative;
+  display: inline-block;
+  margin-left: 0px;
+  padding: 20px;
+  font-size: 23px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+}
+
+.logo{
+  position: absolute;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 50%;  
+  width: 100px;
+  height:100px;
+  left: 2%;
+  padding: 0px;
+}
+figure p{
+  color: orange;
+  position: absolute;
+  left: 14%;
+  font-size: 30px;
+}
+.topBar{
+  top: -15%;
+  position: absolute;
+  margin-left: 0px;
+  text-align: right;
+}
+
+li:hover{
+  background-color: rgb(85, 85, 85);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  background-color: darkmagenta;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.downArrow{
+  width: 15px;
+  height: 15px;
+}
+
+.dropdown:hover .downArrow{
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a::after{
+  color: rgb(255, 255, 255);
+}
+.inline .slider-ctr{
+  display: inline-block;
+}
+.title{
+  position: relative;
+  top: 150px;
+}
+.slider{
+	margin:50px auto;
+	width:50%;
+}
+ 
+.img-box img{
+	width:100%;
+}
+
+* {
+  box-sizing: border-box
+}
+
+.picnic2022{
+  position: relative;
+  top: 450px;
+  right: 550px;
+  height: 200px;
+}
+
+.diwali2019{
+  position: relative;
+  top: 200px;
+  left: 1200px;
+  width: 1000px;
+}
+
+.YagnoPavit2019{
+  position: relative;
+  top: 200px;
+  left: 1200px;
+  width: 1000px;
+  height: 100px;
+}
+
+.picnic2019{
+  position: relative;
+  top: 50px;
+  right: 550px;
+  height: 100px;
+}
+
+.picnic2018{
+  position: relative;
+  top: -100px;
+  right: 550px;
+}
+
+.diwali2018{
+  position: relative;
+  top: 550px;
+  left: 1200px;
+  width: 1000px;
+}
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6{display: none}
+
+img {
+  vertical-align: middle;
+  width: 300px;
+  height: 500px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  background-color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+footer{
+  position: relative;
+  top: -50px;
+  left: -26%;
+  display: inline-block;
+  width: 800px;
+}
+footer li{
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+footer li:hover{
+  background-color: aliceblue;
+}
+.footer .socials{
+  position: relative;
+  top: -50px;
+  left: 49%;
+  width: 800px;
+}
+
+.footer img{
+  width: 30px;
+  height: 30px;
+}
+
+.footer p{
+  position: relative;
+  top: -50px;
+  left: 42%;
+  font-size: 20px;
+  margin-bottom: 0px;
+  width: 800px;
+  height: 10px;
+}
+@media only screen and (max-width: 1460px) and (min-width: 1370px){
+  ul{
+      left: 1100px;
+  }
+  .diwali2018{
+    width: 800px;
+  }
+  .diwali2019{
+    width: 800px;
+  }
+  .YagnoPavit2019{
+    width: 800px;
+  }
+  .slideshow-container{
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 1369px) and (min-width: 1200px){
+  ul{
+      left: 900px;
+  }
+  .diwali2018{
+    left:900px;
+
+    width: 800px;
+  }
+  .diwali2019{
+    left:900px;
+    width: 800px;
+  }
+  .YagnoPavit2019{
+    left:900px;
+    width: 800px;
+  }
+  .picnic2018{
+    left: 30px;
+    width: 800px;
+  }
+  .picnic2019{
+    left: 30px;
+    width: 800px;
+  }
+  .picnic2022 {
+    left: 30px;
+    width: 800px;
+  }
+  .slideshow-container{
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 900px){
+  ul{
+      left: 450px;
+  }
+  .diwali2018{
+    top: 350px;
+    left:700px;
+    width: 600px;
+  }
+  .diwali2019{
+    left:700px;
+    width: 600px;
+  }
+  .YagnoPavit2019{
+    left:700px;
+    width: 600px;
+  }
+  .picnic2018{
+    left: 30px;
+    width: 600px;
+  }
+  .picnic2019{
+    left: 30px;
+    width: 600px;
+  }
+  .picnic2022 {
+    left: 30px;
+    width: 600px;
+  }
+  img{
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 899px) and (min-width: 700px){
+  ul{
+      left: 225px;
+  }
+  li{
+    font-size: 20px;
+  }
+  .logo{
+    width: 80px;
+    height: 80px;
+  }
+  figure p{
+    font-size: 20px;
+  }
+  .diwali2018{
+    top: 300px;
+    left:550px;
+    width: 450px;
+  }
+  .diwali2019{
+    left:550px;
+    width: 450px;
+  }
+  .YagnoPavit2019{
+    left:550px;
+    width: 450px;
+  }
+  .picnic2018{
+    left: 30px;
+    width: 450px;
+  }
+  .picnic2019{
+    left: 30px;
+    width: 450px;
+  }
+  .picnic2022 {
+    left: 30px;
+    width: 450px;
+  }
+  img{
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 699px){
+  ul{
+      left: 225px;
+  }
+  li{
+    display: none;
+  }
+  .logo{
+    width: 80px;
+    height: 80px;
+  }
+  figure p{
+    width: 200px;
+    font-size: 20px;
+  }
+  .diwali2018{
+    top: 1000px;
+    left:30px;
+    width: 850px;
+  }
+  .diwali2019{
+    top: 2400px;
+    left:30px;
+    width: 850px;
+  }
+  .YagnoPavit2019{
+    top: 2400px;
+    left:30px;
+    width: 850px;
+  }
+  .picnic2018{
+    left: 30px;
+    width: 850px;
+  }
+  .picnic2019{
+    left: 30px;
+    width: 850px;
+  }
+  .picnic2022 {
+    left: 30px;
+    width: 850px;
+  }
+  img{
+    height: 400px;
+  }
+  footer{
+    top: 1600px;
+    left: -200px;
+  }
+  .footer .socials{
+    top: 1600px;
+    left: 300px;
+  }
+  .footer p{
+    top: 1600px;
+    left: 150px;
+  }
+}

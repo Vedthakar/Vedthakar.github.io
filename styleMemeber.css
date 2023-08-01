@@ -1,0 +1,344 @@
+h1{
+    color: white;
+    text-align: center;
+    font-size: 120px;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 170px;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+h4{
+    margin-top: 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+body, html {
+    height: 77%;
+}
+.bgImage{
+    position: relative;
+    background-image:  linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url("./Images/MembershipBg-fotor-20230713131639.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-color: pink;
+}
+
+#overlay {
+    width: 60%;
+    position: relative;
+    left: -50px;
+    top: 850px;
+    margin: 1% auto;
+    height: 1140px;
+    background-color: rgba(220, 217, 217, 0.9);
+    border-radius: 40px;
+}
+
+ul{
+    text-align: right;
+    position: relative;
+    left: 1350px;
+}
+
+li{
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    margin-left: 0px;
+    padding: 20px;
+    font-size: 23px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 50%;  
+    width: 100px;
+    height:100px;
+    left: 2%;
+    padding: 0px;
+}
+figure p{
+    color: orange;
+    position: absolute;
+    left: 14%;
+    font-size: 30px;
+}
+.topBar{
+    top: -15%;
+    position: absolute;
+    margin-left: 0px;
+    text-align: right;
+}
+
+li:hover{
+    background-color: rgb(85, 85, 85);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    background-color: darkmagenta;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: red;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+.downArrow{
+    width: 15px;
+    height: 15px;
+}
+
+.dropdown:hover .downArrow{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a::after{
+    color: rgb(255, 255, 255);
+}
+
+.title{
+    position: relative;
+    top: 70px;
+}
+
+.plans div{
+    display: flex;
+}
+
+.family{
+    background-color: rgb(140, 241, 140);
+    position: absolute;
+    top: 750px;
+    left: 200px;
+    width: 600px;
+    height: 600px;
+}
+.family h4{
+    text-align: center;
+    font-size: 70px;
+}
+.family h5{
+    position: relative;
+    top: -30px;
+    text-align: center;
+    font-size: 70px;
+}
+.family p{
+    position: relative;
+    top: -83px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.single{
+    background-color: rgb(239, 202, 80);
+    position: absolute;
+    top: 750px;
+    left: 805px;
+    width: 600px;
+    height: 600px;
+}
+
+.single h4{
+    text-align: center;
+    font-size: 50px;
+}
+.single h5{
+    position: relative;
+    top: -30px;
+    text-align: center;
+    font-size: 70px;
+}
+.single p{
+    position: relative;
+    top: -60px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.senior{
+    background-color: rgb(60, 201, 240);
+    position: absolute;
+    top: 750px;
+    left: 1410px;
+    width: 600px;
+    height: 600px;
+}
+
+.senior h4{
+    text-align: center;
+    font-size: 50px;
+}
+
+.senior h5{
+    position: relative;
+    top: -30px;
+    text-align: center;
+    font-size: 70px;
+}
+
+.senior p{
+    position: relative;
+    top: -60px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+form{
+    position: relative;
+    top: -60px;
+    left: 200px;
+    width: 900px;
+}
+
+label{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+
+input[type = text]{
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+}
+
+input[type = checkbox]{
+    margin: 0;
+    width: 300px;
+    height: 30px;
+}
+
+
+select{
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+}
+
+form p{
+    position: relative;
+    left: 100px;
+    text-align: center;
+    width: 700px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.street input[type = text]{
+    width: 800px;
+    height: 40px;
+}
+
+#street{
+    width: 600px;
+}
+h7{
+    font-size: 20px;
+}
+#zip{
+    width: 190px;
+}
+
+.submit{
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+    left: 350px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+.form h3{
+    color: black;
+    font-size: 90px;
+}
+
+.lname{
+    position: relative;
+    left: 250px;
+}
+
+.zip1{
+    position: relative;
+    left: 500px;
+}
+
+.consent{
+    position: relative;
+    right: 100px;
+    width: 1000px;
+}
+footer{
+    position: relative;
+    top: 824px;
+    left: -700px;
+    display: inline-block;
+    width: 800px;
+  }
+  footer li{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  footer li:hover{
+    background-color: aliceblue;
+  }
+  .footer .socials{
+    position: relative;
+    top: 810px;
+    left: 45%;
+    width: 800px;
+  }
+
+  .footer img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer p{
+    position: relative;
+    top: 800px;
+    left: 37%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 800px;
+  }

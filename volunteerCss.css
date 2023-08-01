@@ -1,0 +1,359 @@
+body, html {
+    height: 77%;
+}
+.body1{
+    position: relative;
+    background-image:  linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url("./Images/1b58c3e2-adba-4950-9096-23438458a27d-fotor-20230713113459.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-color: bisque;
+}
+h1{
+    color: white;
+    position: relative;
+    top: -90px;
+    left: 700px;
+    font-size: 200px;
+    width: 500px;
+}
+h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 23%;
+    font-size: 50px;
+}
+h3{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 780px;
+    top: -260px;
+    font-size: 30px;
+    width: 700px;
+}
+
+h4{
+    margin-top: 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+ul{
+    overflow: hidden;
+}
+
+li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 23px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    position: absolute;
+    top: 0%;
+    width: 80px;
+    height: 80px;
+    left: 2%;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 50%;
+}
+figure p{
+    text-align: right;
+    color: orange;
+    position: relative;
+    top: -20px;
+    right: 1900px;
+    font-size: 30px;
+}
+.topBar{
+    top: 0%;
+    position: absolute;
+    right: 0.5%;
+    margin-left: 0px;
+    text-align: right;
+}
+
+.navigation{
+    display: inline-block;
+    align-items: right;
+}
+
+.navigationBar{
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+}
+
+li:hover{
+    background-color: rgb(85, 85, 85);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(0, 0, 0);
+    background-color: darkmagenta;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: red;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+.downArrow{
+    width: 15px;
+    height: 15px;
+}
+
+.dropdown:hover .downArrow{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a::after{
+    color: rgb(255, 255, 255);
+}
+img{
+    width: 900px;
+    height: 500px;
+}
+
+#overlay {
+    width: 80%;
+    position: relative;
+    top: 150px;
+    margin: 1% auto;
+    height: 1250px;
+    background-color: rgba(160, 158, 158, 0.9);
+    border-radius: 40px;
+}
+
+.formTitle{
+    position: relative;
+    top: 100px;
+    right: 300px;
+    text-align: center;
+    height: 50px;
+}
+.formTitle h1{
+    font-size: 100px;
+    color: black;
+    width: 1000px;
+}
+
+form{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+}
+form p{
+    text-align: left;
+    font-size: 30px;
+    max-height: 300px;
+    overflow: scroll;
+}
+.events{
+    display: flex;
+}
+
+input[type = text]{
+    width: 300px;
+    height: 40px;
+}
+
+input[type = radio]{
+    text-align: center;
+    height: 30px;
+    width: 50px;
+}
+
+input[type = checkbox]{
+    width: 50px;
+    height: 30px;
+}
+
+select{
+    font-size: 25px;
+    width: 300px;
+    height: 30px;
+}
+
+option{
+    font-size: 30px;
+}
+
+.submit{
+    color: black;
+    position: relative;
+    left: 550px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+}
+
+footer{
+    position: relative;
+    top: 124px;
+    left: 800px;
+    display: inline-block;
+    width: 800px;
+  }
+  footer li{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  footer li:hover{
+    background-color: aliceblue;
+  }
+  .footer .socials{
+    position: relative;
+    top: 120px;
+    left: 49%;
+    width: 800px;
+  }
+
+  .footer img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer p{
+    position: relative;
+    top: 100px;
+    left: 41%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 800px;
+  }
+  @media only screen and (max-width: 1460px) and (min-width: 1370px){
+    figure p{
+        left: -1670px;
+    }
+  }
+  @media only screen and (max-width: 1369px) and (min-width: 1200px){
+    figure p{
+        left: -1430px;
+    }
+    .Title h1{
+        position: relative;
+        left: 500px;
+    }
+    .Title h3{
+        position: relative;
+        left: 550px;
+    }
+    .submit{
+        left: 350px;
+    }
+  }
+  @media only screen and (max-width: 1199px) and (min-width: 1000px){
+    figure p{
+        left: -1130px;
+    }
+    .Title h1{
+        position: relative;
+        left: 450px;
+    }
+    .Title h3{
+        position: relative;
+        left: 500px;
+    }
+    .submit{
+        left: 250px;
+    }
+    .formTitle h1{
+        left: 400px;
+    }
+    #overlay{
+        height: 1600px;
+    }
+    footer{
+        left: 400px;
+    }
+  }
+  @media only screen and (max-width: 999px) and (min-width: 700px){
+    figure p{
+        left: -700px;
+    }
+    .Title h1{
+        position: relative;
+        left: 150px;
+    }
+    .Title h3{
+        position: relative;
+        left: 200px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .submit{
+        left: 150px;
+    }
+    .formTitle h1{
+        left: 300px;
+    }
+    #overlay{
+        width: 90%;
+        height: 1700px;
+    }
+    footer{
+        left: 200px;
+    }
+  }
+  @media only screen and (max-width: 699px){
+    figure p{
+        left: -550px;
+    }
+    .Title h1{
+        position: relative;
+        left: 30px;
+    }
+    .Title h3{
+        position: relative;
+        left: 50px;
+    }
+    li{
+        display: none;
+    }
+    .submit{
+        left: 150px;
+    }
+    .formTitle h1{
+        font-size: 80px;
+        left: 200px;
+    }
+    form{
+        margin-left: 70px;
+    }
+    #overlay{
+        width: 90%;
+        height: 1700px;
+    }
+    footer{
+        left: 200px;
+    }
+  }
+  

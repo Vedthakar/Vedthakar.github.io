@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styleContact.css" rel="stylesheet"/>
+</head>
+<body class="bgImage">
+    <div></div>
+    <div class="topBar">
+        <div class="bg">
+            <figure>
+                <img src="./Images/BSA-removebg-preview.png" class='logo'>
+                <p>Brahmin Samaj <br> of Alberta</p>
+            </figure>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li> 
+                    <div class="dropdown">
+                        <h7 class="dropbtn">About Us</h7>
+                        <img src="./Images/ArrowDown.png" class="downArrow"/>
+                        <div class="dropdown-content">
+                          <a href="./ourMisson.html">Our Mission</a>
+                          <a href="./sponser.html">Our Sponsors</a>
+                        </div>
+                      </div>
+                </li>
+                <li><a href="./upComingEvents.html">Upcoming Events</a></li>
+                <li> 
+                    <div class="dropdown">
+                        <h7 class="dropbtn">Get Involved</h7>
+                        <img src="./Images/ArrowDown.png" class="downArrow"/>
+                        <div class="dropdown-content">
+                          <a href="./membership.html">MemberShip</a>
+                          <a href="./donation.html">Donation</a>
+                          <a href="./Volunteer.html">Volunteer</a>
+                        </div>
+                      </div>
+                </li>
+                <li><a href="./media.html">Media</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <h2 class="title">Contact Us</h2>
+    <div id="overlay">
+        <div class="contactForm">
+            <h2>Send us a Message</h2>
+            <h3>We would love to hear form you
+                Please feel free to contact us about any 
+                comments, questions or concerns.
+            </h3>
+            <form action="https://formsubmit.co/ved06.thakar@gmail.com" method="POST">
+                <div class="fname" name = 'First Name'>
+                    <label name = 'First Name'>First Name</label>
+                    <br>
+                    <input type="text" name = 'First Name' required>
+                </div>
+                <div class="lname" name = 'LastName'>
+                    <label name = 'Last Name'>Last Name</label>
+                    <br>
+                    <input type="text" name = 'Last Name' required>
+                </div>
+                <div class="email" name = 'email'>
+                    <label name = 'email'>Email</label>
+                    <br>
+                    <input type="text"name = 'email' required>
+                </div>
+                <div class="phone" name = 'phone'>
+                    <label name = 'phone'>Phone</label>
+                    <br>
+                    <input type="text" required name = 'phone'>
+                </div>
+                <div class="reason" name = 'reason'>
+                    <label name = 'reason'>Reason</label>
+                    <br>
+                    <textarea required name = 'reason'></textarea>
+                </div>
+                <div class="submit">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <button type="submit">Sumbit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="bottom">
+        <footer>
+            <ul>
+                <li>Home</li>
+                <li>Website Disclamiar</li>
+                <li>BSA Event Registration</li>
+                <li>Memebership</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+        <div class="footer">
+            <div class = 'socials'>
+                <a href="https://www.instagram.com/bsacanada/" target="'_blank"><img src="./Images/InstagramLogo-removebg-preview.png" class = 'instaLogo'></a>
+                <a href="https://www.facebook.com/bsacanada" target="'_blank"><img src='./Images/59439-removebg-preview.png' class = 'facebookLogo'></a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                Copyright 2020 Brahmin Samaj of Alberta. All Rights Reserved 
+                <br>Email us: info@brahminsamajAlberta.org
+            </p>
+        </div>
+    </div>
+    <script>
+        document.body.style.zoom="67%"
+    </script>
+</body>
+</html>

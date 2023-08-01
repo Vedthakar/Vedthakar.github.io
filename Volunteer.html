@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./volunteerCss.css" rel="stylesheet">
+</head>
+<body class="body1">
+    <div class="navigationBar bg">
+        <figure>
+            <img src="./Images/BSA-removebg-preview.png" class='logo'>
+            <p>Brahmin Samaj <br> of Alberta</p>
+        </figure>
+        <div class="topBar">
+            <div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li> 
+                        <div class="dropdown">
+                            <h7 class="dropbtn">About Us</h7>
+                            <img src="./Images/ArrowDown.png" class="downArrow"/>
+                            <div class="dropdown-content">
+                              <a href="./ourMisson.html">Our Mission</a>
+                              <a href="./sponser.html">Our Sponsors</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li><a href="./upComingEvents.html">Upcoming Events</a></li>
+                    <li> 
+                        <div class="dropdown">
+                            <h7 class="dropbtn">Get Involved</h7>
+                            <img src="./Images/ArrowDown.png" class="downArrow"/>
+                            <div class="dropdown-content">
+                              <a href="./membership.html">MemberShip</a>
+                              <a href="./donation.html">Donation</a>
+                              <a href="./Volunteer.html">Volunteer</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li><a href="./media.html">Media</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Title">
+        <h1>Volunteer</h1>
+        <h3>Interested in volunteering with us? We would love to have you!
+            Please fill out this form below and someone from our team will be in touch with you shortly.</h3>
+    </div>
+    <div id="overlay">
+        <div class="formTitle">
+            <h1 id="formTitle">Volunteer Sign Up</h1>
+        </div>
+        <form method="post" action="https://formspree.io/f/mjvqkaay">
+            <label for = 'name' name = 'Name'>Please Enter your Name</label>
+            <input type="text" name = 'Name' required>
+            <br>
+            <label for = 'city' name = 'city'>Please Enter your City</label>
+            <input type="text" name="city" required>
+            <br>
+            <label for = 'province' name = 'province'>Please Enter your Province</label>
+            <select name="province">
+                <option value="alberta">Alberta</option>
+                <option value="britishColumbia">British Columbia</option>
+                <option value="saskactechwan">Saskactechwan</option>
+                <option value="manitoba">Manitoba</option>
+                <option value="ontario">Ontario</option>
+                <option value="quebec">Quebec</option>
+                <option value="newfoundland">Newfoundland</option>
+                <option value="princeEdwardIsland">Prince Edward Island</option>
+                <option value="newBrunswick">New Brunswick</option>
+                <option value="NovaScotia">Nova Scotia</option>
+            </select>
+            <br>
+            <span>Are a paid Member of Brahmin Samaj of Alberta</span>
+            <br>
+            <input type="radio" name="MemberShip" id="yes" value="yes">
+            <label for="yes" name ='MemberShip'>Yes</label>
+            <input type="radio" name="MemberShip" id="no" value="no">
+            <label for="no" name ='MemberShip'>No</label>
+            <br>
+            <span>What event would you like to volunteer for?</span>
+            <div class="events">
+                <br>
+                <input type="checkbox" name="Events" id="picnic" value="SummerPicnic">
+                <label for="picnic">Summer Picnic</label>
+                <input type="checkbox" name="Events" id="Yagnopavit" value="Yagnopavit">
+                <label for="Yagnopavit">Yagnopavit (Janoi) Change</label>
+                <input type="checkbox" name="Events" id="DIWALIGALAEVENT" value="Diwali">
+                <label for="DIWALIGALAEVENT">DIWALI GALA EVENT</label>
+            </div>
+            <br>
+            <span>BSA Consent Agreement</span>
+            <br>
+            <input type="checkbox" name="I agree to the privacy policy and BSA Terms" id="yes"  value="Yes" required>
+            <label for="yes" name = 'I agree to the privacy policy and BSA Terms'>I agree to the privacy policy and BSA Terms</label>
+            <p name = 'Agreement'><strong>Assumption of Risk:</strong>
+                <br>
+                I am aware that attending the BSA Event involves inherent risks, including but not limited to accidents, injuries, and exposure to contagious illnesses or diseases. I voluntarily assume all risks associated with my family's attendance at the event, including any minors or elderly individuals for whom I am responsible.
+                <br>
+                <strong>Health and Safety:</strong>
+                <br>
+                I confirm that all members of my family attending the BSA Event are physically fit and in good health to participate. I agree to ensure that they follow all health and safety guidelines or protocols provided by the Event Organizer or the venue hosting the event, including any instructions regarding the consumption of food.
+                <br>
+                <strong>Compliance with Applicable Laws and Regulations:</strong>
+                <br>
+                I agree to comply with all applicable laws, regulations, and guidelines during our attendance at the BSA Event. This includes but is not limited to local, state, and federal laws, as well as any specific rules or policies set forth by the Event Organizer.
+                <strong>Release of Liability:</strong>
+                <br>
+                I release BSA, its officers, directors, employees, volunteers, and affiliates from any liability for personal injury, property damage, or any other claims arising from our attendance at the BSA Event, including any issues related to food allergies or dietary restrictions.
+                <br>
+                <strong>Photography and Media:</strong>
+                <br>
+                I grant the Event Organizer the right to use photographs or recordings of my family members captured during the BSA Event for promotional purposes, both online and offline.
+                <br>
+                <strong>Code of Conduct:</strong>
+                <br>
+                I agree to ensure that all members of my family attending the BSA Event abide by the event's code of conduct and treat all attendees, organizers, and venue staff with courtesy and respect.
+                <br>
+                <strong>Food Allergies and Dietary Restrictions:</strong>
+                <br>
+                I acknowledge that the BSA Event may involve the provision of food and beverages. I understand that it is my responsibility to consume food as per any food allergies or dietary restrictions that any member of my family may have. I agree that the Event Organizer will not be held liable for any allergic reactions or adverse effects resulting from the consumption of food provided at the event.
+                <br>
+                <strong>By signing below, I acknowledge that I have read and understood this social event disclaimer form for the BSO Event, and I voluntarily agree to its terms and conditions on behalf of my family.</strong>
+                <br>
+                </p>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+    <div class="bottom">
+        <footer>
+            <ul>
+                <li>Home</li>
+                <li>Website Disclamiar</li>
+                <li>BSA Event Registration</li>
+                <li>Memebership</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+        <div class="footer">
+            <div class = 'socials'>
+                <a href="https://www.instagram.com/bsacanada/" target="'_blank"><img src="./Images/InstagramLogo-removebg-preview.png" class = 'instaLogo'></a>
+                <a href="https://www.facebook.com/bsacanada" target="'_blank"><img src='./Images/59439-removebg-preview.png' class = 'facebookLogo'></a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                Copyright 2020 Brahmin Samaj of Alberta. All Rights Reserved 
+                <br>Email us: info@brahminsamajAlberta.org
+            </p>
+        </div>
+    </div>
+    <script>
+        document.body.style.zoom="67%"
+    </script>
+</body>
+</html>

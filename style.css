@@ -1,0 +1,1433 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    height: 110%;
+}
+.Body1{
+    position: relative;
+    background-image:  linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url("./Images/Shivji.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%; 
+    background-color: rgb(255, 255, 255); 
+}
+ul{
+    overflow: hidden;
+}
+
+li{
+    display: inline-block;
+    margin-left: 0px;
+    padding: 20px;
+    font-size: 23px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 50%;  
+    width: 100px;
+    height:100px;
+    position: absolute;
+    top: 10px;
+
+    left: 4%;
+}
+
+.topBar{
+    position: relative;
+    top: 10px;
+    margin-left: 0px;
+    text-align: right;
+}
+
+li:hover{
+    background-color: rgb(70, 69, 69);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    background-color: darkmagenta;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: red;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+.downArrow{
+    width: 15px;
+    height: 15px;
+}
+
+.dropdown:hover .downArrow{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+h2{
+    font-size: 35px;
+    margin-right: 30px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40%;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: 63px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30%;
+    margin-left: 20px;
+}
+
+h4{
+    background-color: orange;
+    font-size: 30px;
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    margin-left: 20px;
+    border-color: white;
+    border-radius: 40%;
+    padding: 10px;
+}
+
+.button1{
+    position: absolute;
+    background-color: orange;
+    color: black;
+    border-radius: 40%;
+    padding: 10px;
+    top: 114%;
+    right: 5%;
+    font-size: 23px;
+}
+
+.button2{
+    position: absolute;
+    background-color: orange;
+    color: black;
+    border-radius: 40%;
+    padding: 10px;
+    top: 120%;
+    right: 7%;
+    font-size: 23px;
+}
+
+figure p{
+    position: absolute;
+    top: -10px;
+    left: 190px;
+    color: orange;
+}
+
+p{
+    top: 10px;
+    position: absolute;
+    left: 8%;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.readMore p{
+    text-align: left;
+    position: absolute;
+    top: 112%;
+    left: 5%;
+    color: rebeccapurple;
+    font-size: 27px;
+    width: 1700px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a::after{
+    text-decoration: none;
+}
+
+.test{
+    position: absolute;
+    top: 150%;
+}
+
+.instaLogo{
+    background-color: aliceblue;
+    border-radius: 30%;
+    margin: 0px;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.igLogo{
+    position: fixed;
+    top: 39%;
+}
+
+.facebookLogo{
+    background-color: aliceblue;
+    padding: 2px;
+    border-radius: 30%;
+    width: 50px;
+    height: 45px;
+}
+
+.socials{
+    display: flex;
+    position: fixed;
+    top: 45%;
+    right: 2%;
+}
+
+.messageFromPresident h1{
+    top: 123%;
+    left: 5%;
+    color: black;
+}
+
+.messageFromPresident h2{
+    top: 133%;
+    left: 5%;
+    color: black;
+}
+
+.messageFromPresident p{
+    position: absolute;
+    width: 1000px;
+    top: 140%;
+    left: 5%;
+}
+
+figcaption{
+    position: absolute;
+    top: 203%;
+    right: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Team h1{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 220%;
+    left: 4%;
+}
+
+.Team p{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 230%;
+    left: 5%;
+    font-size: 30px;
+}
+
+.teamMembers{
+    display: inline-block;
+    position: absolute;
+    top: 253%;
+    left: 100px;
+}
+
+.teamNilesh{
+    width: 400px;
+    height: 400px;
+}
+.teamAmit{
+    width: 400px;
+    height: 400px;
+}
+.teamDhimant{
+    width: 400px;
+    height: 400px;
+}
+.teamAnkit{
+    width: 400px;
+    height: 400px;
+}
+.teamAshok{
+    width: 400px;
+    height: 400px;
+}
+.teamGunjan{
+    width: 400px;
+    height: 400px;
+}
+.teamHitesn{
+    width: 400px;
+    height: 400px;
+}
+.teamJignesh{
+    width: 400px;
+    height: 400px;
+}
+.teamNihar{
+    width: 400px;
+    height: 400px;
+}
+.teamRakesh{
+    width: 400px;
+    height: 400px;
+}
+
+.topRow div{
+    display: inline-block;
+}
+
+.bottomRow div{
+    display: inline-block;
+}
+
+.Nilesh h6{
+    position: absolute;
+    top: 35%;   
+    background-color: black;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+}
+
+.Amit h6{
+    position: absolute;
+    top: 35%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Ankit h6{
+    position: absolute;
+    top: 35%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Dhimant h6{
+    position: absolute;
+    top: 35%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Ashok h6{
+    position: absolute;
+    top: 85.4%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Gunjan h6{
+    position: absolute;
+    top: 85.4%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Hitesh h6{
+    position: absolute;
+    top: 85.4%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Jignesh h6{
+    position: absolute;
+    top: 85.4%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Nihar h6{
+    position: absolute;
+    top: 85.4%; 
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+.Rakesh h6{
+    position: absolute;
+    top: 35%;
+    background-color: black;
+    width: 200px;
+    height: 55px;
+}
+
+h6{
+    color:white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.sponsers{
+    display: inline-block;
+}
+
+.Nilesh:hover h6{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.Amit:hover h6{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.Dhimant:hover h6{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.Ashok:hover h6{
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+.Ankit:hover h6{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.Gunjan:hover h6{
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.Hitesh:hover h6{
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+.Nihar:hover h6{
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.Rakesh:hover h6{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+.Jignesh:hover h6{
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+.Nilesh:hover img{
+    opacity: 40%;
+}
+
+.Amit:hover img{
+    opacity: 40%;
+}
+
+.Ankit:hover img{
+    opacity: 40%;
+}
+
+.Dhimant:hover img{
+    opacity: 40%;
+}
+
+.Ashok:hover img{
+    opacity: 40%;
+}
+
+.Gunjan:hover img{
+    opacity: 40%;
+}
+
+.Hitesh:hover img{
+    opacity: 40%;
+}
+
+.Jignesh:hover img{
+    opacity: 40%;
+}
+
+.Nihar:hover img{
+    opacity: 40%;
+}
+
+.Rakesh:hover img{
+    opacity: 40%;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+    top: 140%;
+    right: 5%;
+}
+
+.myslides{
+    max-height: 900px;
+    overflow: hidden;
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+img{
+    width: 900px;
+    height: 500px;
+}
+
+.sponsers h3{
+    position: absolute;
+    top: 128%;
+    right: 10%;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.slider{
+    position: absolute;
+    top: 189%;
+    right: 5%;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 400px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+  footer{
+    position: absolute;
+    top: 325%;
+    left: 28%;
+    display: inline-block;
+  }
+  footer li{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  footer li:hover{
+    background-color: aliceblue;
+  }
+  .footer .socials{
+    position: absolute;
+    top: 330%;
+    left: 45%;
+  }
+
+  .footer img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer p{
+    position: absolute;
+    top: 332%;
+    left: 32%;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .bottom{
+    background-color: black;
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 600px){
+    .Body1{
+        width: 100%;
+    }
+    .socials{
+        left: 800px;
+    }
+    ul{
+        display: none;
+    }
+    figure p{
+        display: none;
+    }
+    h1{
+        top: 110px;
+        font-size: 50px;
+    }
+    h2{
+        top: 700px;
+    }
+    h4{
+        top: 750px;
+    }
+    .readMore p{
+        font-size: 18px;
+        width: 600px;
+    }
+    .button1{
+        text-align: center;
+        width: 170px;
+        font-size: 15px;
+    }
+    .button2{
+        text-align: center;
+        width: 170px;
+        font-size: 15px;
+    }
+    .sponsers h3{
+        top: 1170px;
+        left: 30px;
+    }
+    .slideshow-container{
+        top: 1300px;
+        left: 30px;
+    }
+    .slideshow-container img{
+        width: 600px;
+        height: 300px;
+    }
+    .messageFromPresident h1{
+        top: 1600px;
+        font-size: 40px;
+    }
+    .messageFromPresident h2{
+        top: 1650px;
+        font-size: 40px;
+    }
+    .messageFromPresident p{
+        top: 1720px;
+        font-size: 20px;
+        width: 800px;
+    }
+    .slider{
+        top: 2100px;
+        left: 40px;
+        height: 300px;
+        width: 600px;
+    }
+    .slider img{
+        height: 300px;
+        width: 600px;
+    }
+    .Team h1{
+        top: 2400px;
+        font-size: 40px;
+    }
+    .Team p{
+        top: 2450px;
+        font-size: 20px;
+        width: 750px;
+    }
+    .teamMembers{
+        top: 265%;
+        left: 20px;
+    }
+    .teamMembers img{
+        width: 150px;
+        height: 150px;
+    }
+    h6{
+        font-size: 10px;
+    }
+    .Nilesh h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Rakesh h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Amit h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Dhimant h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Ankit h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Gunjan h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Hitesh h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Jignesh h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Nihar h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Ashok h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+  }
+
+  @media (max-width: 1460px) and (min-width: 1370px){
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    li{
+        font-size: 30px;
+    }
+    .teamMembers img{
+        width: 350px;
+        height: 350px;
+    }
+    .Nilesh h6{
+        top: 240px;
+    }
+    .Rakesh h6{
+        top: 240px;
+    }
+    .Amit h6{
+        top: 240px;
+    }
+    .Dhimant h6{
+        top: 240px;
+    }
+    .Ankit h6{
+        top: 240px;
+    }
+    .Gunjan h6{
+        top: 590px;
+    }
+    .Hitesh h6{
+        top: 590px;
+    }
+    .Jignesh h6{
+        top: 590px;
+    }
+    .Nihar h6{
+        top: 590px;
+    }
+    .Ashok h6{
+        top: 590px;
+    }
+    footer{
+        top: 4050px;
+    }
+    .footer .socials{
+        top: 4100px;
+    }
+    .footer p{
+        top: 4150px;
+    }
+  }
+  @media (max-width: 1371px) and (min-width: 1300px){
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    li{
+        font-size: 30px;
+    }
+    .teamMembers img{
+        width: 300px;
+        height: 300px;
+    }
+    .slideshow-container img{
+        width: 700px;
+        height: 500px;
+    }
+    .slider{
+        width: 700px;
+    }
+    .slider img{
+        width: 700px;
+    }
+    .readMore p{
+        font-size: 25px;
+    }
+    .Nilesh h6{
+        top: 190px;
+    }
+    .Rakesh h6{
+        top: 190px;
+    }
+    .Amit h6{
+        top: 190px;
+    }
+    .Dhimant h6{
+        top: 190px;
+    }
+    .Ankit h6{
+        top: 190px;
+    }
+    .Gunjan h6{
+        top: 490px;
+    }
+    .Hitesh h6{
+        top: 490px;
+    }
+    .Jignesh h6{
+        top: 490px;
+    }
+    .Nihar h6{
+        top: 490px;
+    }
+    .Ashok h6{
+        top: 490px;
+    }
+    footer{
+        top: 4050px;
+    }
+    .footer .socials{
+        top: 4100px;
+    }
+    .footer p{
+        top: 4150px;
+    }
+  }
+  
+  @media (max-width: 1299px) and (min-width: 1200px){
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    li{
+        font-size: 30px;
+    }
+    .messageFromPresident h1{
+        font-size: 60px;
+    }
+    .messageFromPresident h2{
+        font-size: 60px;
+    }
+    .messageFromPresident p{
+        position: relative;
+        top: 1350px;
+        left: 110px;
+        font-size: 25px;
+        width: 800px;
+    }
+    .readMore p{
+        width: 1300px;
+    }
+    .teamMembers img{
+        width: 300px;
+        height: 300px;
+    }
+    .slideshow-container img{
+        width: 700px;
+        height: 500px;
+    }
+    .slider{
+        width: 700px;
+    }
+    .slider img{
+        width: 700px;
+    }
+    .readMore p{
+        font-size: 25px;
+    }
+    .Nilesh h6{
+        top: 190px;
+    }
+    .Rakesh h6{
+        top: 190px;
+    }
+    .Amit h6{
+        top: 190px;
+    }
+    .Dhimant h6{
+        top: 190px;
+    }
+    .Ankit h6{
+        top: 190px;
+    }
+    .Gunjan h6{
+        top: 490px;
+    }
+    .Hitesh h6{
+        top: 490px;
+    }
+    .Jignesh h6{
+        top: 490px;
+    }
+    .Nihar h6{
+        top: 490px;
+    }
+    .Ashok h6{
+        top: 490px;
+    }
+    footer{
+        top: 4050px;
+    }
+    .footer .socials{
+        top: 4100px;
+    }
+    .footer p{
+        top: 4150px;
+    }
+  }
+  
+  @media (max-width: 1200px) and (min-width: 910px){
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        top: 380px;
+        font-size: 20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    figure p{
+        left: 150px;
+        font-size: 25px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .messageFromPresident h1{
+        font-size: 40px;
+    }
+    .messageFromPresident p{
+        font-size: 25px;
+        width: 650px;
+    }
+    .teamMembers img{
+        position: relative;
+        top: 150px;
+        right: 80px;
+        width: 240px;
+        height: 240px;
+    }
+    .slideshow-container img{
+        width: 500px;
+        height: 400px;
+    }
+    .slider{
+        width: 500px;
+    }
+    .slider img{
+        width: 500px;
+    }
+    .readMore p{
+        font-size: 15px;
+    }
+    .Nilesh h6{
+        
+        top: 300px;
+    }
+    .Rakesh h6{
+      
+        top: 300px;
+    }
+    .Amit h6{
+        top: 300px;
+    }
+    .Dhimant h6{
+
+        top: 300px;
+    }
+    .Ankit h6{
+        left: 960px;
+        top: 300px;
+    }
+    .Gunjan h6{
+        top: 530px;
+    }
+    .Hitesh h6{
+        top: 530px;
+    }
+    .Jignesh h6{
+        top: 530px;
+    }
+    .Nihar h6{
+        top: 530px;
+    }
+    .Ashok h6{
+        left: 960px;
+        top: 530px;
+    }
+    footer{
+        top: 4050px;
+    }
+    .footer .socials{
+        top: 4100px;
+    }
+    .footer p{
+        top: 4150px;
+    }
+    h6{
+        font-size: 16px;
+    }
+  }
+  @media (max-width: 909px) and (min-width: 800px){
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    .logo{
+        width: 90px;
+        height: 90px;
+    }
+    figure p{
+        left: 150px;
+        font-size: 20px;
+    }
+    .messageFromPresident h1{
+        font-size: 45px;
+    }
+    .messageFromPresident h2{
+        font-size: 45px;
+    }
+    .messageFromPresident p{
+        position: relative;
+        top: 1350px;
+        left: 80px;
+        font-size: 25px;
+        width: 540px;
+    }
+    .teamMembers img{
+        width: 200px;
+        height: 200px;
+    }
+    .slideshow-container{
+        top: 1500px;
+        left: 650px;
+    }
+    .slideshow-container img{
+        width: 500px;
+        height: 300px;
+    }
+    .sponsers h3{
+        top: 1400px;
+        left: 660px;
+        width: 530px;
+        margin: 0px;
+        font-size: 40px;
+    }
+    .slider{
+        left: 650px;
+        width: 500px;
+        height: 300px;
+    }
+    .slider img{
+        width: 500px;
+        height: 300px;
+    }
+    .readMore p{
+        width: 800px;
+        font-size: 20px;
+    }
+    .Team h1{
+        top: 2210px;
+    }
+    .Team p{
+        font-size: 25px;
+    }
+    h6{
+        font-size: 15px;
+        width: 30px;
+    }
+    .Nilesh h6{
+        width: 150px;
+        height: 40px;
+        top: 115px;
+    }
+    .Rakesh h6{
+        width: 150px;
+        height: 40px;
+        top: 115px;
+    }
+    .Amit h6{
+        width: 150px;
+        height: 40px;
+        top: 115px;
+    }
+    .Dhimant h6{
+        width: 150px;
+        height: 40px;
+        top: 115px;
+    }
+    .Ankit h6{
+        width: 150px;
+        height: 40px;
+        top: 115px;
+    }
+    .Gunjan h6{
+        width: 150px;
+        height: 40px;
+        top: 320px;
+    }
+    .Hitesh h6{
+        width: 150px;
+        height: 40px;
+        top: 320px;
+    }
+    .Jignesh h6{
+        width: 150px;
+        height: 40px;
+        top: 320px;
+    }
+    .Nihar h6{
+        width: 150px;
+        height: 40px;
+        top: 320px;
+    }
+    .Ashok h6{
+        width: 150px;
+        height: 40px;
+        top: 320px;
+    }
+    footer{
+        top: 4050px;
+    }
+    .footer .socials{
+        top: 4100px;
+    }
+    .footer p{
+        top: 4150px;
+    }
+  }
+  @media (max-width: 799px) and (min-width: 601px){
+    .Body1{
+        width: 100%;
+    }
+    .socials{
+        left: 800px;
+    }
+    ul{
+        display: none;
+    }
+    figure p{
+        display: none;
+    }
+    h1{
+        top: 110px;
+        font-size: 50px;
+    }
+    h2{
+        top: 700px;
+    }
+    h4{
+        top: 750px;
+    }
+    .readMore p{
+        font-size: 18px;
+        width: 600px;
+    }
+    .button1{
+        text-align: center;
+        width: 170px;
+        font-size: 15px;
+    }
+    .button2{
+        text-align: center;
+        width: 170px;
+        font-size: 15px;
+    }
+    .sponsers h3{
+        top: 1170px;
+        left: 30px;
+    }
+    .slideshow-container{
+        top: 1300px;
+        left: 30px;
+    }
+    .slideshow-container img{
+        width: 600px;
+        height: 300px;
+    }
+    .messageFromPresident h1{
+        top: 1600px;
+        font-size: 40px;
+    }
+    .messageFromPresident h2{
+        top: 1650px;
+        font-size: 40px;
+    }
+    .messageFromPresident p{
+        top: 1720px;
+        font-size: 20px;
+        width: 800px;
+    }
+    .slider{
+        top: 2100px;
+        left: 40px;
+        height: 300px;
+        width: 600px;
+    }
+    .slider img{
+        height: 300px;
+        width: 600px;
+    }
+    .Team h1{
+        top: 2400px;
+        font-size: 40px;
+    }
+    .Team p{
+        top: 2450px;
+        font-size: 20px;
+        width: 750px;
+    }
+    .teamMembers{
+        top: 265%;
+        left: 20px;
+    }
+    .teamMembers img{
+        width: 150px;
+        height: 150px;
+    }
+    h6{
+        font-size: 10px;
+    }
+    .Nilesh h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Rakesh h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Amit h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Dhimant h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Ankit h6{
+        width: 100px;
+        height: 35px;
+        top: 80px;
+    }
+    .Gunjan h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Hitesh h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Jignesh h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Nihar h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+    .Ashok h6{
+        width: 100px;
+        height: 35px;
+        top: 235px;
+    }
+  }
+  
