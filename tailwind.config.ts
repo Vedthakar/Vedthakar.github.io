@@ -26,11 +26,26 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					glow: 'hsl(var(--secondary-glow))'
+				},
+				navy: {
+					50: 'hsl(var(--navy-50))',
+					100: 'hsl(var(--navy-100))',
+					500: 'hsl(var(--navy-500))',
+					600: 'hsl(var(--navy-600))',
+					700: 'hsl(var(--navy-700))',
+					900: 'hsl(var(--navy-900))'
+				},
+				magenta: {
+					400: 'hsl(var(--magenta-400))',
+					500: 'hsl(var(--magenta-500))',
+					600: 'hsl(var(--magenta-600))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
