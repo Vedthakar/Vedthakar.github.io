@@ -34,7 +34,7 @@ export default function ProjectCard({
   };
 
   return (
-    <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-glow transition-smooth group overflow-hidden">
+    <Card className="bg-solid-card border-border/50 shadow-elegant hover:shadow-glow transition-smooth group overflow-hidden">
       {image && (
         <div className="aspect-video overflow-hidden">
           <img 
@@ -47,7 +47,7 @@ export default function ProjectCard({
       
       <CardHeader>
         <div className="flex items-start justify-between gap-2">
-          <CardTitle className="text-foreground group-hover:text-gradient transition-smooth">
+          <CardTitle className="text-foreground group-hover:text-solid-accent transition-smooth">
             {title}
           </CardTitle>
           <Badge className={`text-xs ${getStatusColor(status)}`}>

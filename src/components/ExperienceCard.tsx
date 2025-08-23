@@ -32,11 +32,11 @@ export default function ExperienceCard({
   };
 
   return (
-    <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-magenta transition-smooth group">
+    <Card className="bg-solid-card border-border/50 shadow-elegant hover:shadow-magenta transition-smooth group">
       <CardHeader>
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
-            <CardTitle className="text-foreground group-hover:text-gradient transition-smooth">
+            <CardTitle className="text-foreground group-hover:text-solid-accent transition-smooth">
               {title}
             </CardTitle>
             <CardDescription className="text-magenta-400 font-medium mt-1">

@@ -227,11 +227,11 @@ export default function Portfolio() {
       <HeroSection />
       
       {/* Projects Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-navy-900/20">
+      <section className="py-20 bg-navy-900/10">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-              <span className="text-gradient">Featured Projects</span>
+              <span className="text-solid-accent">Featured Projects</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Explore my work in cybersecurity, web development, and innovative technology solutions
@@ -286,11 +286,11 @@ export default function Portfolio() {
       </section>
       
       {/* Experience Section */}
-      <section className="py-20 bg-gradient-to-b from-navy-900/20 to-background">
+      <section className="py-20 bg-navy-900/5">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-              <span className="text-gradient">Experience & Education</span>
+              <span className="text-solid-accent">Experience & Education</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Professional journey, educational background, and industry certifications
@@ -330,10 +330,10 @@ export default function Portfolio() {
       </section>
       
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-card border-t border-border/50">
+      <section className="py-20 bg-solid-card border-t border-border/50">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-8">
-            <span className="text-gradient">Let's Connect</span>
+            <span className="text-solid-accent">Let's Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Interested in cybersecurity consulting, web development projects, or just want to chat about technology? I'd love to hear from you.
@@ -341,7 +341,7 @@ export default function Portfolio() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="mailto:Ved06.thakar@gmail.com" 
-              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-hero text-white font-semibold rounded-lg hover:shadow-glow transition-smooth"
+              className="inline-flex items-center justify-center px-8 py-4 bg-solid-hero text-white font-semibold rounded-lg hover:shadow-glow transition-smooth"
             >
               Email Me
             </a>

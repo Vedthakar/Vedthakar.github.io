@@ -14,7 +14,7 @@ export default function HeroSection() {
           alt="Hero background" 
           className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-navy-900/90" />
+        <div className="absolute inset-0 bg-navy-900/80" />
       </div>
       
       {/* Content */}
@@ -30,7 +30,7 @@ export default function HeroSection() {
               
               <h1 className="text-5xl lg:text-7xl font-bold">
                 <span className="text-foreground">Ved</span>{' '}
-                <span className="text-gradient animate-glow">Thakar</span>
+                <span className="text-solid-accent animate-glow">Thakar</span>
               </h1>
               
               <div className="space-y-2">
@@ -70,7 +70,7 @@ export default function HeroSection() {
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-hero hover:shadow-glow transition-smooth border-0 text-white font-semibold"
+                className="bg-solid-hero hover:shadow-glow transition-smooth border-0 text-white font-semibold"
               >
                 <Mail className="h-5 w-5 mr-2" />
                 Get In Touch

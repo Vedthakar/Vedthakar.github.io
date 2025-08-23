@@ -50,10 +50,10 @@
     --magenta-500: 320 100% 50%;
     --magenta-600: 315 100% 45%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--navy-600)), hsl(var(--magenta-500)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--navy-700) / 0.6), hsl(var(--magenta-600) / 0.3));
-    --gradient-accent: linear-gradient(90deg, hsl(var(--magenta-500)), hsl(var(--navy-500)));
+    /* Solid Colors */
+    --color-hero: hsl(var(--navy-600));
+    --color-card: hsl(var(--navy-700) / 0.8);
+    --color-accent: hsl(var(--magenta-500));
 
     /* Shadows */
     --shadow-glow: 0 0 40px hsl(var(--navy-500) / 0.3);
@@ -132,16 +132,16 @@
 }
 
 @layer utilities {
-  .bg-gradient-hero {
-    background: var(--gradient-hero);
+  .bg-solid-hero {
+    background: var(--color-hero);
   }
   
-  .bg-gradient-card {
-    background: var(--gradient-card);
+  .bg-solid-card {
+    background: var(--color-card);
   }
   
-  .bg-gradient-accent {
-    background: var(--gradient-accent);
+  .bg-solid-accent {
+    background: var(--color-accent);
   }
   
   .shadow-glow {
@@ -172,11 +172,8 @@
     animation: glow 2s ease-in-out infinite alternate;
   }
 
-  .text-gradient {
-    background: var(--gradient-accent);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .text-solid-accent {
+    color: var(--color-accent);
   }
 }
 
