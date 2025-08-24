@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   // 👇 important for GitHub Pages project sites
-  base: mode === "production" ? "/ved-thakar-portfolio-sphere/" : "/",
+  base: "/",
 
   server: { host: "::", port: 8080 },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
