@@ -52,7 +52,7 @@
 
     /* Solid Colors */
     --color-hero: hsl(var(--navy-600));
-    --color-card: hsl(var(--navy-700) / 0.8);
+    --color-card: hsl(0 0% 0% / 0.8);
     --color-accent: hsl(var(--magenta-500));
 
     /* Shadows */
