@@ -1,3 +1,17 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "title": "TEST",
+      "description": "descrption test",
+      "details": "test\n",
+      "technologies": [
+        "TBD"
+      ],
+      "status": "in-progress",
+      "image": "/images/default.jpg",
+      "url": "https://github.com/Vedthakar/TEST",
+      "createdAt": "2025-08-28",
+      "category": "Web Development"
+    }
+  ]
 }
