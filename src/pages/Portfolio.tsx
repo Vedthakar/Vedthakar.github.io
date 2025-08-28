@@ -5,6 +5,8 @@ import ExperienceCard from '@/components/ExperienceCard';
 import { Badge } from '@/components/ui/badge';
 import pentestImage from '@/assets/pentest-project.jpg';
 import webdevImage from '@/assets/webdev-project.jpg';
+import projectData from "@/data/projects.json";
+const allProjects = projectData.projects || [];
 
 export default function Portfolio() {
   const cybersecurityProjects = [
