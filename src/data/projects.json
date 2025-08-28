@@ -1,147 +1,213 @@
 {
-  "projects": [
-    {
-      "title": "TEST",
-      "description": "descrption test",
-      "details": "test\n",
-      "technologies": [
-        "TBD"
-      ],
-      "status": "in-progress",
-      "image": "/images/default.jpg",
-      "url": "https://github.com/Vedthakar/TEST",
-      "createdAt": "2025-08-28",
-      "category": "Web Development"
-    }
-  ],
-  "workExperience": [
-    {
-      "title": "Junior Security Analyst",
-      "company": "Savi Finance",
-      "duration": "05/2025 - Current",
-      "description": [
-        "Performed comprehensive penetration testing on front-end, back-end, and GraphQL API calls",
-        "Gathered reconnaissance information for SOC2 and GDPR compliance initiatives",
-        "Documented complete security audit and penetration testing reports",
-        "Ensured secure coding practices across all development teams"
-      ],
-      "skills": [
-        "Penetration Testing",
-        "Security Auditing",
-        "Compliance",
-        "GraphQL Security"
-      ],
-      "type": "work"
-    },
-    {
-      "title": "Full Stack Web Developer",
-      "company": "Fallyx",
-      "duration": "05/2025 - Current",
-      "description": [
-        "Built and maintained full-stack web features in React and TypeScript",
-        "Handled customer-facing UI updates and API integrations for workflow automation",
-        "Collaborated in weekly sprint meetings with cross-functional stakeholders",
-        "Delivered production-level code following rigorous CI/CD and code-review standards"
-      ],
-      "skills": [
-        "React",
-        "TypeScript",
-        "Full-Stack Development",
-        "CI/CD",
-        "Agile"
-      ],
-      "type": "work"
-    },
-    {
-      "title": "Shadow Experience",
-      "company": "NIH Private Contracting",
-      "duration": "02/2025 - Current",
-      "description": [
-        "Proposed strategic solutions during critical network outage situations",
-        "Facilitated rapid root-cause identification and resolution processes",
-        "Collaborated on VPN system reboot procedures and troubleshooting",
-        "Contributed strategic insights for secure network connectivity maintenance"
-      ],
-      "skills": [
-        "Network Troubleshooting",
-        "VPN Systems",
-        "Problem Solving",
-        "Strategic Planning"
-      ],
-      "type": "work"
-    },
-    {
-      "title": "Freelance Web Developer",
-      "company": "Self-employed",
-      "location": "Edmonton, Alberta",
-      "duration": "07/2022 - Current",
-      "description": [
-        "Simplified technical concepts to clients through effective communication",
-        "Created personalized websites resulting in $6,000 additional gross earnings for clients",
-        "Provided timely progress updates and maintained strong client relationships",
-        "Specialized in HTML, CSS, and JavaScript for responsive web solutions"
-      ],
-      "skills": [
-        "Client Communication",
-        "Web Development",
-        "Project Management",
-        "Business Growth"
-      ],
-      "type": "work"
-    }
-  ],
-  "education": [
-    {
-      "title": "Bachelor of Science: Computer Science",
-      "company": "University of Toronto Scarborough",
-      "duration": "Expected 04/2028",
-      "description": [
-        "Focused coursework in algorithms, data structures, and software engineering",
-        "Completed Calculus 1 with rigorous proof-writing and problem-solving skills",
-        "Computer Science 1: Developed multifunctional programs for complex order systems",
-        "Ethics 1: Applied moral reasoning to technology and cybersecurity contexts"
-      ],
-      "skills": [
-        "Computer Science",
-        "Mathematics",
-        "Ethics",
-        "Problem Solving"
-      ],
-      "type": "education"
-    }
-  ],
-  "certifications": [
-    {
-      "title": "Google Cybersecurity Certification",
-      "company": "Google",
-      "duration": "Completed",
-      "description": [
-        "Comprehensive cybersecurity fundamentals and best practices",
-        "Network security, incident response, and risk management",
-        "Hands-on experience with security tools and frameworks"
-      ],
-      "skills": [
-        "Cybersecurity",
-        "Risk Management",
-        "Security Tools"
-      ],
-      "type": "certification"
-    },
-    {
-      "title": "CompTIA Security+ License",
-      "company": "CompTIA",
-      "duration": "In Progress",
-      "description": [
-        "Industry-standard security certification covering core security concepts",
-        "Network security, compliance, operational security, and threats",
-        "Preparing for comprehensive security professional certification"
-      ],
-      "skills": [
-        "Network Security",
-        "Compliance",
-        "Threat Analysis"
-      ],
-      "type": "certification"
-    }
-  ]
+ "projects": {
+   "cybersecurity": [
+     {
+       "title": "Enterprise Penetration Testing",
+       "description": "Full security assessment for Savi Finance",
+       "details": "Performed comprehensive penetration testing on front-end, back-end, and GraphQL API calls to ensure secure coding practices. Gathered reconnaissance information and documented findings in a complete security audit report for SOC2 and GDPR compliance.",
+       "technologies": ["Penetration Testing", "GraphQL", "Security Audit", "SOC2", "GDPR"],
+       "image": "pentestImage",
+       "status": "completed"
+     },
+     {
+       "title": "CTFs Website Pen-Testing",
+       "description": "Capture The Flag challenges and website security testing",
+       "details": "Conducted various CTF challenges focusing on web application security vulnerabilities, including SQL injection, XSS, and authentication bypass techniques.",
+       "technologies": ["CTF", "Web Security", "SQL Injection", "XSS", "Authentication"],
+       "status": "completed"
+     },
+     {
+       "title": "WAF Configuration & Testing",
+       "description": "Web Application Firewall setup and penetration testing",
+       "details": "Configured and tested Web Application Firewall on Ubuntu VM environment. Performed comprehensive security testing to ensure proper protection against common web attacks.",
+       "technologies": ["WAF", "Ubuntu", "Network Security", "Penetration Testing"],
+       "status": "completed"
+     },
+     {
+       "title": "SIEM Dashboard Development",
+       "description": "Custom Security Information and Event Management system",
+       "details": "Created personalized SIEM dashboard to monitor security alerts on mock networks. Implemented real-time threat detection and incident response capabilities.",
+       "technologies": ["SIEM", "Network Monitoring", "Threat Detection", "Incident Response"],
+       "status": "completed"
+     },
+     {
+       "title": "Network Security Analysis",
+       "description": "Wireshark traffic analysis and network monitoring",
+       "details": "Applied network components knowledge and Wireshark to monitor traffic patterns. Conducted mock man-in-the-middle attacks for security research purposes on authorized networks.",
+       "technologies": ["Wireshark", "Network Analysis", "Traffic Monitoring", "MITM"],
+       "status": "completed"
+     },
+     {
+       "title": "Self-Hosted IPSEC VPN",
+       "description": "Personal VPN infrastructure development",
+       "details": "Currently building a self-hosted IPSEC VPN solution for enhanced personal network security and privacy. Implementing industry-standard encryption protocols.",
+       "technologies": ["IPSEC", "VPN", "Network Security", "Encryption", "Infrastructure"],
+       "status": "in-progress"
+     }
+   ],
+   "webDevelopment": [
+     {
+       "title": "Fallyx Full-Stack Platform",
+       "description": "React/TypeScript enterprise web application",
+       "details": "Built and maintained full-stack web features using React and TypeScript. Handled customer-facing UI updates and API integrations to automate internal workflows. Collaborated in weekly sprint meetings following rigorous CI/CD and code-review standards.",
+       "technologies": ["React", "TypeScript", "Full-Stack", "CI/CD", "API Integration"],
+       "image": "webdevImage",
+       "status": "completed"
+     },
+     {
+       "title": "Client Marketing Websites",
+       "description": "Custom websites for business growth",
+       "details": "Developed personalized websites for clients using HTML, CSS, and JavaScript, resulting in $6,000 additional gross earnings for companies within 2-month spans. Focused on responsive design and user experience optimization.",
+       "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design", "UX/UI"],
+       "status": "completed"
+     },
+     {
+       "title": "Uni-Solved Platform",
+       "description": "Co-founder of educational technology startup",
+       "details": "Co-founded and developed an educational platform aimed at helping students solve complex university-level problems. Built using modern web technologies with focus on scalability and user engagement.",
+       "technologies": ["Startup", "EdTech", "Web Development", "Product Management"],
+       "status": "in-progress"
+     },
+     {
+       "title": "Password Manager Application",
+       "description": "Secure local password management tool",
+       "details": "Developed a local-only GUI password manager using Electron/Qt with symmetric encryption. Features multiple hashing options and secure vault management with master passphrase protection.",
+       "technologies": ["Electron", "Encryption", "Security", "Desktop App", "Qt"],
+       "status": "completed"
+     }
+   ],
+   "other": [
+     {
+       "title": "Unity 3D Parkour Game",
+       "description": "Physics-based gaming experience",
+       "details": "Created a 3D parkour game in Unity game engine using C#. Applied momentum physics for realistic movement mechanics and engaging gameplay experience.",
+       "technologies": ["Unity", "C#", "Game Development", "Physics", "3D Modeling"],
+       "status": "completed"
+     },
+     {
+       "title": "Bionic Arm Development",
+       "description": "Hardware and software integration project",
+       "details": "Developed a functional bionic arm prototype combining hardware engineering with software control systems for precise movement and user interaction.",
+       "technologies": ["Hardware", "Embedded Systems", "Robotics", "Engineering"],
+       "status": "completed"
+     },
+     {
+       "title": "AWS Facial Recognition System",
+       "description": "Cloud-based computer vision application",
+       "details": "Implemented facial recognition system using AWS services, combining machine learning capabilities with cloud infrastructure for scalable image processing.",
+       "technologies": ["AWS", "Machine Learning", "Computer Vision", "Cloud Computing"],
+       "status": "completed"
+     },
+     {
+       "title": "iOS Camera Security App",
+       "description": "Mobile security application",
+       "details": "Developed iOS application focused on camera security features, ensuring user privacy and secure image handling on mobile devices.",
+       "technologies": ["iOS", "Swift", "Mobile Security", "Camera API", "Privacy"],
+       "status": "completed"
+     },
+     {
+       "title": "OpenCV Projects",
+       "description": "Computer vision applications",
+       "details": "Multiple OpenCV projects including ball movement tracking and finger-based music control systems. Explored real-time image processing and gesture recognition technologies.",
+       "technologies": ["OpenCV", "Computer Vision", "Python", "Real-time Processing"],
+       "status": "completed"
+     }
+   ]
+ },
+ "workExperience": [
+   {
+     "title": "Junior Security Analyst",
+     "company": "Savi Finance",
+     "duration": "05/2025 - Current",
+     "description": [
+       "Performed comprehensive penetration testing on front-end, back-end, and GraphQL API calls",
+       "Gathered reconnaissance information for SOC2 and GDPR compliance initiatives",
+       "Documented complete security audit and penetration testing reports",
+       "Ensured secure coding practices across all development teams"
+     ],
+     "skills": ["Penetration Testing", "Security Auditing", "Compliance", "GraphQL Security"],
+     "type": "work"
+   },
+   {
+     "title": "Full Stack Web Developer",
+     "company": "Fallyx",
+     "duration": "05/2025 - Current",
+     "description": [
+       "Built and maintained full-stack web features in React and TypeScript",
+       "Handled customer-facing UI updates and API integrations for workflow automation",
+       "Collaborated in weekly sprint meetings with cross-functional stakeholders",
+       "Delivered production-level code following rigorous CI/CD and code-review standards"
+     ],
+     "skills": ["React", "TypeScript", "Full-Stack Development", "CI/CD", "Agile"],
+     "type": "work"
+   },
+   {
+     "title": "Shadow Experience",
+     "company": "NIH Private Contracting",
+     "duration": "02/2025 - Current",
+     "description": [
+       "Proposed strategic solutions during critical network outage situations",
+       "Facilitated rapid root-cause identification and resolution processes",
+       "Collaborated on VPN system reboot procedures and troubleshooting",
+       "Contributed strategic insights for secure network connectivity maintenance"
+     ],
+     "skills": ["Network Troubleshooting", "VPN Systems", "Problem Solving", "Strategic Planning"],
+     "type": "work"
+   },
+   {
+     "title": "Freelance Web Developer",
+     "company": "Self-employed",
+     "location": "Edmonton, Alberta",
+     "duration": "07/2022 - Current",
+     "description": [
+       "Simplified technical concepts to clients through effective communication",
+       "Created personalized websites resulting in $6,000 additional gross earnings for clients",
+       "Provided timely progress updates and maintained strong client relationships",
+       "Specialized in HTML, CSS, and JavaScript for responsive web solutions"
+     ],
+     "skills": ["Client Communication", "Web Development", "Project Management", "Business Growth"],
+     "type": "work"
+   }
+ ],
+ "education": [
+   {
+     "title": "Bachelor of Science: Computer Science",
+     "company": "University of Toronto Scarborough",
+     "duration": "Expected 04/2028",
+     "description": [
+       "Focused coursework in algorithms, data structures, and software engineering",
+       "Completed Calculus 1 with rigorous proof-writing and problem-solving skills",
+       "Computer Science 1: Developed multifunctional programs for complex order systems",
+       "Ethics 1: Applied moral reasoning to technology and cybersecurity contexts"
+     ],
+     "skills": ["Computer Science", "Mathematics", "Ethics", "Problem Solving"],
+     "type": "education"
+   }
+ ],
+ "certifications": [
+   {
+     "title": "Google Cybersecurity Certification",
+     "company": "Google",
+     "duration": "Completed",
+     "description": [
+       "Comprehensive cybersecurity fundamentals and best practices",
+       "Network security, incident response, and risk management",
+       "Hands-on experience with security tools and frameworks"
+     ],
+     "skills": ["Cybersecurity", "Risk Management", "Security Tools"],
+     "type": "certification"
+   },
+   {
+     "title": "CompTIA Security+ License",
+     "company": "CompTIA",
+     "duration": "In Progress",
+     "description": [
+       "Industry-standard security certification covering core security concepts",
+       "Network security, compliance, operational security, and threats",
+       "Preparing for comprehensive security professional certification"
+     ],
+     "skills": ["Network Security", "Compliance", "Threat Analysis"],
+     "type": "certification"
+   }
+ ]
 }
