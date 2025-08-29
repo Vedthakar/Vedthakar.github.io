@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "title": "Vedthakar.Github.Io",
+      "description": "No description yet.",
+      "details": "# Welcome to your Lovable project\n\n## Project info\n\n**URL**: https://lovable.dev/projects/098a0771-5415-46fc-a713-8bdf070b58f0\n\n## How can I edit this code?\n\nThere are several ways of editing your application.\n\n**Use Lovable**\n\nSimply visit the [Lovable Project](https://lovable.dev/projects/098a0771-5415-46fc-a713-8bdf070b58f0) and start prompting.\n\nChanges made via Lovable will be committed automatically to this repo.\n\n**Use your preferred IDE**\n\nIf you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.\n\nThe only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)\n\nFollow these steps:\n\n```sh\n# Step 1: Clone the repository using the project",
+      "technologies": [
+        "TBD"
+      ],
+      "status": "in-progress",
+      "image": "/images/default.jpg",
+      "url": "https://github.com/Vedthakar/Vedthakar.github.io",
+      "createdAt": "2025-08-24",
+      "category": "Web Development"
+    },
+    {
       "title": "TEST",
       "description": "descrption test",
       "details": "test\n",
