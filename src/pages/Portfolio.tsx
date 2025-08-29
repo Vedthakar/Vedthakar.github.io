@@ -10,23 +10,58 @@ import projectData from "@/data/projects.json";
 export default function Portfolio() {
   // Image mapping for projects that have images
   const imageMap: { [key: string]: string } = {
-    pentestImage,
-    webdevImage,
+    '/images/pentest-project.jpg': pentestImage,
+    '/images/webdev-project.jpg': webdevImage,
   };
 
-  // Helper function to add images to projects
-  const addImagesToProjects = (projects: any[]) => {
-    return projects.map(project => ({
+  // Helper function to process project images
+  const processProjectImage = (imagePath: string) => {
+    if (imagePath === '/images/default.jpg') {
+      return undefined;
+    }
+    return imageMap[imagePath] || undefined;
+  };
+
+  // Helper function to ensure valid status
+  const normalizeStatus = (status: string): "completed" | "in-progress" | "planned" => {
+    if (status === "completed" || status === "in-progress" || status === "planned") {
+      return status;
+    }
+    return "in-progress"; // Default fallback
+  };
+
+  // Filter projects by category and add proper images
+  const cybersecurityProjects = (projectData.projects || [])
+    .filter(project => project.category === 'cybersecurity')
+    .map(project => ({
       ...project,
-      image: project.image && imageMap[project.image] ? imageMap[project.image] : undefined
+      image: processProjectImage(project.image),
+      status: normalizeStatus(project.status),
+      githubUrl: project.url || undefined,
+      liveUrl: undefined
     }));
-  };
 
-  // Extract data from JSON with fallbacks and type assertions
-  const cybersecurityProjects = addImagesToProjects(projectData.projects?.cybersecurity || []);
-  const webDevelopmentProjects = addImagesToProjects(projectData.projects?.webDevelopment || []);
-  const otherProjects = addImagesToProjects(projectData.projects?.other || []);
+  const webDevelopmentProjects = (projectData.projects || [])
+    .filter(project => project.category === 'webDevelopment')
+    .map(project => ({
+      ...project,
+      image: processProjectImage(project.image),
+      status: normalizeStatus(project.status),
+      githubUrl: project.url || undefined,
+      liveUrl: undefined
+    }));
+
+  const otherProjects = (projectData.projects || [])
+    .filter(project => project.category === 'other')
+    .map(project => ({
+      ...project,
+      image: processProjectImage(project.image),
+      status: normalizeStatus(project.status),
+      githubUrl: project.url || undefined,
+      liveUrl: undefined
+    }));
   
+  // Keep the existing work experience, education, and certifications structure
   const workExperience = (projectData.workExperience || []).map(exp => ({
     ...exp,
     type: exp.type as "work" | "education" | "certification"
