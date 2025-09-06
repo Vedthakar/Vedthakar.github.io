@@ -7,6 +7,7 @@
       "technologies": ["Penetration Testing", "GraphQL", "Security Audit", "SOC2", "GDPR"],
       "status": "completed",
       "image": "/images/pentest-project.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2025-05-01",
       "category": "cybersecurity"
@@ -18,6 +19,7 @@
       "technologies": ["CTF", "Web Security", "SQL Injection", "XSS", "Authentication"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2025-04-15",
       "category": "cybersecurity"
@@ -29,6 +31,7 @@
       "technologies": ["WAF", "Ubuntu", "Network Security", "Penetration Testing"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2025-03-20",
       "category": "cybersecurity"
@@ -40,6 +43,7 @@
       "technologies": ["SIEM", "Network Monitoring", "Threat Detection", "Incident Response"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2025-02-10",
       "category": "cybersecurity"
@@ -51,6 +55,7 @@
       "technologies": ["Wireshark", "Network Analysis", "Traffic Monitoring", "MITM"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2025-01-15",
       "category": "cybersecurity"
@@ -62,6 +67,7 @@
       "technologies": ["IPSEC", "VPN", "Network Security", "Encryption", "Infrastructure"],
       "status": "in-progress",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2025-06-01",
       "category": "cybersecurity"
@@ -73,6 +79,7 @@
       "technologies": ["React", "TypeScript", "Full-Stack", "CI/CD", "API Integration"],
       "status": "completed",
       "image": "/images/webdev-project.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2025-05-01",
       "category": "webDevelopment"
@@ -84,6 +91,7 @@
       "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design", "UX/UI"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2024-07-01",
       "category": "webDevelopment"
@@ -95,6 +103,7 @@
       "technologies": ["Startup", "EdTech", "Web Development", "Product Management"],
       "status": "in-progress",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2024-09-01",
       "category": "webDevelopment"
@@ -106,9 +115,22 @@
       "technologies": ["Electron", "Encryption", "Security", "Desktop App", "Qt"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2024-11-01",
       "category": "webDevelopment"
+    },
+    {
+      "title": "3D Ball Maze Game",
+      "description": "Physics-based gaming experience",
+      "details": "Built a multi-level puzzle game in Unity where players navigate a 3D ball through progressively challenging mazes. Tested and utilized Unity's camera libraries to create smooth camera transitions and perspectives tailored to gameplay.",
+      "technologies": ["Unity", "C#", "Game Development", "Camera Libraries", "3D Modeling"],
+      "status": "completed",
+      "image": "/videos/BallMaze.MP4",
+      "mediaType": "video",
+      "url": "",
+      "createdAt": "2024-06-01",
+      "category": "other"
     },
     {
       "title": "Unity 3D Parkour Game",
@@ -116,7 +138,8 @@
       "details": "Created a 3D parkour game in Unity game engine using C#. Applied momentum physics for realistic movement mechanics and engaging gameplay experience.",
       "technologies": ["Unity", "C#", "Game Development", "Physics", "3D Modeling"],
       "status": "completed",
-      "image": "/images/default.jpg",
+      "image": "/videos/Parkour.MP4",
+      "mediaType": "video",
       "url": "",
       "createdAt": "2024-06-01",
       "category": "other"
@@ -128,6 +151,7 @@
       "technologies": ["Hardware", "Embedded Systems", "Robotics", "Engineering"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2024-03-01",
       "category": "other"
@@ -139,6 +163,7 @@
       "technologies": ["AWS", "Machine Learning", "Computer Vision", "Cloud Computing"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2024-08-01",
       "category": "other"
@@ -150,6 +175,7 @@
       "technologies": ["iOS", "Swift", "Mobile Security", "Camera API", "Privacy"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2024-10-01",
       "category": "other"
@@ -161,6 +187,7 @@
       "technologies": ["OpenCV", "Computer Vision", "Python", "Real-time Processing"],
       "status": "completed",
       "image": "/images/default.jpg",
+      "mediaType": "image",
       "url": "",
       "createdAt": "2024-12-01",
       "category": "other"

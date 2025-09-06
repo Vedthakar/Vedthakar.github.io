@@ -7,19 +7,29 @@ import pentestImage from '@/assets/pentest-project.jpg';
 import webdevImage from '@/assets/webdev-project.jpg';
 import projectData from "@/data/projects.json";
 
+// Import videos using dynamic imports to avoid TypeScript errors
+const ballMazeVideo = '/src/assets/BallMaze.MP4';
+const parkourVideo = '/src/assets/Parkour.MP4';
+
 export default function Portfolio() {
-  // Image mapping for projects that have images
-  const imageMap: { [key: string]: string } = {
+  // Media mapping for projects that have images or videos
+  const mediaMap: { [key: string]: string } = {
     '/images/pentest-project.jpg': pentestImage,
     '/images/webdev-project.jpg': webdevImage,
+    '/videos/BallMaze.MP4': ballMazeVideo,
+    '/videos/Parkour.MP4': parkourVideo,
   };
 
-  // Helper function to process project images
-  const processProjectImage = (imagePath: string) => {
-    if (imagePath === '/images/default.jpg') {
-      return undefined;
+  // Helper function to process project media
+  const processProjectMedia = (mediaPath: string, mediaType: string) => {
+    if (mediaPath === '/images/default.jpg') {
+      return { media: undefined, type: 'image' };
     }
-    return imageMap[imagePath] || undefined;
+    const media = mediaMap[mediaPath];
+    return media ? { 
+      media: media, 
+      type: mediaType || 'image' 
+    } : { media: undefined, type: 'image' };
   };
 
   // Helper function to ensure valid status
@@ -30,36 +40,51 @@ export default function Portfolio() {
     return "in-progress"; // Default fallback
   };
 
-  // Filter projects by category and add proper images
+  // Filter projects by category and add proper media
   const cybersecurityProjects = (projectData.projects || [])
     .filter(project => project.category === 'cybersecurity')
-    .map(project => ({
-      ...project,
-      image: processProjectImage(project.image),
-      status: normalizeStatus(project.status),
-      githubUrl: project.url || undefined,
-      liveUrl: undefined
-    }));
+    .map(project => {
+      const { media, type } = processProjectMedia(project.image, project.mediaType);
+      return {
+        ...project,
+        image: type === 'image' ? media : undefined,
+        video: type === 'video' ? media : undefined,
+        mediaType: type,
+        status: normalizeStatus(project.status),
+        githubUrl: project.url || undefined,
+        liveUrl: undefined
+      };
+    });
 
   const webDevelopmentProjects = (projectData.projects || [])
     .filter(project => project.category === 'webDevelopment')
-    .map(project => ({
-      ...project,
-      image: processProjectImage(project.image),
-      status: normalizeStatus(project.status),
-      githubUrl: project.url || undefined,
-      liveUrl: undefined
-    }));
+    .map(project => {
+      const { media, type } = processProjectMedia(project.image, project.mediaType);
+      return {
+        ...project,
+        image: type === 'image' ? media : undefined,
+        video: type === 'video' ? media : undefined,
+        mediaType: type,
+        status: normalizeStatus(project.status),
+        githubUrl: project.url || undefined,
+        liveUrl: undefined
+      };
+    });
 
   const otherProjects = (projectData.projects || [])
     .filter(project => project.category === 'other')
-    .map(project => ({
-      ...project,
-      image: processProjectImage(project.image),
-      status: normalizeStatus(project.status),
-      githubUrl: project.url || undefined,
-      liveUrl: undefined
-    }));
+    .map(project => {
+      const { media, type } = processProjectMedia(project.image, project.mediaType);
+      return {
+        ...project,
+        image: type === 'image' ? media : undefined,
+        video: type === 'video' ? media : undefined,
+        mediaType: type,
+        status: normalizeStatus(project.status),
+        githubUrl: project.url || undefined,
+        liveUrl: undefined
+      };
+    });
   
   // Keep the existing work experience, education, and certifications structure
   const workExperience = (projectData.workExperience || []).map(exp => ({
