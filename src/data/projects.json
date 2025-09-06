@@ -145,6 +145,18 @@
       "category": "other"
     },
     {
+      "title": "Logistic Regression Model",
+      "description": "University Admission",
+      "details": "Built a Logistic Regression Model to determine and applicants chances of admission based on test scores and historical data. Using NumPy, Matplotlib and pandas to visualized data and fine-tuned the model to predict at an accuracy of 83%.",
+      "technologies": ["Logistic Regression", "Numpy", "Python", "Model Tuning"],
+      "status": "completed",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2024-12-01",
+      "category": "other"
+    },
+    {
       "title": "Bionic Arm Development",
       "description": "Hardware and software integration project",
       "details": "Developed a functional bionic arm prototype combining hardware engineering with software control systems for precise movement and user interaction.",
