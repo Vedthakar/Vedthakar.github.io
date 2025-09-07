@@ -3,21 +3,22 @@ import HeroSection from '@/components/HeroSection';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceCard from '@/components/ExperienceCard';
 import { Badge } from '@/components/ui/badge';
-import pentestImage from '@/assets/pentest-project.jpg';
-import webdevImage from '@/assets/webdev-project.jpg';
 import projectData from "@/data/projects.json";
 
-// Import videos using dynamic imports to avoid TypeScript errors
-const ballMazeVideo = '/src/assets/BallMaze.MP4';
-const parkourVideo = '/src/assets/Parkour.MP4';
+// Import images from assets (these will be processed by Vite)
+import pentestImage from '@/assets/pentest-project.jpg';
+import webdevImage from '@/assets/webdev-project.jpg';
 
 export default function Portfolio() {
   // Media mapping for projects that have images or videos
   const mediaMap: { [key: string]: string } = {
+    // Images (processed by Vite from src/assets)
     '/images/pentest-project.jpg': pentestImage,
     '/images/webdev-project.jpg': webdevImage,
-    '/videos/BallMaze.MP4': ballMazeVideo,
-    '/videos/Parkour.MP4': parkourVideo,
+    
+    // Videos (served directly from public folder)
+    '/videos/BallMaze.MP4': '/BallMaze.MP4',
+    '/videos/Parkour.MP4': '/Parkour.MP4',
   };
 
   // Helper function to process project media
