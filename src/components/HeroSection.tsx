@@ -2,20 +2,11 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import Interactive3DBall from './Interactive3DBall';
-import heroImage from '@/assets/hero-bg.jpg';
+import resumePdf from '@/assets/Ved_Thakar_Resume.pdf';
 
 export default function HeroSection() {
   return (
     <section className="min-h-screen relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Hero background" 
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-navy-900/80" />
-      </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-20">
@@ -82,7 +73,15 @@ export default function HeroSection() {
                 className="border-navy-500/50 text-navy-100 hover:bg-navy-600/20 hover:shadow-magenta transition-smooth"
               >
                 <Download className="h-5 w-5 mr-2" />
-                Download Resume
+                                <a
+                  href={resumePdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Ved_Thakar_Resume.pdf"
+                >
+                  {/* your download icon, e.g. <Download className="w-4 h-4" /> */}
+                  <span>Download Resume</span>
+                </a>
               </Button>
             </div>
             

@@ -4,6 +4,7 @@ import ProjectCard from '@/components/ProjectCard';
 import ExperienceCard from '@/components/ExperienceCard';
 import { Badge } from '@/components/ui/badge';
 import projectData from "@/data/projects.json";
+import resumePdf from '@/assets/Ved_Thakar_Resume.pdf';
 
 // Import images from assets (these will be processed by Vite)
 import pentestImage from '@/assets/pentest-project.jpg';
@@ -230,21 +231,32 @@ export default function Portfolio() {
             Interested in cybersecurity consulting, web development projects, or just want to chat about technology? I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="mailto:Ved06.thakar@gmail.com" 
-              className="inline-flex items-center justify-center px-8 py-4 bg-solid-hero text-white font-semibold rounded-lg hover:shadow-glow transition-smooth"
-            >
-              Email Me
-            </a>
-            <a 
-              href="https://linkedin.com/in/ved-thakar-00202b247" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 border border-navy-500/50 text-navy-100 rounded-lg hover:bg-navy-600/20 hover:shadow-magenta transition-smooth"
-            >
-              LinkedIn Profile
-            </a>
-          </div>
+          <a 
+            href="mailto:Ved06.thakar@gmail.com" 
+            className="inline-flex items-center justify-center px-8 py-4 bg-solid-hero text-white font-semibold rounded-lg hover:shadow-glow transition-smooth"
+          >
+            Email Me
+          </a>
+
+          <a 
+            href="https://linkedin.com/in/ved-thakar-00202b247" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-8 py-4 border border-navy-500/50 text-navy-100 rounded-lg hover:bg-navy-600/20 hover:shadow-magenta transition-smooth"
+          >
+            LinkedIn Profile
+          </a>
+
+         <a
+            href={resumePdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Ved_Thakar_Resume.pdf"
+            className="inline-flex items-center justify-center px-8 py-4 border border-solid-accent/60 text-solid-accent rounded-lg hover:bg-solid-accent/10 hover:shadow-glow transition-smooth"
+          >
+            Download Resume
+          </a>
+        </div>
         </div>
       </section>
     </div>
