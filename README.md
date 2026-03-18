@@ -119,18 +119,33 @@ To run the website on your device:
 
 ```sh
 # Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Go into the project folder
-cd <YOUR_PROJECT_NAME>
+git clone https://github.com/Vedthakar/Vedthakar.github.io.git
 
 # Install dependencies
 npm install
 
 # Start the local development server
 npm run dev
+```
 
+After that, open the local URL shown in your terminal, usually something like:
 
+```sh
+http://localhost:5173
+```
+
+---
+
+## Screenshots
+
+### Website home page
 ![Homepage Screenshot](./public/homepage.png)
+
+### Projects section
 ![Projects Screenshot](./public/projects.png)
+
+### n8n workflow
 ![n8n Workflow Screenshot](./public/n8n.png)
+
+### Mobile view
+![Mobile Screenshot](./public/mobile.png)
