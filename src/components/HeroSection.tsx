@@ -26,12 +26,12 @@ export default function HeroSection() {
               
               <div className="space-y-2">
                 <p className="text-xl lg:text-2xl text-magenta-400 font-semibold">
-                  Cybersecurity Analyst & Full-Stack Developer
+                  Solution Arcitect & Full-Stack Developer
                 </p>
                 <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-                  Computer Science student at University of Toronto specializing in penetration testing, 
-                  secure web development, and cybersecurity research. Currently working as a Junior Security Analyst 
-                  at Savi Finance and Full-Stack Developer at Fallyx.
+                  Computer Science student at University of Toronto specializing in Solution Architecture, 
+                  Full-Stack Dev, DevOps and Product Management. Currently working at Geotab as a Backend 
+                  Software Developer Intern, with a passion for building secure and innovative solutions.
                 </p>
               </div>
             </div>

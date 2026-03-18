@@ -204,6 +204,92 @@
       "createdAt": "2024-12-01",
       "category": "other"
     }
+    ,
+    {
+      "title": "Moorcheh.ai (AI Symbiote)",
+      "description": "AI Symbiote project — hackathon winner",
+      "details": "Built Moorcheh.ai as part of an AI Symbiote project that won a national AI hackathon. Focused on rapid prototyping of AI-driven features and integration for demonstration-grade systems.",
+      "technologies": ["Machine Learning", "AI", "Prototype", "Hackathon"],
+      "status": "completed",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2026-02-01",
+      "category": "ai"
+    },
+    {
+      "title": "Prediction Market Prototype",
+      "description": "Polymarket + stock insight prototype (UofTHacks)",
+      "details": "Prototype integrating prediction-market primitives with market and stock insight data to explore decentralized forecasting interfaces and decision-support visualizations.",
+      "technologies": ["Polymarket", "Data Analysis", "Web3", "Prototyping"],
+      "status": "completed",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2025-11-01",
+      "category": "other"
+    },
+    {
+      "title": "Sticky Bean",
+      "description": "Casual game project",
+      "details": "Developed Sticky Bean, a small prototype game focusing on simple mechanics and polished feel for rapid playtesting and user feedback.",
+      "technologies": ["Game Development", "Prototype"],
+      "status": "completed",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2024-05-01",
+      "category": "other"
+    }
+    ,
+    {
+      "title": "n8n Portfolio Automation",
+      "description": "Automated GitHub.io portfolio sync workflow",
+      "details": "Built an n8n workflow that detects new GitHub repos, scrapes READMEs, classifies projects, and updates the central `projects.json` to keep the portfolio in sync automatically.",
+      "technologies": ["n8n", "GitHub API", "Automation", "JSON"],
+      "status": "completed",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2025-10-01",
+      "category": "webDevelopment"
+    },
+    {
+      "title": "Smart Travel Companion (NewHacks)",
+      "description": "Adaptive itinerary and travel assistant",
+      "details": "Prototype built at NewHacks combining Swift frontend, Django backend, and Firebase for real-time syncing. Features dynamic itinerary adjustments, live navigation, and group safety via WebSocket updates.",
+      "technologies": ["Swift", "Django", "Firebase", "NLP", "WebSocket"],
+      "status": "completed",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2025-09-01",
+      "category": "webDevelopment"
+    },
+    {
+      "title": "ADHD Productivity Companion (Hack the Valley)",
+      "description": "Autonomous productivity app for ADHD users",
+      "details": "Hack the Valley project: backend in Spring Boot with Firebase integration. Automates progress verification using activity signals and introduces gamified motivation features to encourage consistent habits.",
+      "technologies": ["SpringBoot", "Firebase", "Backend", "Automation"],
+      "status": "in-progress",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2025-04-01",
+      "category": "webDevelopment"
+    },
+    {
+      "title": "Pathogenicity Detection Model",
+      "description": "Protein mutation pathogenicity predictor (Bioinformatics Hackathon)",
+      "details": "Built a prototype using protein LLMs (ESM2) and AWS SageMaker to predict pathogenicity in intrinsically disordered regions. Managed ClinVar datasets and implemented a SageMaker-based training/deployment workflow.",
+      "technologies": ["ESM2", "SageMaker", "AWS", "Machine Learning", "Bioinformatics"],
+      "status": "completed",
+      "image": "/images/default.jpg",
+      "mediaType": "image",
+      "url": "",
+      "createdAt": "2025-10-01",
+      "category": "other"
+    }
   ],
   "workExperience": [
     {
@@ -258,6 +344,52 @@
       ],
       "skills": ["Client Communication", "Web Development", "Project Management", "Business Growth"],
       "type": "work"
+    }
+    ,
+    {
+      "title": "VC Analyst",
+      "company": "Orbit Capital",
+      "duration": "2025 - Current",
+      "description": [
+        "Supported sourcing and preliminary diligence for early-stage investments",
+        "Prepared market research and investment memos to inform partner decisions",
+        "Assisted with portfolio monitoring and qualitative startup evaluations"
+      ],
+      "skills": ["Venture Due Diligence", "Market Research", "Financial Analysis"],
+      "type": "work"
+    },
+    {
+      "title": "Mentor",
+      "company": "Hack Canada",
+      "duration": "2025",
+      "description": [
+        "Mentored student hackathon teams on technical implementation and product design",
+        "Provided guidance on prototyping, pitching, and demo preparation"
+      ],
+      "skills": ["Mentoring", "Prototyping", "Product Design"],
+      "type": "volunteer"
+    },
+    {
+      "title": "Judge",
+      "company": "Hack the Move / UWAFT",
+      "duration": "2026",
+      "description": [
+        "Evaluated hackathon submissions across technical merit and user impact",
+        "Provided feedback to finalist teams and contributed to award decisions"
+      ],
+      "skills": ["Technical Evaluation", "Product Assessment", "Event Judging"],
+      "type": "volunteer"
+    },
+    {
+      "title": "Mentor",
+      "company": "DeerHacks",
+      "duration": "2025",
+      "description": [
+        "Advised teams on architecture and implementation strategies",
+        "Helped students iterate on MVPs and prepare final demos"
+      ],
+      "skills": ["Mentoring", "Architecture", "MVP Development"],
+      "type": "volunteer"
     }
   ],
   "education": [

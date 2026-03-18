@@ -118,24 +118,7 @@ export default function Portfolio() {
             </p>
           </div>
           
-          {/* Cybersecurity Projects */}
-          {cybersecurityProjects.length > 0 && (
-            <div className="mb-16">
-              <div className="flex items-center gap-4 mb-8">
-                <h3 className="text-3xl font-bold text-foreground">Cybersecurity</h3>
-                <Badge className="bg-red-500/20 text-red-400 border-red-500/30">
-                  {cybersecurityProjects.length} Projects
-                </Badge>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {cybersecurityProjects.map((project, index) => (
-                  <ProjectCard key={index} {...project} />
-                ))}
-              </div>
-            </div>
-          )}
-          
-          {/* Web Development Projects */}
+          {/* Web Development Projects (render first for emphasis on full-stack work) */}
           {webDevelopmentProjects.length > 0 && (
             <div className="mb-16">
               <div className="flex items-center gap-4 mb-8">
@@ -151,10 +134,10 @@ export default function Portfolio() {
               </div>
             </div>
           )}
-          
-          {/* Other Projects */}
+
+          {/* Innovation & Hardware */}
           {otherProjects.length > 0 && (
-            <div>
+            <div className="mb-16">
               <div className="flex items-center gap-4 mb-8">
                 <h3 className="text-3xl font-bold text-foreground">Innovation & Hardware</h3>
                 <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">
@@ -163,6 +146,23 @@ export default function Portfolio() {
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {otherProjects.map((project, index) => (
+                  <ProjectCard key={index} {...project} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Cybersecurity Projects (render later so full-stack appears first) */}
+          {cybersecurityProjects.length > 0 && (
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <h3 className="text-3xl font-bold text-foreground">Cybersecurity</h3>
+                <Badge className="bg-red-500/20 text-red-400 border-red-500/30">
+                  {cybersecurityProjects.length} Projects
+                </Badge>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {cybersecurityProjects.map((project, index) => (
                   <ProjectCard key={index} {...project} />
                 ))}
               </div>
