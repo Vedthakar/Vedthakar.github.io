@@ -7,48 +7,30 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/ved-thakar-00202b247",
   resume: "/Ved_Thakar_Resume.pdf",
   intro:
-    "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won two hackathons, and ranked in the top 3% of 47,923 open-source contributors in GSSoC 2026.",
+    "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won two hackathons (GenAI Genesis and Cursor Toronto), and ranked in the top 3% of 47,923 open-source contributors in GSSoC 2026.",
 };
 
-export type Win = { value: string; label: string; detail: string; href?: string };
+export type Stat = { value: string; label: string; note: string; href?: string };
 
-export const wins: Win[] = [
-  {
-    value: "Acquired",
-    label: "TripBuddy",
-    detail: "Went from a 24-hour hackathon build to an acquisition two weeks after the live demo.",
-    href: "#project-tripbuddy",
-  },
-  {
-    value: "$750K",
-    label: "Deal closed at Tavus",
-    detail: "Helped close it with a solution architecture and a working demo built in under 5 hours.",
-    href: "#journey-tavus",
-  },
-  {
-    value: "2×",
-    label: "Hackathon winner",
-    detail: "Including the GenAI Genesis 2026 sponsor prize for best use of memory architecture.",
-    href: "#project-revenant",
-  },
-  {
-    value: "Top 3%",
-    label: "GSSoC 2026, worldwide",
-    detail: "Ranked 1,396 of 47,923 contributors in GirlScript Summer of Code, and mentored in the program.",
-    href: "#open-source",
-  },
-  {
-    value: "169",
-    label: "Security findings triaged",
-    detail: "Ran a six-phase audit on a live iOS health app and closed every critical in code.",
-    href: "#journey-sequen",
-  },
-  {
-    value: "3 firms",
-    label: "DealFlow OS in production",
-    detail: "Built and run solo. 500+ production deployments.",
-    href: "#project-dealflow-os",
-  },
+/** The "current stats" board at the top of the page. Update these as they change. */
+export const statsAsOf = "October 2026";
+export const stats: Stat[] = [
+  { value: "$750K", label: "Biggest deal closed", note: "Tavus", href: "#journey-tavus" },
+  { value: "1×", label: "Product acquired", note: "TripBuddy", href: "#project-tripbuddy" },
+  { value: "2×", label: "Hackathon winner", note: "GenAI Genesis · Cursor Toronto", href: "#project-revenant" },
+  { value: "Top 3%", label: "GSSoC 2026, worldwide", note: "#1,396 of 47,923", href: "#open-source" },
+  { value: "753", label: "Commits this year", note: "GitHub, 2026", href: "https://github.com/Vedthakar" },
+  { value: "24", label: "GitHub stars", note: "swamr · Vedocker · TripBuddy", href: "#project-swamr" },
+  { value: "500+", label: "Production deployments", note: "DealFlow OS", href: "#project-dealflow-os" },
+  { value: "1,017", label: "Startups indexed", note: "DealFlow OS market index", href: "#project-dealflow-os" },
+  { value: "150+", label: "AI agents orchestrated", note: "swamr, in parallel", href: "#project-swamr" },
+  { value: "169", label: "Security findings triaged", note: "SEQUEN audit, every critical closed", href: "#journey-sequen" },
+  { value: "40+", label: "PRs shipped in one summer", note: "SEQUEN, to the App Store", href: "#journey-sequen" },
+  { value: "Millions", label: "Pipeline added", note: "Tavus", href: "#journey-tavus" },
+  { value: "80%", label: "Faster turnaround", note: "Savi Finance, Lambda + SQS", href: "#journey-savi" },
+  { value: "70%", label: "Cycle time cut", note: "Geotab CI gating", href: "#journey-geotab" },
+  { value: "25+", label: "Projects shipped", note: "Below, most impressive first", href: "#projects" },
+  { value: "5", label: "Events judged & mentored", note: "MacHacks · GSSoC · DeerHacks …", href: "#volunteering" },
 ];
 
 export type Stop = {

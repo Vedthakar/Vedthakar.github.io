@@ -151,6 +151,30 @@
       "category": "ai"
     },
     {
+      "slug": "marry-me",
+      "title": "Shadi Mubarak",
+      "description": "Hackathon-winning AR wedding planner, ideated and built in 37 minutes at Cursor Toronto.",
+      "badge": "Winner · Cursor Toronto",
+      "posterStat": "Built in 37 minutes",
+      "bullets": [
+        "Won the Cursor Toronto hackathon with a wedding planner we ideated and built in 37 minutes.",
+        "A BERT classifier pulls each partner's interests from their Claude chat history, and Gemini turns them into prompts for a real-time AR scene with under 3 s latency.",
+        "Voice commands change the scene, add supplies to an Amazon cart through Playwright and email nearby vendors through Resend."
+      ],
+      "technologies": [
+        "AR",
+        "BERT",
+        "Gemini",
+        "Playwright",
+        "Resend"
+      ],
+      "image": "",
+      "github": "https://github.com/akashngb/mARry-me",
+      "live": "",
+      "createdAt": "2026-07-23",
+      "category": "creative"
+    },
+    {
       "slug": "cinesync",
       "title": "CineSync",
       "description": "Scheduling and disruption intelligence for film productions.",
@@ -520,30 +544,6 @@
       "live": "",
       "createdAt": "2026-03-19",
       "category": "security"
-    },
-    {
-      "slug": "marry-me",
-      "title": "mARry-me",
-      "description": "AR wedding planning, built in 37 minutes at Cursor Toronto.",
-      "badge": "Built in 37 min",
-      "posterStat": "37 minutes",
-      "bullets": [
-        "Ideated and built in 37 minutes at a Cursor Toronto hackathon.",
-        "A BERT classifier pulls each partner's interests from their Claude chat history, and Gemini turns them into prompts for a real-time AR scene with under 3 s latency.",
-        "Voice commands change the scene, add supplies to an Amazon cart through Playwright and email nearby vendors through Resend."
-      ],
-      "technologies": [
-        "AR",
-        "BERT",
-        "Gemini",
-        "Playwright",
-        "Resend"
-      ],
-      "image": "",
-      "github": "https://github.com/akashngb/mARry-me",
-      "live": "",
-      "createdAt": "2026-07-23",
-      "category": "creative"
     },
     {
       "slug": "smart-air",

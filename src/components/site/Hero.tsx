@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import { profile, wins } from "@/data/site";
+import { profile } from "@/data/site";
+import StatsBoard from "./StatsBoard";
 
 export default function Hero() {
   return (
@@ -37,20 +38,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border bg-border sm:grid-cols-2 lg:grid-cols-3">
-        {wins.map((w, i) => (
-          <a
-            key={w.label}
-            href={w.href}
-            className="reveal group flex flex-col gap-2 bg-card p-6 transition-colors hover:bg-background"
-            style={{ animationDelay: `${120 + i * 60}ms` }}
-          >
-            <span className="font-display text-5xl leading-none">{w.value}</span>
-            <span className="text-sm font-medium">{w.label}</span>
-            <span className="text-sm leading-relaxed text-muted-foreground">{w.detail}</span>
-          </a>
-        ))}
-      </div>
+      <StatsBoard />
     </section>
   );
 }
