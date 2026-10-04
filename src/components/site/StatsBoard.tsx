@@ -42,21 +42,35 @@ function CountUp({ value, run }: { value: string; run: boolean }) {
   );
 }
 
-function StatCell({ stat, run }: { stat: Stat; run: boolean }) {
-  const external = stat.href?.startsWith("http");
+function externalProps(href?: string) {
+  const external = href?.startsWith("http");
+  return external ? { target: "_blank", rel: "noreferrer" } : {};
+}
+
+function Headline({ stat, run }: { stat: Stat; run: boolean }) {
+  return (
+    <a href={stat.href} {...externalProps(stat.href)} className="group block border-t border-foreground pt-4">
+      <span className="block whitespace-nowrap font-display text-5xl leading-none tabular-nums sm:text-6xl lg:text-7xl">
+        <CountUp value={stat.value} run={run} />
+      </span>
+      <span className="mt-3 block text-sm font-medium">{stat.label}</span>
+      <span className="mt-1 block font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-foreground">{stat.note}</span>
+    </a>
+  );
+}
+
+function LedgerRow({ stat, run }: { stat: Stat; run: boolean }) {
   return (
     <a
       href={stat.href}
-      target={external ? "_blank" : undefined}
-      rel={external ? "noreferrer" : undefined}
-      className="group flex flex-col justify-between gap-6 bg-card p-5 transition-colors hover:bg-background sm:p-6"
+      {...externalProps(stat.href)}
+      title={stat.note}
+      className="group flex items-baseline gap-3 border-b py-3 transition-colors hover:border-foreground"
     >
-      <span className="whitespace-nowrap font-display text-[2.4rem] leading-none tabular-nums sm:text-5xl lg:text-[3.25rem]">
+      <span className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">{stat.label}</span>
+      <span aria-hidden className="mb-1 flex-1 border-b border-dotted border-muted-foreground/40" />
+      <span className="whitespace-nowrap font-display text-2xl leading-none tabular-nums">
         <CountUp value={stat.value} run={run} />
-      </span>
-      <span>
-        <span className="block text-sm font-medium">{stat.label}</span>
-        <span className="mt-1 block font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-foreground">{stat.note}</span>
       </span>
     </a>
   );
@@ -82,9 +96,12 @@ export default function StatsBoard() {
     return () => io.disconnect();
   }, []);
 
+  const headline = stats.slice(0, 4);
+  const ledger = stats.slice(4);
+
   return (
     <div ref={ref} className="mt-20">
-      <div className="mb-4 flex items-end justify-between gap-4">
+      <div className="mb-8 flex items-end justify-between gap-4">
         <p className="eyebrow flex items-center gap-2">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-foreground/40" />
@@ -94,9 +111,16 @@ export default function StatsBoard() {
         </p>
         <p className="eyebrow">As of {statsAsOf}</p>
       </div>
-      <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border bg-border lg:grid-cols-4">
-        {stats.map((s) => (
-          <StatCell key={s.label} stat={s} run={run} />
+
+      <div className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4 lg:gap-x-10">
+        {headline.map((s) => (
+          <Headline key={s.label} stat={s} run={run} />
+        ))}
+      </div>
+
+      <div className="mt-14 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
+        {ledger.map((s) => (
+          <LedgerRow key={s.label} stat={s} run={run} />
         ))}
       </div>
     </div>
