@@ -1,436 +1,556 @@
 {
   "projects": [
     {
-      "title": "Enterprise Penetration Testing",
-      "description": "Full security assessment for Savi Finance",
-      "details": "Performed comprehensive penetration testing on front-end, back-end, and GraphQL API calls to ensure secure coding practices. Gathered reconnaissance information and documented findings in a complete security audit report for SOC2 and GDPR compliance.",
-      "technologies": ["Penetration Testing", "GraphQL", "Security Audit", "SOC2", "GDPR"],
-      "status": "completed",
-      "image": "/images/pentest-project.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-05-01",
-      "category": "cybersecurity"
+      "slug": "tripbuddy",
+      "title": "TripBuddy",
+      "description": "Adaptive travel companion that re-plans your trip when plans break.",
+      "badge": "Acquired",
+      "featured": true,
+      "bullets": [
+        "Led a team of four from a 24-hour NewHacks build to a product a startup acquired two weeks after the live demo, with a full codebase handover in June 2026.",
+        "Took it on a real trip and watched four first-time users fail at flows I was sure were intuitive. That proved the problem was comprehension, not performance, and justified a full rebuild.",
+        "Built a linked-list itinerary engine that reshuffles flexible stops around locked flights and hotels, with Gemini checking opening hours, weather and travel time, plus Expedia PDF import."
+      ],
+      "technologies": [
+        "Flutter",
+        "Django",
+        "Firebase",
+        "Gemini",
+        "Google Maps"
+      ],
+      "image": "/media/tripbuddy.jpg",
+      "fit": "contain",
+      "github": "",
+      "live": "",
+      "createdAt": "2025-10-26",
+      "category": "product"
     },
     {
-      "title": "CTFs Website Pen-Testing",
-      "description": "Capture The Flag challenges and website security testing",
-      "details": "Conducted various CTF challenges focusing on web application security vulnerabilities, including SQL injection, XSS, and authentication bypass techniques.",
-      "technologies": ["CTF", "Web Security", "SQL Injection", "XSS", "Authentication"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-04-15",
-      "category": "cybersecurity"
-    },
-    {
-      "title": "WAF Configuration & Testing",
-      "description": "Web Application Firewall setup and penetration testing",
-      "details": "Configured and tested Web Application Firewall on Ubuntu VM environment. Performed comprehensive security testing to ensure proper protection against common web attacks.",
-      "technologies": ["WAF", "Ubuntu", "Network Security", "Penetration Testing"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-03-20",
-      "category": "cybersecurity"
-    },
-    {
-      "title": "SIEM Dashboard Development",
-      "description": "Custom Security Information and Event Management system",
-      "details": "Created personalized SIEM dashboard to monitor security alerts on mock networks. Implemented real-time threat detection and incident response capabilities.",
-      "technologies": ["SIEM", "Network Monitoring", "Threat Detection", "Incident Response"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-02-10",
-      "category": "cybersecurity"
-    },
-    {
-      "title": "Network Security Analysis",
-      "description": "Wireshark traffic analysis and network monitoring",
-      "details": "Applied network components knowledge and Wireshark to monitor traffic patterns. Conducted mock man-in-the-middle attacks for security research purposes on authorized networks.",
-      "technologies": ["Wireshark", "Network Analysis", "Traffic Monitoring", "MITM"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-01-15",
-      "category": "cybersecurity"
-    },
-    {
-      "title": "Self-Hosted IPSEC VPN",
-      "description": "Personal VPN infrastructure development",
-      "details": "Currently building a self-hosted IPSEC VPN solution for enhanced personal network security and privacy. Implementing industry-standard encryption protocols.",
-      "technologies": ["IPSEC", "VPN", "Network Security", "Encryption", "Infrastructure"],
-      "status": "in-progress",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-06-01",
-      "category": "cybersecurity"
-    },
-    {
-      "title": "Fallyx Full-Stack Platform",
-      "description": "React/TypeScript enterprise web application",
-      "details": "Built and maintained full-stack web features using React and TypeScript. Handled customer-facing UI updates and API integrations to automate internal workflows. Collaborated in weekly sprint meetings following rigorous CI/CD and code-review standards.",
-      "technologies": ["React", "TypeScript", "Full-Stack", "CI/CD", "API Integration"],
-      "status": "completed",
-      "image": "/images/webdev-project.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-05-01",
-      "category": "webDevelopment"
-    },
-    {
-      "title": "Client Marketing Websites",
-      "description": "Custom websites for business growth",
-      "details": "Developed personalized websites for clients using HTML, CSS, and JavaScript, resulting in $6,000 additional gross earnings for companies within 2-month spans. Focused on responsive design and user experience optimization.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design", "UX/UI"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-07-01",
-      "category": "webDevelopment"
-    },
-    {
-      "title": "Uni-Solved Platform",
-      "description": "Co-founder of educational technology startup",
-      "details": "Co-founded and developed an educational platform aimed at helping students solve complex university-level problems. Built using modern web technologies with focus on scalability and user engagement.",
-      "technologies": ["Startup", "EdTech", "Web Development", "Product Management"],
-      "status": "in-progress",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-09-01",
-      "category": "webDevelopment"
-    },
-    {
-      "title": "Password Manager Application",
-      "description": "Secure local password management tool",
-      "details": "Developed a local-only GUI password manager using Electron/Qt with symmetric encryption. Features multiple hashing options and secure vault management with master passphrase protection.",
-      "technologies": ["Electron", "Encryption", "Security", "Desktop App", "Qt"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-11-01",
-      "category": "webDevelopment"
-    },
-    {
-      "title": "3D Ball Maze Game",
-      "description": "Physics-based gaming experience",
-      "details": "Built a multi-level puzzle game in Unity where players navigate a 3D ball through progressively challenging mazes. Tested and utilized Unity's camera libraries to create smooth camera transitions and perspectives tailored to gameplay.",
-      "technologies": ["Unity", "C#", "Game Development", "Camera Libraries", "3D Modeling"],
-      "status": "completed",
-      "image": "/videos/BallMaze.MP4",
-      "mediaType": "video",
-      "url": "",
-      "createdAt": "2024-06-01",
-      "category": "other"
-    },
-    {
-      "title": "Unity 3D Parkour Game",
-      "description": "Physics-based gaming experience",
-      "details": "Created a 3D parkour game in Unity game engine using C#. Applied momentum physics for realistic movement mechanics and engaging gameplay experience.",
-      "technologies": ["Unity", "C#", "Game Development", "Physics", "3D Modeling"],
-      "status": "completed",
-      "image": "/videos/Parkour.MP4",
-      "mediaType": "video",
-      "url": "",
-      "createdAt": "2024-06-01",
-      "category": "other"
-    },
-    {
-      "title": "Logistic Regression Model",
-      "description": "University Admission",
-      "details": "Built a Logistic Regression Model to determine and applicants chances of admission based on test scores and historical data. Using NumPy, Matplotlib and pandas to visualized data and fine-tuned the model to predict at an accuracy of 83%.",
-      "technologies": ["Logistic Regression", "Numpy", "Python", "Model Tuning"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-12-01",
-      "category": "other"
-    },
-    {
-      "title": "Bionic Arm Development",
-      "description": "Hardware and software integration project",
-      "details": "Developed a functional bionic arm prototype combining hardware engineering with software control systems for precise movement and user interaction.",
-      "technologies": ["Hardware", "Embedded Systems", "Robotics", "Engineering"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-03-01",
-      "category": "other"
-    },
-    {
-      "title": "AWS Facial Recognition System",
-      "description": "Cloud-based computer vision application",
-      "details": "Implemented facial recognition system using AWS services, combining machine learning capabilities with cloud infrastructure for scalable image processing.",
-      "technologies": ["AWS", "Machine Learning", "Computer Vision", "Cloud Computing"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-08-01",
-      "category": "other"
-    },
-    {
-      "title": "iOS Camera Security App",
-      "description": "Mobile security application",
-      "details": "Developed iOS application focused on camera security features, ensuring user privacy and secure image handling on mobile devices.",
-      "technologies": ["iOS", "Swift", "Mobile Security", "Camera API", "Privacy"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-10-01",
-      "category": "other"
-    },
-    {
-      "title": "OpenCV Projects",
-      "description": "Computer vision applications",
-      "details": "Multiple OpenCV projects including ball movement tracking and finger-based music control systems. Explored real-time image processing and gesture recognition technologies.",
-      "technologies": ["OpenCV", "Computer Vision", "Python", "Real-time Processing"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-12-01",
-      "category": "other"
-    }
-    ,
-    {
-      "title": "Moorcheh.ai (AI Symbiote)",
-      "description": "AI Symbiote project — hackathon winner",
-      "details": "Built Moorcheh.ai as part of an AI Symbiote project that won a national AI hackathon. Focused on rapid prototyping of AI-driven features and integration for demonstration-grade systems.",
-      "technologies": ["Machine Learning", "AI", "Prototype", "Hackathon"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2026-02-01",
+      "slug": "dealflow-os",
+      "title": "DealFlow OS",
+      "description": "Startup intelligence platform for investment firms, built and run solo.",
+      "badge": "In production · 3 firms",
+      "featured": true,
+      "posterStat": "500+ deployments",
+      "bullets": [
+        "Built and still operate the platform solo. It runs in production at three professional services firms, and I defined the usage and scoring metrics it reports on.",
+        "My first version let an LLM write research memos and nobody could verify the output, so I rebuilt it: memos assemble deterministically from source records and the model only polishes wording. A rate limit degrades phrasing, never a figure.",
+        "Analysed behavioural usage data to separate momentum signals from noise, then shipped dashboards on top across 500+ production deployments, fed by scheduled scraping and enrichment pipelines."
+      ],
+      "technologies": [
+        "Next.js",
+        "Supabase",
+        "PostgreSQL",
+        "Python",
+        "Groq"
+      ],
+      "image": "",
+      "github": "",
+      "live": "",
+      "createdAt": "2026-07-02",
       "category": "ai"
     },
     {
-      "title": "Prediction Market Prototype",
-      "description": "Polymarket + stock insight prototype (UofTHacks)",
-      "details": "Prototype integrating prediction-market primitives with market and stock insight data to explore decentralized forecasting interfaces and decision-support visualizations.",
-      "technologies": ["Polymarket", "Data Analysis", "Web3", "Prototyping"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-11-01",
-      "category": "other"
+      "slug": "swamr",
+      "title": "swamr",
+      "description": "One prompt spins up 150+ specialist Cursor agents that build your project in parallel.",
+      "badge": "Open source · 11★",
+      "featured": true,
+      "bullets": [
+        "Built and published a framework that coordinates 150+ specialist agents across planning, build, test and hardening phases, running up to 20 Cursor agents at once.",
+        "Designed mandatory human review gates so generated work stays a draft until a person validates it, plus checkpointing that resumes an interrupted run exactly where it stopped.",
+        "Gave every agent a shared Obsidian memory and wired MCP servers to GitHub, Supabase and Slack, so agent #150 knows what agent #1 decided."
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "MCP",
+        "Cursor",
+        "Obsidian"
+      ],
+      "video": "/media/swamr.mp4",
+      "image": "/media/swamr.jpg",
+      "github": "https://github.com/Vedthakar/swamr",
+      "live": "",
+      "createdAt": "2026-10-03",
+      "category": "ai"
     },
     {
-      "title": "Sticky Bean",
-      "description": "Casual game project",
-      "details": "Developed Sticky Bean, a small prototype game focusing on simple mechanics and polished feel for rapid playtesting and user feedback.",
-      "technologies": ["Game Development", "Prototype"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2024-05-01",
-      "category": "other"
-    }
-    ,
+      "slug": "vedocker",
+      "title": "Vedocker",
+      "description": "Docker and Kubernetes rebuilt from scratch in Go. Paste a GitHub URL, get a running container.",
+      "badge": "Open source · 12★",
+      "featured": true,
+      "bullets": [
+        "Wrote a container runtime, image store, build engine, networking and orchestration from the ground up on Linux namespaces, cgroups and iptables. No Docker Engine, containerd or Kubernetes underneath.",
+        "Swap github.com for the dashboard URL and it clones, builds and runs the repo. If there is no Dockerfile, Gemini writes one. Also ships as an MCP server and a browser extension.",
+        "Published a technical write-up, \"I built my own Docker and Kubernetes system from scratch\", on Towards AWS."
+      ],
+      "technologies": [
+        "Go",
+        "Linux",
+        "Kubernetes",
+        "Gemini",
+        "MCP"
+      ],
+      "video": "/media/vedocker.mp4",
+      "image": "/media/vedocker.jpg",
+      "github": "https://github.com/Vedthakar/Vedocker",
+      "live": "https://towardsaws.com/i-built-my-own-docker-and-kubernetes-system-from-scratch-and-you-can-too-759ffabe9993",
+      "liveLabel": "Read the article",
+      "createdAt": "2026-10-04",
+      "category": "infra"
+    },
     {
-      "title": "n8n Portfolio Automation",
-      "description": "Automated GitHub.io portfolio sync workflow",
-      "details": "Built an n8n workflow that detects new GitHub repos, scrapes READMEs, classifies projects, and updates the central `projects.json` to keep the portfolio in sync automatically.",
-      "technologies": ["n8n", "GitHub API", "Automation", "JSON"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
+      "slug": "revenant",
+      "title": "Revenant",
+      "description": "AI memory for engineering teams. Ask anything about how your team works.",
+      "badge": "Winner · GenAI Genesis 2026",
+      "featured": true,
+      "bullets": [
+        "Won the sponsor prize for best use of memory architecture at GenAI Genesis 2026.",
+        "Co-built a system that embeds GitHub, Slack and Jira activity into a pgvector index and answers natural-language questions over it, so knowledge stays when people leave.",
+        "Designed the schema and query paths to split a low-latency retrieval path from a batch evaluation path, so batch processing stopped blocking live requests."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "pgvector",
+        "Redis",
+        "Nango"
+      ],
+      "image": "/media/revenant.jpg",
+      "github": "https://github.com/akashngb/revenant",
+      "live": "",
+      "createdAt": "2026-03-20",
+      "category": "ai"
+    },
+    {
+      "slug": "stockbot",
+      "title": "stockbot",
+      "description": "A rules engine finds the trade. A local LLM gets veto power.",
+      "badge": "LLM with veto power",
+      "featured": true,
+      "bullets": [
+        "Built an intraday trading bot where deterministic Python finds and sizes setups, and an LLM judge can only say no. It can't create a trade, change config or override a risk gate.",
+        "Made the judge fail-closed: a timeout, an error or an off-format answer means veto. Every yes and every no is logged with its reason.",
+        "Added nightly post-mortems that turn losing patterns into AVOID rules the judge enforces the next day. Paper trading by default, with backtests and safety tests."
+      ],
+      "technologies": [
+        "Python",
+        "LM Studio",
+        "Alpaca API",
+        "pandas"
+      ],
+      "video": "/media/stockbot.mp4",
+      "image": "/media/stockbot.jpg",
+      "github": "https://github.com/Vedthakar/stockbot",
+      "live": "",
+      "createdAt": "2026-10-04",
+      "category": "ai"
+    },
+    {
+      "slug": "cinesync",
+      "title": "CineSync",
+      "description": "Scheduling and disruption intelligence for film productions.",
+      "badge": "",
+      "posterStat": "8 live agents",
+      "bullets": [
+        "Turns a script and call sheet into a dependency graph of scenes, actors, locations and shoot days, then runs Monte Carlo simulation to score schedule volatility.",
+        "Eight background agents (weather, budget drift, schedule drift, actor, location and more) flag risk continuously, with a live reasoning console so crews can see why.",
+        "Git-style schedule branches: drag scenes between days on a storyboard and see budget deltas and conflicts before merging. Locked down with RBAC, rate limiting and row-level security."
+      ],
+      "technologies": [
+        "FastAPI",
+        "Supabase",
+        "Gemini",
+        "Monte Carlo",
+        "SSE"
+      ],
+      "image": "",
+      "github": "",
+      "live": "",
+      "createdAt": "2026-07-05",
+      "category": "ai"
+    },
+    {
+      "slug": "surfacer",
+      "title": "Surfacer",
+      "description": "Drop in your LinkedIn export, get a ranked list of exactly who to message.",
+      "badge": "",
+      "bullets": [
+        "Scores every connection into seven configurable tiers with a 0 to 100 score, the reasons behind it and a ready-to-send opener.",
+        "One deterministic scoring engine shared by a Next.js web app, a CLI and a Manifest V3 Chrome extension.",
+        "Private by design: no backend, no API keys, no AI calls. The CSV never leaves your machine, and spreadsheet-formula injection is neutralised on export."
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Chrome Extension",
+        "Tailwind"
+      ],
+      "video": "/media/surfacer.mp4",
+      "image": "/media/surfacer.jpg",
+      "github": "",
+      "live": "",
+      "createdAt": "2026-10-04",
+      "category": "product"
+    },
+    {
+      "slug": "finger-musix",
+      "title": "Finger Musix",
+      "description": "Play piano, guitar, flute and drums by pinching your fingers on camera.",
+      "badge": "Live",
+      "bullets": [
+        "On-device MediaPipe hand tracking in the browser, with a One Euro filter per landmark and pinch detection that fires a camera frame early.",
+        "Synthesised every instrument in code so a pinch schedules sound in under 1 ms. Guitar strings, drum skins and piano keys are real mass-spring physics.",
+        "Adaptive quality keeps it smooth on weak devices, and the camera feed never leaves the device."
+      ],
+      "technologies": [
+        "TypeScript",
+        "MediaPipe",
+        "WebGL",
+        "Web Audio"
+      ],
+      "video": "/media/finger-musix.mp4",
+      "image": "/media/finger-musix.jpg",
+      "github": "https://github.com/Vedthakar/Finger_Musix",
+      "live": "https://vedthakar.github.io/Finger_Musix/",
+      "liveLabel": "Play it live",
+      "createdAt": "2026-10-04",
+      "category": "creative"
+    },
+    {
+      "slug": "model-eval",
+      "title": "Model Evaluation & Benchmarking",
+      "description": "Protein-language-model pathogenicity detection, built in 36 hours.",
+      "badge": "",
+      "posterStat": "36-hour build",
+      "bullets": [
+        "Comparisons at a 36-hour research hackathon were being made on whichever run looked best, so I built an evaluation harness that scored every configuration on identical metrics.",
+        "Ran parallel AWS SageMaker training jobs on ESM2 protein language models and ClinVar data to fit the experiment loop inside the deadline.",
+        "Separately, evaluated frontier models for a founder and wrote the recommendation selecting Llama 3.1 8B on licensing and architecture grounds, in language she could act on."
+      ],
+      "technologies": [
+        "AWS SageMaker",
+        "PyTorch",
+        "ESM2",
+        "scikit-learn"
+      ],
+      "image": "",
+      "github": "https://github.com/Vedthakar/BioInformatics",
+      "live": "",
+      "createdAt": "2025-09-21",
+      "category": "ai"
+    },
+    {
+      "slug": "pr-automation",
+      "title": "AI Ticket-to-PR Automation",
+      "description": "From a Jira ticket to an open pull request, automatically.",
+      "badge": "Adopted at Savi Finance",
+      "bullets": [
+        "Built an MVP that creates Jira tasks with AI, cuts a GitHub branch per ticket, generates the change and opens the pull request.",
+        "The repository is the demo: every branch and PR in it was produced by the pipeline itself.",
+        "Became the foundation for an internal implementation at Savi Finance, extended on AWS."
+      ],
+      "technologies": [
+        "Python",
+        "Jira API",
+        "GitHub API",
+        "LLMs",
+        "AWS"
+      ],
+      "image": "/media/pr-automation.jpg",
+      "fit": "contain",
+      "github": "https://github.com/Vedthakar/PrCreationTester",
+      "live": "",
+      "createdAt": "2026-03-18",
+      "category": "ai"
+    },
+    {
+      "slug": "callbooker",
+      "title": "CallBooker",
+      "description": "A phone number that answers, books and follows up like a front desk.",
+      "badge": "",
+      "posterStat": "Voice AI receptionist",
+      "bullets": [
+        "Turns a Twilio number into an AI receptionist for restaurants and small businesses: it takes the call, books the slot and confirms the details.",
+        "Gemini extracts structured booking intent, ElevenLabs speaks, and Cal.com checks availability and creates the booking.",
+        "Follows up by SMS and email asking for a review, with credentials kept out of code."
+      ],
+      "technologies": [
+        "Python",
+        "Flask",
+        "Twilio",
+        "Gemini",
+        "ElevenLabs"
+      ],
+      "image": "",
+      "github": "https://github.com/Vedthakar/ResturantAutomator",
+      "live": "",
+      "createdAt": "2026-03-20",
+      "category": "ai"
+    },
+    {
+      "slug": "unisolved",
+      "title": "UniSolved",
+      "description": "One plain-language question in, a concrete next step out, for U of T students.",
+      "badge": "",
+      "bullets": [
+        "Combines a direct answer, ranked campus resources and mentor matches in one chat workflow.",
+        "Ranks mentors on course overlap, language, program fit and topic relevance, and puts official campus support first when a question calls for it.",
+        "Gemini with Google Search grounding when a key is present, with a full local fallback when it isn't."
+      ],
+      "technologies": [
+        "Python",
+        "Streamlit",
+        "SQLite",
+        "Gemini"
+      ],
+      "image": "/media/unisolved.jpg",
+      "github": "https://github.com/Vedthakar/UniSolved",
+      "live": "",
+      "createdAt": "2026-03-20",
+      "category": "product"
+    },
+    {
+      "slug": "pawgress",
+      "title": "Pawgress",
+      "description": "Voice-first to-do app where getting things done keeps your puppy happy.",
+      "badge": "",
+      "bullets": [
+        "Say a task out loud and it gets tracked, reminded and ticked off automatically. Built for people with ADHD.",
+        "SwiftUI app on a Django JWT API, with Deepgram speech-to-text and transcripts stored for review.",
+        "Ties productivity to caring for a virtual pet, so the reward loop feels emotional rather than administrative."
+      ],
+      "technologies": [
+        "SwiftUI",
+        "Django",
+        "Deepgram",
+        "JWT"
+      ],
+      "image": "/media/pawgress.jpg",
+      "fit": "contain",
+      "github": "https://github.com/Vedthakar/Pawgress",
+      "live": "",
+      "createdAt": "2026-10-04",
+      "category": "product"
+    },
+    {
+      "slug": "helping-hand",
+      "title": "Helping Hand",
+      "description": "A voice and vision controlled bionic arm.",
+      "badge": "",
+      "bullets": [
+        "Say \"pick up the red ball\" and the arm finds the object, approaches it and grasps it.",
+        "Combined speech recognition with object detection, then chose between a full grip and a two-finger pinch from the object's size and shape.",
+        "Integrated servo motors and microcontrollers, and tuned for real-time sync between voice and vision."
+      ],
+      "technologies": [
+        "Python",
+        "Computer Vision",
+        "Speech",
+        "Embedded"
+      ],
+      "image": "/media/helping-hand.jpg",
+      "github": "https://github.com/AryanAggarwal62/Helping-Hand",
+      "live": "",
+      "createdAt": "2025-03-26",
+      "category": "hardware"
+    },
+    {
+      "slug": "promptboard",
+      "title": "PromptBoards",
+      "description": "Organise, share and reuse AI prompts like tools instead of chat history.",
+      "badge": "",
+      "bullets": [
+        "Boards by topic or workflow, search across boards and prompts, and filters by category and model.",
+        "React frontend on Vercel and a Django API on Render, with auth and environment configuration done end to end.",
+        "The first project I took all the way from localhost to production."
+      ],
+      "technologies": [
+        "React",
+        "Django",
+        "Vercel",
+        "Render"
+      ],
+      "image": "/media/promptboard.jpg",
+      "github": "https://github.com/Vedthakar/PromptBoard",
+      "live": "https://prompt-board-iota.vercel.app",
+      "liveLabel": "Visit",
+      "createdAt": "2026-03-18",
+      "category": "product"
+    },
+    {
+      "slug": "securenotes",
+      "title": "SecureNotes",
+      "description": "Encrypted notes with a Rust WebAssembly frontend.",
+      "badge": "",
+      "bullets": [
+        "Rust and Yew frontend compiled to WebAssembly, on a Django REST backend.",
+        "JWT issuance and validation, protected routes and per-user data ownership modelled at the database level.",
+        "Postgres on Supabase, so notes follow the user across devices without giving up access control."
+      ],
+      "technologies": [
+        "Rust",
+        "Yew",
+        "WebAssembly",
+        "Django",
+        "Supabase"
+      ],
+      "image": "/media/securenotes.jpg",
+      "github": "https://github.com/Vedthakar/SecureNotes",
+      "live": "",
+      "createdAt": "2026-03-20",
+      "category": "security"
+    },
+    {
+      "slug": "password-manager",
+      "title": "Local-First Password Manager",
+      "description": "A Chrome extension that keeps your vault on your device, not a company's cloud.",
+      "badge": "",
+      "bullets": [
+        "Detects password fields and surfaces the vault at the right moment, unlocked by a master password.",
+        "Credentials are encrypted and stored locally. No central backend to breach.",
+        "Built to reduce how much users have to trust third parties with their most sensitive data."
+      ],
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension",
+        "Web Crypto"
+      ],
+      "video": "/media/password-manager.mp4",
+      "image": "/media/password-manager.jpg",
+      "github": "https://github.com/Vedthakar/Password-Manager",
+      "live": "",
+      "createdAt": "2026-03-19",
+      "category": "security"
+    },
+    {
+      "slug": "marry-me",
+      "title": "mARry-me",
+      "description": "AR wedding planning, built in 37 minutes at Cursor Toronto.",
+      "badge": "Built in 37 min",
+      "posterStat": "37 minutes",
+      "bullets": [
+        "Ideated and built in 37 minutes at a Cursor Toronto hackathon.",
+        "A BERT classifier pulls each partner's interests from their Claude chat history, and Gemini turns them into prompts for a real-time AR scene with under 3 s latency.",
+        "Voice commands change the scene, add supplies to an Amazon cart through Playwright and email nearby vendors through Resend."
+      ],
+      "technologies": [
+        "AR",
+        "BERT",
+        "Gemini",
+        "Playwright",
+        "Resend"
+      ],
+      "image": "",
+      "github": "https://github.com/akashngb/mARry-me",
+      "live": "",
+      "createdAt": "2026-07-23",
+      "category": "creative"
+    },
+    {
+      "slug": "smart-air",
+      "title": "Smart Air",
+      "description": "Android asthma companion for kids, parents and doctors.",
+      "badge": "",
+      "posterStat": "3 user roles",
+      "bullets": [
+        "Built the one-tap triage flow, personal-best peak-flow zones and the action-plan authoring screen.",
+        "Wired parent alerts when rescue-inhaler use crosses a safety threshold in a three-hour window.",
+        "Parent-controlled sharing means providers see nothing until a parent opts in."
+      ],
+      "technologies": [
+        "Java",
+        "Android",
+        "Firebase",
+        "Firestore"
+      ],
+      "image": "",
+      "github": "https://github.com/krish-p577/Smart-Air-App",
+      "live": "",
+      "createdAt": "2025-12-03",
+      "category": "product"
+    },
+    {
+      "slug": "portfolio-sync",
+      "title": "Self-Updating Portfolio",
+      "description": "This site. An n8n workflow keeps it in sync with my GitHub.",
+      "badge": "",
+      "bullets": [
+        "An n8n workflow watches GitHub for new repositories on a schedule.",
+        "It reads each README, extracts the project details and categorises them with custom logic.",
+        "It writes the result into the projects.json this page renders from, so shipping a repo updates the site."
+      ],
+      "technologies": [
+        "n8n",
+        "GitHub API",
+        "React",
+        "Vite"
+      ],
+      "image": "/media/n8n.jpg",
+      "github": "https://github.com/Vedthakar/Vedthakar.github.io",
+      "live": "",
       "createdAt": "2025-10-01",
-      "category": "webDevelopment"
-    },
-    {
-      "title": "Smart Travel Companion (NewHacks)",
-      "description": "Adaptive itinerary and travel assistant",
-      "details": "Prototype built at NewHacks combining Swift frontend, Django backend, and Firebase for real-time syncing. Features dynamic itinerary adjustments, live navigation, and group safety via WebSocket updates.",
-      "technologies": ["Swift", "Django", "Firebase", "NLP", "WebSocket"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-09-01",
-      "category": "webDevelopment"
-    },
-    {
-      "title": "ADHD Productivity Companion (Hack the Valley)",
-      "description": "Autonomous productivity app for ADHD users",
-      "details": "Hack the Valley project: backend in Spring Boot with Firebase integration. Automates progress verification using activity signals and introduces gamified motivation features to encourage consistent habits.",
-      "technologies": ["SpringBoot", "Firebase", "Backend", "Automation"],
-      "status": "in-progress",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-04-01",
-      "category": "webDevelopment"
-    },
-    {
-      "title": "Pathogenicity Detection Model",
-      "description": "Protein mutation pathogenicity predictor (Bioinformatics Hackathon)",
-      "details": "Built a prototype using protein LLMs (ESM2) and AWS SageMaker to predict pathogenicity in intrinsically disordered regions. Managed ClinVar datasets and implemented a SageMaker-based training/deployment workflow.",
-      "technologies": ["ESM2", "SageMaker", "AWS", "Machine Learning", "Bioinformatics"],
-      "status": "completed",
-      "image": "/images/default.jpg",
-      "mediaType": "image",
-      "url": "",
-      "createdAt": "2025-10-01",
-      "category": "other"
+      "category": "infra"
     }
   ],
-  "workExperience": [
+  "archive": [
     {
-      "title": "Junior Security Analyst",
-      "company": "Savi Finance",
-      "duration": "05/2025 - Current",
-      "description": [
-        "Performed comprehensive penetration testing on front-end, back-end, and GraphQL API calls",
-        "Gathered reconnaissance information for SOC2 and GDPR compliance initiatives",
-        "Documented complete security audit and penetration testing reports",
-        "Ensured secure coding practices across all development teams"
-      ],
-      "skills": ["Penetration Testing", "Security Auditing", "Compliance", "GraphQL Security"],
-      "type": "work"
+      "title": "Hand-Tracking Object Control",
+      "description": "My first OpenCV project: move and rotate an object by pinching it on camera.",
+      "video": "/media/cv-ball.mp4",
+      "image": "/media/cv-ball.jpg",
+      "github": "https://github.com/Vedthakar/CV_Ball_Moving",
+      "technologies": [
+        "Python",
+        "OpenCV",
+        "MediaPipe"
+      ]
     },
     {
-      "title": "Full Stack Web Developer",
-      "company": "Fallyx",
-      "duration": "05/2025 - Current",
-      "description": [
-        "Built and maintained full-stack web features in React and TypeScript",
-        "Handled customer-facing UI updates and API integrations for workflow automation",
-        "Collaborated in weekly sprint meetings with cross-functional stakeholders",
-        "Delivered production-level code following rigorous CI/CD and code-review standards"
-      ],
-      "skills": ["React", "TypeScript", "Full-Stack Development", "CI/CD", "Agile"],
-      "type": "work"
+      "title": "Movie Recommender",
+      "description": "Collaborative filtering from scratch: learned movie features, user preferences and biases.",
+      "image": "/media/movie-recommender.jpg",
+      "github": "https://github.com/Vedthakar/Movie-Recommender",
+      "technologies": [
+        "Python",
+        "NumPy",
+        "Machine Learning"
+      ]
     },
     {
-      "title": "Shadow Experience",
-      "company": "NIH Private Contracting",
-      "duration": "02/2025 - Current",
-      "description": [
-        "Proposed strategic solutions during critical network outage situations",
-        "Facilitated rapid root-cause identification and resolution processes",
-        "Collaborated on VPN system reboot procedures and troubleshooting",
-        "Contributed strategic insights for secure network connectivity maintenance"
-      ],
-      "skills": ["Network Troubleshooting", "VPN Systems", "Problem Solving", "Strategic Planning"],
-      "type": "work"
+      "title": "K-Means Image Compression",
+      "description": "K-means implemented by hand, then used to compress images to a handful of representative colours.",
+      "image": "/media/image-compression.jpg",
+      "github": "https://github.com/Vedthakar/Image-Compression",
+      "technologies": [
+        "Python",
+        "NumPy"
+      ]
     },
     {
-      "title": "Freelance Web Developer",
-      "company": "Self-employed",
-      "location": "Edmonton, Alberta",
-      "duration": "07/2022 - Current",
-      "description": [
-        "Simplified technical concepts to clients through effective communication",
-        "Created personalized websites resulting in $6,000 additional gross earnings for clients",
-        "Provided timely progress updates and maintained strong client relationships",
-        "Specialized in HTML, CSS, and JavaScript for responsive web solutions"
-      ],
-      "skills": ["Client Communication", "Web Development", "Project Management", "Business Growth"],
-      "type": "work"
-    }
-    ,
-    {
-      "title": "VC Analyst",
-      "company": "Orbit Capital",
-      "duration": "2025 - Current",
-      "description": [
-        "Supported sourcing and preliminary diligence for early-stage investments",
-        "Prepared market research and investment memos to inform partner decisions",
-        "Assisted with portfolio monitoring and qualitative startup evaluations"
-      ],
-      "skills": ["Venture Due Diligence", "Market Research", "Financial Analysis"],
-      "type": "work"
+      "title": "Unity 3D Games",
+      "description": "A multi-level ball maze and a momentum-based parkour game.",
+      "video": "/media/unity-games.mp4",
+      "image": "/media/unity-games.jpg",
+      "github": "",
+      "technologies": [
+        "Unity",
+        "C#"
+      ]
     },
     {
-      "title": "Mentor",
-      "company": "Hack Canada",
-      "duration": "2025",
-      "description": [
-        "Mentored student hackathon teams on technical implementation and product design",
-        "Provided guidance on prototyping, pitching, and demo preparation"
-      ],
-      "skills": ["Mentoring", "Prototyping", "Product Design"],
-      "type": "volunteer"
-    },
-    {
-      "title": "Judge",
-      "company": "Hack the Move / UWAFT",
-      "duration": "2026",
-      "description": [
-        "Evaluated hackathon submissions across technical merit and user impact",
-        "Provided feedback to finalist teams and contributed to award decisions"
-      ],
-      "skills": ["Technical Evaluation", "Product Assessment", "Event Judging"],
-      "type": "volunteer"
-    },
-    {
-      "title": "Mentor",
-      "company": "DeerHacks",
-      "duration": "2025",
-      "description": [
-        "Advised teams on architecture and implementation strategies",
-        "Helped students iterate on MVPs and prepare final demos"
-      ],
-      "skills": ["Mentoring", "Architecture", "MVP Development"],
-      "type": "volunteer"
-    }
-  ],
-  "education": [
-    {
-      "title": "Bachelor of Science: Computer Science",
-      "company": "University of Toronto Scarborough",
-      "duration": "Expected 04/2028",
-      "description": [
-        "Focused coursework in algorithms, data structures, and software engineering",
-        "Completed Calculus 1 with rigorous proof-writing and problem-solving skills",
-        "Computer Science 1: Developed multifunctional programs for complex order systems",
-        "Ethics 1: Applied moral reasoning to technology and cybersecurity contexts"
-      ],
-      "skills": ["Computer Science", "Mathematics", "Ethics", "Problem Solving"],
-      "type": "education"
-    }
-  ],
-  "certifications": [
-    {
-      "title": "Google Cybersecurity Certification",
-      "company": "Google",
-      "duration": "Completed",
-      "description": [
-        "Comprehensive cybersecurity fundamentals and best practices",
-        "Network security, incident response, and risk management",
-        "Hands-on experience with security tools and frameworks"
-      ],
-      "skills": ["Cybersecurity", "Risk Management", "Security Tools"],
-      "type": "certification"
-    },
-    {
-      "title": "CompTIA Security+ License",
-      "company": "CompTIA",
-      "duration": "In Progress",
-      "description": [
-        "Industry-standard security certification covering core security concepts",
-        "Network security, compliance, operational security, and threats",
-        "Preparing for comprehensive security professional certification"
-      ],
-      "skills": ["Network Security", "Compliance", "Threat Analysis"],
-      "type": "certification"
+      "title": "AWS Intruder Detector",
+      "description": "Live-frame face recognition against an allow-list, with alerts sent to your phone.",
+      "image": "",
+      "github": "https://github.com/Vedthakar/Intruder-Detector",
+      "technologies": [
+        "AWS Rekognition",
+        "Swift",
+        "Python"
+      ]
     }
   ]
 }
