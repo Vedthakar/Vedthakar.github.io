@@ -2,6 +2,10 @@
 
 This is my personal portfolio website, built to showcase my projects, experience, and the kind of systems I like building.
 
+<a href="./public/media/portfolio-sync.mp4"><img src="./public/media/portfolio-sync.gif" alt="26-second walkthrough of the n8n workflow that keeps this portfolio updated" width="100%"></a>
+
+<sub>▶ 26-second walkthrough of the auto-updating n8n workflow. Click for the full-quality MP4 with sound.</sub>
+
 What makes this project different from a typical personal website is that it is not just a static portfolio. I built an **n8n automation workflow** around it so my site can stay updated with new projects automatically, without me having to manually edit the codebase every time I ship something new.
 
 A lot of people have personal websites, but keeping them updated is annoying. Every new project usually means opening the portfolio repo, editing the projects section, committing changes, and pushing again just to add one more entry. That process felt repetitive and broken, so I turned it into a system.
