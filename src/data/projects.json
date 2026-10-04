@@ -23,7 +23,8 @@
       "github": "",
       "live": "",
       "createdAt": "2025-10-26",
-      "category": "product"
+      "category": "product",
+      "video": "/media/tripbuddy.mp4"
     },
     {
       "slug": "dealflow-os",
@@ -49,7 +50,8 @@
       "live": "https://nexus-flow-os.vercel.app",
       "createdAt": "2026-07-02",
       "category": "ai",
-      "liveLabel": "Open DealFlow OS"
+      "liveLabel": "Open DealFlow OS",
+      "video": "/media/dealflow-os.mp4"
     },
     {
       "slug": "revenant",
@@ -73,7 +75,8 @@
       "github": "https://github.com/akashngb/revenant",
       "live": "",
       "createdAt": "2026-03-20",
-      "category": "ai"
+      "category": "ai",
+      "video": "/media/revenant.mp4"
     },
     {
       "slug": "shadi-mubarak",
@@ -93,12 +96,13 @@
         "Resend",
         "Expo"
       ],
-      "image": "",
+      "image": "/media/shadi-mubarak.jpg",
       "github": "https://github.com/Vedthakar/Cursor-Hackathon-June",
       "live": "",
       "createdAt": "2026-06-15",
       "category": "product",
-      "featured": true
+      "featured": true,
+      "video": "/media/shadi-mubarak.mp4"
     },
     {
       "slug": "swamr",
@@ -205,7 +209,7 @@
       "title": "CineSync",
       "description": "Scheduling and disruption intelligence for film productions.",
       "badge": "",
-      "posterStat": "8 live agents",
+      "posterStat": "56K lines in 30 days",
       "bullets": [
         "Turns a script and call sheet into a dependency graph of scenes, actors, locations and shoot days, then runs Monte Carlo simulation to score schedule volatility.",
         "Eight background agents (weather, budget drift, schedule drift, actor, location and more) flag risk continuously, with a live reasoning console so crews can see why.",
@@ -218,11 +222,12 @@
         "Monte Carlo",
         "SSE"
       ],
-      "image": "",
+      "image": "/media/cinesync.jpg",
       "github": "",
       "live": "",
       "createdAt": "2026-07-05",
-      "category": "ai"
+      "category": "ai",
+      "video": "/media/cinesync.mp4"
     },
     {
       "slug": "surfacer",
@@ -269,6 +274,149 @@
       "live": "https://vedthakar.github.io/Finger_Musix/",
       "liveLabel": "Play it live",
       "createdAt": "2026-10-04",
+      "category": "creative"
+    },
+    {
+      "slug": "ticker-insights",
+      "title": "StockSights",
+      "description": "A Chrome extension that puts live prediction-market odds next to any TradingView chart.",
+      "badge": "UofTHacks",
+      "posterStat": "Stocks × Polymarket",
+      "bullets": [
+        "Reads the ticker from the TradingView tab you are on and pulls market data from Polygon.",
+        "Gemini extracts the events that actually move that company (earnings, lawsuits, acquisitions), which are used to search Polymarket.",
+        "Ranks markets by keyword overlap with the company and penalises generic ones, so you see the five most relevant bets with their live odds."
+      ],
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension",
+        "Gemini",
+        "Polymarket API",
+        "Polygon API"
+      ],
+      "image": "/media/ticker-insights.jpg",
+      "github": "",
+      "live": "",
+      "createdAt": "2026-01-23",
+      "category": "ai",
+      "video": "/media/ticker-insights.mp4"
+    },
+    {
+      "slug": "pawgress",
+      "title": "Pawgress",
+      "description": "Voice-first to-do app where getting things done keeps your puppy happy.",
+      "badge": "",
+      "bullets": [
+        "Say a task out loud and it gets tracked, reminded and ticked off automatically. Built for people with ADHD.",
+        "SwiftUI app on a Django JWT API, with Deepgram speech-to-text and transcripts stored for review.",
+        "Ties productivity to caring for a virtual pet, so the reward loop feels emotional rather than administrative."
+      ],
+      "technologies": [
+        "SwiftUI",
+        "Django",
+        "Deepgram",
+        "JWT"
+      ],
+      "image": "/media/pawgress.jpg",
+      "fit": "contain",
+      "github": "https://github.com/Vedthakar/Pawgress",
+      "live": "",
+      "createdAt": "2026-10-04",
+      "category": "product",
+      "video": "/media/pawgress.mp4"
+    },
+    {
+      "slug": "password-manager",
+      "title": "Local-First Password Manager",
+      "description": "A Chrome extension that keeps your vault on your device, not a company's cloud.",
+      "badge": "",
+      "bullets": [
+        "Detects password fields and surfaces the vault at the right moment, unlocked by a master password.",
+        "Credentials are encrypted and stored locally. No central backend to breach.",
+        "Built to reduce how much users have to trust third parties with their most sensitive data."
+      ],
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension",
+        "Web Crypto"
+      ],
+      "video": "/media/password-manager.mp4",
+      "image": "/media/password-manager.jpg",
+      "github": "https://github.com/Vedthakar/Password-Manager",
+      "live": "",
+      "createdAt": "2026-03-19",
+      "category": "security"
+    },
+    {
+      "slug": "marry-me",
+      "title": "mARry-me",
+      "description": "AR wedding planning, built in 37 minutes at a Cursor Toronto hackathon.",
+      "badge": "Built in 37 min",
+      "posterStat": "37 minutes",
+      "bullets": [
+        "Ideated and built in 37 minutes at a Cursor Toronto hackathon.",
+        "A BERT classifier pulls each partner's interests from their Claude chat history, and Gemini turns them into prompts for a real-time AR scene with under 3 s latency.",
+        "Voice commands change the scene, add supplies to an Amazon cart through Playwright and email nearby vendors through Resend."
+      ],
+      "technologies": [
+        "AR",
+        "BERT",
+        "Gemini",
+        "Playwright",
+        "Resend"
+      ],
+      "image": "/media/marry-me.jpg",
+      "github": "https://github.com/akashngb/mARry-me",
+      "live": "",
+      "createdAt": "2026-07-23",
+      "category": "creative",
+      "video": "/media/marry-me.mp4"
+    },
+    {
+      "slug": "smart-air",
+      "title": "Smart Air",
+      "description": "Android asthma companion for kids, parents and doctors.",
+      "badge": "",
+      "posterStat": "3 user roles",
+      "bullets": [
+        "Built the one-tap triage flow, personal-best peak-flow zones and the action-plan authoring screen.",
+        "Wired parent alerts when rescue-inhaler use crosses a safety threshold in a three-hour window.",
+        "Parent-controlled sharing means providers see nothing until a parent opts in."
+      ],
+      "technologies": [
+        "Java",
+        "Android",
+        "Firebase",
+        "Firestore"
+      ],
+      "image": "/media/smart-air.jpg",
+      "github": "https://github.com/krish-p577/Smart-Air-App",
+      "live": "",
+      "createdAt": "2025-12-03",
+      "category": "product",
+      "fit": "contain",
+      "video": "/media/smart-air.mp4"
+    },
+    {
+      "slug": "sticky-bean",
+      "title": "Sticky Bean",
+      "description": "A physics-driven game in C#, running on a physics engine I wrote myself.",
+      "badge": "Custom physics engine",
+      "posterStat": "C# · hand-built physics",
+      "bullets": [
+        "Built Sticky Bean from the ground up in C#, with the whole game feel resting on its physics.",
+        "Wrote my own physics engine to handle movement and collisions, so every jump and landing is tuned by hand instead of borrowed from a stock character controller.",
+        "Iterated in fast playtesting loops to tighten the mechanics and polish how the game feels to play."
+      ],
+      "technologies": [
+        "C#",
+        "Physics engine",
+        "Game development"
+      ],
+      "image": "",
+      "github": "",
+      "live": "",
+      "createdAt": "2024-05-01",
       "category": "creative"
     },
     {
@@ -344,30 +492,6 @@
       "category": "ai"
     },
     {
-      "slug": "ticker-insights",
-      "title": "Ticker Insights",
-      "description": "A Chrome extension that pairs any TradingView chart with live prediction-market odds.",
-      "badge": "UofTHacks",
-      "posterStat": "Stocks × Polymarket",
-      "bullets": [
-        "Reads the ticker from the TradingView tab you are on and pulls market data from Polygon.",
-        "Gemini extracts the events that actually move that company (earnings, lawsuits, acquisitions), which are used to search Polymarket.",
-        "Ranks markets by keyword overlap with the company and penalises generic ones, so you see the five most relevant bets with their live odds."
-      ],
-      "technologies": [
-        "JavaScript",
-        "Chrome Extension",
-        "Gemini",
-        "Polymarket API",
-        "Polygon API"
-      ],
-      "image": "",
-      "github": "",
-      "live": "",
-      "createdAt": "2026-01-23",
-      "category": "ai"
-    },
-    {
       "slug": "unisolved",
       "title": "UniSolved",
       "description": "One plain-language question in, a concrete next step out, for U of T students.",
@@ -387,29 +511,6 @@
       "github": "https://github.com/Vedthakar/UniSolved",
       "live": "",
       "createdAt": "2026-03-20",
-      "category": "product"
-    },
-    {
-      "slug": "pawgress",
-      "title": "Pawgress",
-      "description": "Voice-first to-do app where getting things done keeps your puppy happy.",
-      "badge": "",
-      "bullets": [
-        "Say a task out loud and it gets tracked, reminded and ticked off automatically. Built for people with ADHD.",
-        "SwiftUI app on a Django JWT API, with Deepgram speech-to-text and transcripts stored for review.",
-        "Ties productivity to caring for a virtual pet, so the reward loop feels emotional rather than administrative."
-      ],
-      "technologies": [
-        "SwiftUI",
-        "Django",
-        "Deepgram",
-        "JWT"
-      ],
-      "image": "/media/pawgress.jpg",
-      "fit": "contain",
-      "github": "https://github.com/Vedthakar/Pawgress",
-      "live": "",
-      "createdAt": "2026-10-04",
       "category": "product"
     },
     {
@@ -502,76 +603,6 @@
       "live": "",
       "createdAt": "2026-03-20",
       "category": "security"
-    },
-    {
-      "slug": "password-manager",
-      "title": "Local-First Password Manager",
-      "description": "A Chrome extension that keeps your vault on your device, not a company's cloud.",
-      "badge": "",
-      "bullets": [
-        "Detects password fields and surfaces the vault at the right moment, unlocked by a master password.",
-        "Credentials are encrypted and stored locally. No central backend to breach.",
-        "Built to reduce how much users have to trust third parties with their most sensitive data."
-      ],
-      "technologies": [
-        "JavaScript",
-        "Chrome Extension",
-        "Web Crypto"
-      ],
-      "video": "/media/password-manager.mp4",
-      "image": "/media/password-manager.jpg",
-      "github": "https://github.com/Vedthakar/Password-Manager",
-      "live": "",
-      "createdAt": "2026-03-19",
-      "category": "security"
-    },
-    {
-      "slug": "marry-me",
-      "title": "mARry-me",
-      "description": "AR wedding planning, built in 37 minutes at a Cursor Toronto hackathon.",
-      "badge": "Built in 37 min",
-      "posterStat": "37 minutes",
-      "bullets": [
-        "Ideated and built in 37 minutes at a Cursor Toronto hackathon.",
-        "A BERT classifier pulls each partner's interests from their Claude chat history, and Gemini turns them into prompts for a real-time AR scene with under 3 s latency.",
-        "Voice commands change the scene, add supplies to an Amazon cart through Playwright and email nearby vendors through Resend."
-      ],
-      "technologies": [
-        "AR",
-        "BERT",
-        "Gemini",
-        "Playwright",
-        "Resend"
-      ],
-      "image": "",
-      "github": "https://github.com/akashngb/mARry-me",
-      "live": "",
-      "createdAt": "2026-07-23",
-      "category": "creative"
-    },
-    {
-      "slug": "smart-air",
-      "title": "Smart Air",
-      "description": "Android asthma companion for kids, parents and doctors.",
-      "badge": "",
-      "posterStat": "3 user roles",
-      "bullets": [
-        "Built the one-tap triage flow, personal-best peak-flow zones and the action-plan authoring screen.",
-        "Wired parent alerts when rescue-inhaler use crosses a safety threshold in a three-hour window.",
-        "Parent-controlled sharing means providers see nothing until a parent opts in."
-      ],
-      "technologies": [
-        "Java",
-        "Android",
-        "Firebase",
-        "Firestore"
-      ],
-      "image": "/media/smart-air.jpg",
-      "github": "https://github.com/krish-p577/Smart-Air-App",
-      "live": "",
-      "createdAt": "2025-12-03",
-      "category": "product",
-      "fit": "contain"
     },
     {
       "slug": "portfolio-sync",

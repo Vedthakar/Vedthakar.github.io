@@ -1,10 +1,9 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "@/data/site";
-import StatsBoard from "./StatsBoard";
 
 export default function Hero() {
   return (
-    <section id="top" className="container pb-16 pt-32 sm:pb-24 sm:pt-40">
+    <section id="top" className="container pb-14 pt-32 sm:pb-20 sm:pt-40">
       <div className="reveal max-w-4xl">
         <p className="eyebrow mb-6 flex items-center gap-2">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-foreground" />
@@ -38,7 +37,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <StatsBoard />
     </section>
   );
 }

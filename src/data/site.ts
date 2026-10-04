@@ -103,6 +103,7 @@ export const journey: Stop[] = [
   {
     id: "ascenix",
     org: "Ascenix (YC F26)",
+    logo: "/logos/ascenix.png",
     role: "Early Software Engineer",
     when: "May – Sep 2025",
     where: "Remote",
