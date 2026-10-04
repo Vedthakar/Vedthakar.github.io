@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowUpRight, GitMerge, GitPullRequest, GitPullRequestClosed } from "lucide-react";
-import { openSource, type OpenSource } from "@/data/site";
+import { gssoc, openSource, type OpenSource } from "@/data/site";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 import SectionHeader from "./SectionHeader";
@@ -24,10 +24,9 @@ function RepoCard({ repo }: { repo: OpenSource }) {
           </div>
         </div>
         <p className="text-sm leading-relaxed text-muted-foreground">{repo.blurb}</p>
-        <div className="mt-auto flex items-center gap-2 font-mono text-[10.5px] uppercase tracking-[0.12em]">
-          {repo.merged > 0 && <span className="rounded-full bg-foreground px-2.5 py-1 text-background">{repo.merged} merged</span>}
-          {repo.open > 0 && <span className="rounded-full border px-2.5 py-1">{repo.open} in review</span>}
-          <span className="ml-auto text-muted-foreground">{open ? "Hide" : `${repo.prs.length} PR${repo.prs.length > 1 ? "s" : ""}`}</span>
+        <div className="mt-auto flex items-center justify-between font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-foreground">
+          <span>Contributor</span>
+          <span>{open ? "Hide" : "See contributions"}</span>
         </div>
       </button>
       <div className={cn("grid transition-[grid-template-rows] duration-500 ease-out", open ? "grid-rows-[1fr]" : "grid-rows-[0fr]")}>
@@ -39,7 +38,7 @@ function RepoCard({ repo }: { repo: OpenSource }) {
                 <a href={pr.url} target="_blank" rel="noreferrer" className="group flex items-start gap-3 px-5 py-3 text-sm hover:bg-background">
                   <Icon className={cn("mt-0.5 h-4 w-4 shrink-0", pr.status === "closed" && "text-muted-foreground")} />
                   <span className="flex-1 leading-snug">{pr.title}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">{pr.status}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">{pr.status === "open" ? "in review" : pr.status}</span>
                   <ArrowUpRight className="h-3.5 w-3.5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
                 </a>
               </li>
@@ -52,15 +51,34 @@ function RepoCard({ repo }: { repo: OpenSource }) {
 }
 
 export default function OpenSourceSection() {
-  const merged = openSource.reduce((n, r) => n + r.merged, 0);
   return (
     <section id="open-source" className="container py-20 sm:py-28">
       <SectionHeader
         index="02"
         kicker="Open source"
         title="Contributions"
-        aside={`${merged} pull requests merged across ${openSource.filter((r) => r.merged).length} upstream projects, including AWS Cedar and Meta's Lexical. Click a repo to see each PR.`}
+        aside="Fixes, features and tests shipped upstream, including AWS's Cedar and Meta's Lexical. Click a repo to see each pull request."
       />
+
+      <div className="mb-5 flex flex-col gap-6 overflow-hidden rounded-2xl border bg-foreground p-6 text-background sm:flex-row sm:items-center sm:p-8">
+        <img src={gssoc.badge} alt="GSSoC 2026 badge" className="h-28 w-28 shrink-0 object-contain" loading="lazy" />
+        <div className="flex-1">
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] opacity-60">{gssoc.program}</p>
+          <p className="mt-2 font-display text-4xl leading-none sm:text-5xl">Top 3% worldwide</p>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed opacity-75">{gssoc.detail}</p>
+        </div>
+        <div className="flex shrink-0 gap-6 sm:flex-col sm:gap-3 sm:text-right">
+          <div>
+            <p className="font-display text-4xl leading-none">#{gssoc.rank}</p>
+            <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] opacity-60">of {gssoc.of}</p>
+          </div>
+          <div>
+            <p className="font-display text-2xl leading-none">Mentor</p>
+            <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] opacity-60">GSSoC 2026</p>
+          </div>
+        </div>
+      </div>
+
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {openSource.map((r) => (
           <RepoCard key={r.repo} repo={r} />

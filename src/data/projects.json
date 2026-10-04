@@ -44,11 +44,12 @@
         "Python",
         "Groq"
       ],
-      "image": "",
+      "image": "/media/dealflow-os.jpg",
       "github": "",
-      "live": "",
+      "live": "https://nexus-flow-os.vercel.app",
       "createdAt": "2026-07-02",
-      "category": "ai"
+      "category": "ai",
+      "liveLabel": "Open DealFlow OS"
     },
     {
       "slug": "swamr",
@@ -174,6 +175,29 @@
       "category": "ai"
     },
     {
+      "slug": "persona-swarm",
+      "title": "Persona Swarm",
+      "description": "Simulated users that find conversion and usability problems before you have the traffic to A/B test.",
+      "badge": "North the Hack 2026",
+      "image": "/media/persona-swarm.jpg",
+      "bullets": [
+        "Built a behavioural simulator that sends a cohort of seeded browser personas through a real signup flow on Browserbase, each bounded by its own patience, scroll depth and step budget.",
+        "Kept the model out of the walk on purpose: browsers produce measurements, and the model reviews each session once, so findings are clustered on a fixed taxonomy with Wilson confidence intervals instead of vibes.",
+        "Shipped real endpoints for first-impression audits (redirects, TTFB, consent walls, bot walls) and cold-vs-returning visitor diffs, plus a calibration view comparing predicted and observed drop-off."
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Browserbase",
+        "LLMs",
+        "Statistics"
+      ],
+      "github": "",
+      "live": "",
+      "createdAt": "2026-09-24",
+      "category": "ai"
+    },
+    {
       "slug": "surfacer",
       "title": "Surfacer",
       "description": "Drop in your LinkedIn export, get a ranked list of exactly who to message.",
@@ -292,6 +316,54 @@
       "category": "ai"
     },
     {
+      "slug": "ticker-insights",
+      "title": "Ticker Insights",
+      "description": "A Chrome extension that pairs any TradingView chart with live prediction-market odds.",
+      "badge": "UofTHacks",
+      "posterStat": "Stocks × Polymarket",
+      "bullets": [
+        "Reads the ticker from the TradingView tab you are on and pulls market data from Polygon.",
+        "Gemini extracts the events that actually move that company (earnings, lawsuits, acquisitions), which are used to search Polymarket.",
+        "Ranks markets by keyword overlap with the company and penalises generic ones, so you see the five most relevant bets with their live odds."
+      ],
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension",
+        "Gemini",
+        "Polymarket API",
+        "Polygon API"
+      ],
+      "image": "",
+      "github": "",
+      "live": "",
+      "createdAt": "2026-01-23",
+      "category": "ai"
+    },
+    {
+      "slug": "capture-pipeline",
+      "title": "Snap-to-Invoice Pipeline",
+      "description": "Photograph items, barter a price, and get a Stripe payment link and PDF invoice by email.",
+      "badge": "Cursor Hackathon",
+      "posterStat": "Photo → paid",
+      "bullets": [
+        "FastAPI webhooks take a batch of photos, attach a valuation to each item and write a per-image PDF report.",
+        "After bartering, a finalize call creates a real Stripe Payment Link and a PDF invoice with the amount due.",
+        "Invoices go out through Resend over plain HTTP, with an Expo mobile app and web app on the front end."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Stripe",
+        "Resend",
+        "Expo"
+      ],
+      "image": "",
+      "github": "https://github.com/Vedthakar/Cursor-Hackathon-June",
+      "live": "",
+      "createdAt": "2026-06-15",
+      "category": "product"
+    },
+    {
       "slug": "unisolved",
       "title": "UniSolved",
       "description": "One plain-language question in, a concrete next step out, for U of T students.",
@@ -334,6 +406,29 @@
       "github": "https://github.com/Vedthakar/Pawgress",
       "live": "",
       "createdAt": "2026-10-04",
+      "category": "product"
+    },
+    {
+      "slug": "talkbetter",
+      "title": "TalkBetter",
+      "description": "Duolingo-style speaking practice that ends in a boss battle against a recruiter.",
+      "badge": "",
+      "posterStat": "Speak → level up",
+      "bullets": [
+        "Short speaking lessons build toward unlockable \"boss battles\", like a mock recruiter interview.",
+        "Onboarding sets a goal and an anonymous alter ego, then personalises the learning path.",
+        "Built as a Flutter mobile app with a React web companion; practice audio is never stored."
+      ],
+      "technologies": [
+        "Flutter",
+        "React",
+        "TypeScript",
+        "Speech"
+      ],
+      "image": "",
+      "github": "",
+      "live": "",
+      "createdAt": "2026-04-23",
       "category": "product"
     },
     {
@@ -467,11 +562,12 @@
         "Firebase",
         "Firestore"
       ],
-      "image": "",
+      "image": "/media/smart-air.jpg",
       "github": "https://github.com/krish-p577/Smart-Air-App",
       "live": "",
       "createdAt": "2025-12-03",
-      "category": "product"
+      "category": "product",
+      "fit": "contain"
     },
     {
       "slug": "portfolio-sync",

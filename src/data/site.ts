@@ -4,10 +4,10 @@ export const profile = {
   location: "Toronto, ON",
   email: "ved06.thakar@gmail.com",
   github: "https://github.com/Vedthakar",
-  linkedin: "https://www.linkedin.com/in/ved-thakar-00202b247/",
+  linkedin: "https://www.linkedin.com/in/ved-thakar-00202b247",
   resume: "/Ved_Thakar_Resume.pdf",
   intro:
-    "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won GenAI Genesis, and had code merged into AWS Cedar and Meta's Lexical.",
+    "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won two hackathons, and ranked in the top 3% of 47,923 open-source contributors in GSSoC 2026.",
 };
 
 export type Win = { value: string; label: string; detail: string; href?: string };
@@ -26,10 +26,16 @@ export const wins: Win[] = [
     href: "#journey-tavus",
   },
   {
-    value: "Winner",
-    label: "GenAI Genesis 2026",
-    detail: "Sponsor prize for best use of memory architecture, for Revenant.",
+    value: "2×",
+    label: "Hackathon winner",
+    detail: "Including the GenAI Genesis 2026 sponsor prize for best use of memory architecture.",
     href: "#project-revenant",
+  },
+  {
+    value: "Top 3%",
+    label: "GSSoC 2026, worldwide",
+    detail: "Ranked 1,396 of 47,923 contributors in GirlScript Summer of Code, and mentored in the program.",
+    href: "#open-source",
   },
   {
     value: "169",
@@ -42,12 +48,6 @@ export const wins: Win[] = [
     label: "DealFlow OS in production",
     detail: "Built and run solo. 500+ production deployments.",
     href: "#project-dealflow-os",
-  },
-  {
-    value: "Merged",
-    label: "AWS Cedar · Meta Lexical",
-    detail: "Open-source contributions to policy-language and editor frameworks used in production.",
-    href: "#open-source",
   },
 ];
 
@@ -67,6 +67,7 @@ export const journey: Stop[] = [
   {
     id: "tavus",
     org: "Tavus",
+    logo: "/logos/tavus.svg",
     role: "Growth & Solutions Fellow (part-time)",
     when: "2026 – now",
     where: "Remote · San Francisco",
@@ -80,6 +81,7 @@ export const journey: Stop[] = [
   {
     id: "sequen",
     org: "SEQUEN",
+    logo: "/logos/sequen.svg",
     role: "Forward Deployed Engineer (contract)",
     when: "Summer 2026",
     where: "Remote",
@@ -106,6 +108,7 @@ export const journey: Stop[] = [
   {
     id: "savi",
     org: "Savi Finance",
+    logo: "/logos/savi.png",
     role: "Junior Solutions Architect (Intern)",
     when: "May 2025 – Mar 2026",
     where: "Toronto, ON",
@@ -117,7 +120,7 @@ export const journey: Stop[] = [
   },
   {
     id: "ascenix",
-    org: "Ascenix",
+    org: "Ascenix (YC F26)",
     role: "Early Software Engineer",
     when: "May – Sep 2025",
     where: "Remote",
@@ -147,8 +150,6 @@ export type OpenSource = {
   name: string;
   owner: string;
   blurb: string;
-  merged: number;
-  open: number;
   prs: { title: string; url: string; status: "merged" | "open" | "closed" }[];
 };
 
@@ -158,12 +159,9 @@ export const openSource: OpenSource[] = [
     name: "Cedar",
     owner: "cedar-policy",
     blurb: "AWS's open-source authorization policy language, written in Rust.",
-    merged: 2,
-    open: 0,
     prs: [
       { title: "Add help text for function argument validation errors", url: "https://github.com/cedar-policy/cedar/pull/2291", status: "merged" },
       { title: "Add JSON integer boundary tests (i64/u64 edges)", url: "https://github.com/cedar-policy/cedar/pull/2292", status: "merged" },
-      { title: "Decode Z3 models containing sets in SymCC", url: "https://github.com/cedar-policy/cedar/pull/2422", status: "closed" },
     ],
   },
   {
@@ -171,11 +169,8 @@ export const openSource: OpenSource[] = [
     name: "Lexical",
     owner: "facebook",
     blurb: "Meta's extensible text-editor framework.",
-    merged: 1,
-    open: 0,
     prs: [
       { title: "Clarify how Yjs syncs custom node properties in collaboration", url: "https://github.com/facebook/lexical/pull/8288", status: "merged" },
-      { title: "Accept SerializedEditorState in LexicalComposer", url: "https://github.com/facebook/lexical/pull/8285", status: "closed" },
     ],
   },
   {
@@ -183,12 +178,8 @@ export const openSource: OpenSource[] = [
     name: "OSV.dev",
     owner: "google",
     blurb: "Google's open-source vulnerability database.",
-    merged: 0,
-    open: 1,
     prs: [
       { title: "Infer introduced and fixed versions from GitHub compare URLs", url: "https://github.com/google/osv.dev/pull/5214", status: "open" },
-      { title: "Mark rejected CVEs as withdrawn", url: "https://github.com/google/osv.dev/pull/5188", status: "closed" },
-      { title: "Clarify API 404s when querying alias CVE IDs", url: "https://github.com/google/osv.dev/pull/5208", status: "closed" },
     ],
   },
   {
@@ -196,8 +187,6 @@ export const openSource: OpenSource[] = [
     name: "Docusaurus",
     owner: "facebook",
     blurb: "Meta's static-site generator for documentation.",
-    merged: 0,
-    open: 1,
     prs: [
       { title: "Resolve slug conflict when index/README and dirname file coexist", url: "https://github.com/facebook/docusaurus/pull/11910", status: "open" },
     ],
@@ -207,8 +196,6 @@ export const openSource: OpenSource[] = [
     name: "bashmanager",
     owner: "siddu-k",
     blurb: "Desktop manager for shell scripts (Electron + Flask).",
-    merged: 2,
-    open: 0,
     prs: [
       { title: "Stop caching raw unlock passwords in frontend state", url: "https://github.com/siddu-k/bashmanager/pull/80", status: "merged" },
       { title: "Dynamic port allocation and startup error handling", url: "https://github.com/siddu-k/bashmanager/pull/82", status: "merged" },
@@ -219,21 +206,39 @@ export const openSource: OpenSource[] = [
     name: "StudyMatePlus",
     owner: "lovelymahor",
     blurb: "Open study-resource platform for university students.",
-    merged: 0,
-    open: 1,
     prs: [
       { title: "Fix stuck loading state on syllabus preview after filtering", url: "https://github.com/lovelymahor/StudyMatePlus/pull/603", status: "open" },
     ],
   },
 ];
 
-export type Volunteer = { event: string; role: "Judge" | "Mentor"; year: string; logo?: string; detail: string };
+export const gssoc = {
+  program: "GirlScript Summer of Code 2026",
+  rank: "1,396",
+  of: "47,923",
+  badge: "/logos/gssoc.png",
+  detail:
+    "Ranked 1,396 of 47,923 contributors worldwide (top 3%) for merged open-source work across the program, and selected as a GSSoC 2026 mentor.",
+};
+
+export type Volunteer = {
+  event: string;
+  role: "Judge" | "Mentor" | "Club";
+  title: string;
+  year: string;
+  logo?: string;
+  detail: string;
+};
 
 export const volunteering: Volunteer[] = [
-  { event: "MacHacks", role: "Judge", year: "2026", detail: "Judged submissions against a shared rubric under a tight window." },
-  { event: "Hack the Move · UWAFT", role: "Judge", year: "2026", logo: "/logos/uwaft.png", detail: "Scored projects on technical merit and user impact, and gave feedback to finalists." },
-  { event: "Hack Canada", role: "Mentor", year: "2025", detail: "Helped teams with implementation, product design and demo prep." },
-  { event: "DeerHacks", role: "Mentor", year: "2025", detail: "Advised first-time builders on architecture and getting an MVP to demo." },
+  { event: "MacHacks", role: "Judge", title: "Judge", year: "2026", logo: "/logos/machacks.png", detail: "Judged submissions at McMaster's AI hackathon against a shared rubric under a tight window." },
+  { event: "Hack the Move · UWAFT", role: "Judge", title: "Judge", year: "2026", logo: "/logos/uwaft.png", detail: "Scored projects on technical merit and user impact, and gave feedback to finalists." },
+  { event: "GSSoC 2026", role: "Mentor", title: "Mentor", year: "2026", logo: "/logos/gssoc.png", detail: "Mentored contributors in GirlScript Summer of Code, one of the largest open-source programs in the world." },
+  { event: "Hack Canada", role: "Mentor", title: "Mentor", year: "2025", logo: "/logos/hackcanada.svg", detail: "Helped teams with implementation, product design and demo prep." },
+  { event: "DeerHacks", role: "Mentor", title: "Mentor", year: "2025", logo: "/logos/deerhacks.png", detail: "Advised first-time builders on architecture and getting an MVP to demo." },
+  { event: "Rotaract Club", role: "Club", title: "VP of Externals", year: "Now", logo: "/logos/rotaract.png", detail: "On the executive team, leading external relations." },
+  { event: "Boxing Club", role: "Club", title: "Member", year: "Now", detail: "Training with the university boxing club." },
+  { event: "MMA Club", role: "Club", title: "Member", year: "Now", detail: "Training with the university MMA club." },
 ];
 
 export const skills: { group: string; items: string[] }[] = [

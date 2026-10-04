@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 export default function Logo({ src, name, className }: { src?: string; name: string; className?: string }) {
   const [failed, setFailed] = useState(false);
   const initials = name
+    .replace(/\(.*?\)/g, "")
     .replace(/[^A-Za-z0-9 ]/g, " ")
     .split(/\s+/)
     .filter(Boolean)
