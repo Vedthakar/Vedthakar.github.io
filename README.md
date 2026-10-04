@@ -94,22 +94,46 @@ I built this so it is not just a one-off workflow for me. The system is modular 
 
 ## Tech stack
 
-This project is built with:
+- **React + TypeScript + Vite**
+- **Tailwind CSS** (one neutral stone/charcoal theme, Instrument Serif + Inter)
+- **shadcn/ui** dialog primitives
+- **n8n + GitHub API** for the project sync
 
-- **React**
-- **TypeScript**
-- **Vite**
-- **Tailwind CSS**
-- **shadcn/ui**
-- **n8n**
-- **GitHub API**
-- **JSON-based project data pipeline**
+---
 
-### Frontend
-The website itself is built using React and TypeScript with Vite for fast development and Tailwind CSS + shadcn/ui for styling and UI components.
+## Where the content lives
 
-### Automation / backend workflow
-The automation layer is built in n8n and uses API-driven logic to fetch project data, transform it, and push it into the portfolio data source.
+| File | What it holds |
+|---|---|
+| `src/data/projects.json` | Project cards (ordered most impressive first) and the "earlier experiments" list. This is the file the n8n workflow appends to. |
+| `src/data/site.ts` | Hero wins, the journey timeline, open-source PRs, volunteering, skills. |
+| `public/media/` | Project videos (`<slug>.mp4`) and posters/screenshots (`<slug>.jpg`). |
+| `public/logos/` | Company and hackathon logos. Missing logos fall back to a monogram. |
+
+### Project entry schema
+
+```json
+{
+  "slug": "swamr",
+  "title": "swamr",
+  "description": "One-line pitch shown on the card.",
+  "badge": "Open source · 11★",
+  "featured": true,
+  "bullets": ["Three resume-style bullets", "shown when the card", "is clicked"],
+  "technologies": ["TypeScript", "MCP"],
+  "video": "/media/swamr.mp4",
+  "image": "/media/swamr.jpg",
+  "github": "https://github.com/Vedthakar/swamr",
+  "live": "",
+  "category": "ai"
+}
+```
+
+Older n8n entries (`details`, `url`, `/images/default.jpg`) still render: `src/data/types.ts` normalises them. Cards without an image or video get a typographic poster.
+
+### Adding a video
+
+Drop `public/media/<slug>.mp4` (H.264 + AAC, ideally 1280×720) and set `"video"` on the project. Hovering a card plays it with sound once the visitor has clicked anywhere on the page (browsers block audible autoplay before that).
 
 ---
 
@@ -131,7 +155,7 @@ npm run dev
 After that, open the local URL shown in your terminal, usually something like:
 
 ```sh
-http://localhost:5173
+http://localhost:8080
 ```
 
 ---
