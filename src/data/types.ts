@@ -17,6 +17,8 @@ export type Project = {
   url?: string;
   live?: string;
   liveLabel?: string;
+  /** Same-origin URL of a web app that can be played inside the project dialog. */
+  playable?: string;
   createdAt?: string;
   category?: string;
 };

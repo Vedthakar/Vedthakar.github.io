@@ -1,4 +1,5 @@
-import { ArrowUpRight, Github, Star } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowUpRight, Github, Hand, Star } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import type { Project } from "@/data/types";
 import Poster from "./Poster";
@@ -10,6 +11,9 @@ export default function ProjectDialog({
   project: Project | null;
   onClose: () => void;
 }) {
+  const [playing, setPlaying] = useState(false);
+  useEffect(() => setPlaying(false), [project]);
+
   return (
     <Dialog open={!!project} onOpenChange={(o) => !o && onClose()}>
       <DialogContent
@@ -23,7 +27,15 @@ export default function ProjectDialog({
         {project && (
           <>
             <div className="relative aspect-video w-full overflow-hidden rounded-t-2xl bg-foreground">
-              {project.video ? (
+              {playing && project.playable ? (
+                <iframe
+                  src={project.playable}
+                  title={`${project.title}, live`}
+                  allow="camera; microphone; autoplay; fullscreen"
+                  allowFullScreen
+                  className="h-full w-full border-0"
+                />
+              ) : project.video ? (
                 <video
                   key={project.video}
                   src={project.video}
@@ -74,8 +86,20 @@ export default function ProjectDialog({
                 ))}
               </div>
 
-              {(project.github || project.live) && (
+              {(project.github || project.live || project.playable) && (
                 <div className="flex flex-wrap gap-2 border-t pt-5">
+                  {project.playable && !playing && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setPlaying(true);
+                        document.querySelector("[role=dialog]")?.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                      className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm text-background transition-opacity hover:opacity-85"
+                    >
+                      <Hand className="h-4 w-4" /> Play it here
+                    </button>
+                  )}
                   {project.github && (
                     <a
                       href={project.github}

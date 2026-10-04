@@ -254,7 +254,7 @@
     {
       "slug": "finger-musix",
       "title": "Finger Musix",
-      "description": "Play piano, guitar, flute and drums by pinching your fingers on camera.",
+      "description": "Play piano, guitar, flute and drums with your hands on camera. Try it right here.",
       "badge": "Live",
       "bullets": [
         "On-device MediaPipe hand tracking in the browser, with a One Euro filter per landmark and pinch detection that fires a camera frame early.",
@@ -271,6 +271,7 @@
       "image": "/media/finger-musix.jpg",
       "github": "https://github.com/Vedthakar/Finger_Musix",
       "live": "https://vedthakar.github.io/Finger_Musix/",
+      "playable": "/Finger_Musix/",
       "liveLabel": "Play it live",
       "createdAt": "2026-10-04",
       "category": "creative"
