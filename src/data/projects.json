@@ -52,6 +52,55 @@
       "liveLabel": "Open DealFlow OS"
     },
     {
+      "slug": "revenant",
+      "title": "Revenant",
+      "description": "AI memory for engineering teams. Ask anything about how your team works.",
+      "badge": "Winner · GenAI Genesis 2026",
+      "featured": true,
+      "bullets": [
+        "Won the sponsor prize for best use of memory architecture at GenAI Genesis 2026.",
+        "Co-built a system that embeds GitHub, Slack and Jira activity into a pgvector index and answers natural-language questions over it, so knowledge stays when people leave.",
+        "Designed the schema and query paths to split a low-latency retrieval path from a batch evaluation path, so batch processing stopped blocking live requests."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "pgvector",
+        "Redis",
+        "Nango"
+      ],
+      "image": "/media/revenant.jpg",
+      "github": "https://github.com/akashngb/revenant",
+      "live": "",
+      "createdAt": "2026-03-20",
+      "category": "ai"
+    },
+    {
+      "slug": "shadi-mubarak",
+      "title": "Shadi Mubarak",
+      "description": "Snap photos of what you are selling, barter a price, and get paid by Stripe link and emailed invoice. Won the Cursor Hackathon.",
+      "badge": "Winner · Cursor Hackathon 2026",
+      "posterStat": "Cursor Hackathon winner",
+      "bullets": [
+        "Won the Cursor Hackathon 2026 with an end-to-end flow from photos to payment, built across an Expo mobile app, a web app and a FastAPI backend.",
+        "A capture webhook takes a batch of photos, attaches a valuation to each item and writes a per-image PDF report.",
+        "After bartering, a finalize call creates a real Stripe Payment Link and a PDF invoice, then emails it through Resend over plain HTTP."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Stripe",
+        "Resend",
+        "Expo"
+      ],
+      "image": "",
+      "github": "https://github.com/Vedthakar/Cursor-Hackathon-June",
+      "live": "",
+      "createdAt": "2026-06-15",
+      "category": "product",
+      "featured": true
+    },
+    {
       "slug": "swamr",
       "title": "swamr",
       "description": "One prompt spins up 150+ specialist Cursor agents that build your project in parallel.",
@@ -103,30 +152,6 @@
       "category": "infra"
     },
     {
-      "slug": "revenant",
-      "title": "Revenant",
-      "description": "AI memory for engineering teams. Ask anything about how your team works.",
-      "badge": "Winner · GenAI Genesis 2026",
-      "featured": true,
-      "bullets": [
-        "Won the sponsor prize for best use of memory architecture at GenAI Genesis 2026.",
-        "Co-built a system that embeds GitHub, Slack and Jira activity into a pgvector index and answers natural-language questions over it, so knowledge stays when people leave.",
-        "Designed the schema and query paths to split a low-latency retrieval path from a batch evaluation path, so batch processing stopped blocking live requests."
-      ],
-      "technologies": [
-        "Python",
-        "FastAPI",
-        "pgvector",
-        "Redis",
-        "Nango"
-      ],
-      "image": "/media/revenant.jpg",
-      "github": "https://github.com/akashngb/revenant",
-      "live": "",
-      "createdAt": "2026-03-20",
-      "category": "ai"
-    },
-    {
       "slug": "stockbot",
       "title": "stockbot",
       "description": "A rules engine finds the trade. A local LLM gets veto power.",
@@ -151,28 +176,29 @@
       "category": "ai"
     },
     {
-      "slug": "marry-me",
-      "title": "Shadi Mubarak",
-      "description": "Hackathon-winning AR wedding planner, ideated and built in 37 minutes at Cursor Toronto.",
-      "badge": "Winner · Cursor Toronto",
-      "posterStat": "Built in 37 minutes",
+      "slug": "persona-swarm",
+      "title": "Persona Swarm",
+      "description": "Simulated users that find conversion and usability problems before you have the traffic to A/B test.",
+      "badge": "North the Hack 2026",
+      "image": "/media/persona-swarm.jpg",
       "bullets": [
-        "Won the Cursor Toronto hackathon with a wedding planner we ideated and built in 37 minutes.",
-        "A BERT classifier pulls each partner's interests from their Claude chat history, and Gemini turns them into prompts for a real-time AR scene with under 3 s latency.",
-        "Voice commands change the scene, add supplies to an Amazon cart through Playwright and email nearby vendors through Resend."
+        "Built a behavioural simulator that sends a cohort of seeded browser personas through a real signup flow on Browserbase, each bounded by its own patience, scroll depth and step budget.",
+        "Kept the model out of the walk on purpose: browsers produce measurements, and the model reviews each session once, so findings are clustered on a fixed taxonomy with Wilson confidence intervals instead of vibes.",
+        "Shipped real endpoints for first-impression audits (redirects, TTFB, consent walls, bot walls) and cold-vs-returning visitor diffs, plus a calibration view comparing predicted and observed drop-off."
       ],
       "technologies": [
-        "AR",
-        "BERT",
-        "Gemini",
-        "Playwright",
-        "Resend"
+        "Next.js",
+        "TypeScript",
+        "Browserbase",
+        "LLMs",
+        "Statistics"
       ],
-      "image": "",
-      "github": "https://github.com/akashngb/mARry-me",
+      "github": "",
       "live": "",
-      "createdAt": "2026-07-23",
-      "category": "creative"
+      "createdAt": "2026-09-24",
+      "category": "ai",
+      "featured": true,
+      "video": "/media/persona-swarm.mp4"
     },
     {
       "slug": "cinesync",
@@ -196,29 +222,6 @@
       "github": "",
       "live": "",
       "createdAt": "2026-07-05",
-      "category": "ai"
-    },
-    {
-      "slug": "persona-swarm",
-      "title": "Persona Swarm",
-      "description": "Simulated users that find conversion and usability problems before you have the traffic to A/B test.",
-      "badge": "North the Hack 2026",
-      "image": "/media/persona-swarm.jpg",
-      "bullets": [
-        "Built a behavioural simulator that sends a cohort of seeded browser personas through a real signup flow on Browserbase, each bounded by its own patience, scroll depth and step budget.",
-        "Kept the model out of the walk on purpose: browsers produce measurements, and the model reviews each session once, so findings are clustered on a fixed taxonomy with Wilson confidence intervals instead of vibes.",
-        "Shipped real endpoints for first-impression audits (redirects, TTFB, consent walls, bot walls) and cold-vs-returning visitor diffs, plus a calibration view comparing predicted and observed drop-off."
-      ],
-      "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Browserbase",
-        "LLMs",
-        "Statistics"
-      ],
-      "github": "",
-      "live": "",
-      "createdAt": "2026-09-24",
       "category": "ai"
     },
     {
@@ -269,21 +272,22 @@
       "category": "creative"
     },
     {
-      "slug": "model-eval",
-      "title": "Model Evaluation & Benchmarking",
-      "description": "Protein-language-model pathogenicity detection, built in 36 hours.",
-      "badge": "",
-      "posterStat": "36-hour build",
+      "slug": "pathogen-detector",
+      "title": "Pathogenicity Detector",
+      "description": "A protein-language-model classifier that flags disease-causing mutations, built at a bioinformatics hackathon.",
+      "badge": "Bioinformatics Hackathon",
+      "posterStat": "ESM2 · ClinVar · SageMaker",
       "bullets": [
-        "Comparisons at a 36-hour research hackathon were being made on whichever run looked best, so I built an evaluation harness that scored every configuration on identical metrics.",
-        "Ran parallel AWS SageMaker training jobs on ESM2 protein language models and ClinVar data to fit the experiment loop inside the deadline.",
-        "Separately, evaluated frontier models for a founder and wrote the recommendation selecting Llama 3.1 8B on licensing and architecture grounds, in language she could act on."
+        "Helped build a model that classifies single amino-acid mutations in human proteins as benign or pathogenic, using ESM2 protein language models trained on curated ClinVar variants.",
+        "Built the evaluation harness that scored every configuration (frozen vs fine-tuned ESM2, with and without extra features) on identical metrics, tracked in Weights & Biases.",
+        "Ran parallel AWS SageMaker training jobs so the whole experiment loop fit inside the 36-hour deadline."
       ],
       "technologies": [
-        "AWS SageMaker",
         "PyTorch",
         "ESM2",
-        "scikit-learn"
+        "AWS SageMaker",
+        "Weights & Biases",
+        "Python"
       ],
       "image": "",
       "github": "https://github.com/Vedthakar/BioInformatics",
@@ -362,30 +366,6 @@
       "live": "",
       "createdAt": "2026-01-23",
       "category": "ai"
-    },
-    {
-      "slug": "capture-pipeline",
-      "title": "Snap-to-Invoice Pipeline",
-      "description": "Photograph items, barter a price, and get a Stripe payment link and PDF invoice by email.",
-      "badge": "Cursor Hackathon",
-      "posterStat": "Photo → paid",
-      "bullets": [
-        "FastAPI webhooks take a batch of photos, attach a valuation to each item and write a per-image PDF report.",
-        "After bartering, a finalize call creates a real Stripe Payment Link and a PDF invoice with the amount due.",
-        "Invoices go out through Resend over plain HTTP, with an Expo mobile app and web app on the front end."
-      ],
-      "technologies": [
-        "Python",
-        "FastAPI",
-        "Stripe",
-        "Resend",
-        "Expo"
-      ],
-      "image": "",
-      "github": "https://github.com/Vedthakar/Cursor-Hackathon-June",
-      "live": "",
-      "createdAt": "2026-06-15",
-      "category": "product"
     },
     {
       "slug": "unisolved",
@@ -544,6 +524,30 @@
       "live": "",
       "createdAt": "2026-03-19",
       "category": "security"
+    },
+    {
+      "slug": "marry-me",
+      "title": "mARry-me",
+      "description": "AR wedding planning, built in 37 minutes at a Cursor Toronto hackathon.",
+      "badge": "Built in 37 min",
+      "posterStat": "37 minutes",
+      "bullets": [
+        "Ideated and built in 37 minutes at a Cursor Toronto hackathon.",
+        "A BERT classifier pulls each partner's interests from their Claude chat history, and Gemini turns them into prompts for a real-time AR scene with under 3 s latency.",
+        "Voice commands change the scene, add supplies to an Amazon cart through Playwright and email nearby vendors through Resend."
+      ],
+      "technologies": [
+        "AR",
+        "BERT",
+        "Gemini",
+        "Playwright",
+        "Resend"
+      ],
+      "image": "",
+      "github": "https://github.com/akashngb/mARry-me",
+      "live": "",
+      "createdAt": "2026-07-23",
+      "category": "creative"
     },
     {
       "slug": "smart-air",
