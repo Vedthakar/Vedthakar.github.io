@@ -98,18 +98,3 @@
   .card-lift, .card-lift:hover { transition: none; transform: none; }
 }
 
-/* Stats ticker: two copies of the row slide left by half their width, forever. */
-.ticker-track {
-  animation: ticker 70s linear infinite;
-}
-.ticker:hover .ticker-track {
-  animation-play-state: paused;
-}
-@keyframes ticker {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .ticker { overflow-x: auto; }
-  .ticker-track { animation: none; }
-}

@@ -1,9 +1,9 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import { profile } from "@/data/site";
+import { profile, stats } from "@/data/site";
 
 export default function Hero() {
   return (
-    <section id="top" className="container pb-14 pt-32 sm:pb-20 sm:pt-40">
+    <section id="top" className="container pb-16 pt-32 sm:pb-24 sm:pt-40">
       <div className="reveal max-w-4xl">
         <p className="eyebrow mb-6 flex items-center gap-2">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-foreground" />
@@ -37,6 +37,25 @@ export default function Hero() {
         </div>
       </div>
 
+      <div className="mt-20 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border bg-border sm:grid-cols-2 lg:grid-cols-3">
+        {stats.map((w, i) => {
+          const external = w.href?.startsWith("http");
+          return (
+            <a
+              key={w.label}
+              href={w.href}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noreferrer" : undefined}
+              className="reveal group flex flex-col gap-2 bg-card p-6 transition-colors hover:bg-background"
+              style={{ animationDelay: `${120 + i * 60}ms` }}
+            >
+              <span className="font-display text-5xl leading-none">{w.value}</span>
+              <span className="text-sm font-medium">{w.label}</span>
+              <span className="text-sm leading-relaxed text-muted-foreground">{w.detail}</span>
+            </a>
+          );
+        })}
+      </div>
     </section>
   );
 }

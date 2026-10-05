@@ -10,27 +10,16 @@ export const profile = {
     "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won two hackathons (GenAI Genesis and the Cursor Hackathon), and ranked in the top 3% of 47,923 open-source contributors in GSSoC 2026.",
 };
 
-export type Stat = { value: string; label: string; note: string; href?: string };
+export type Stat = { value: string; label: string; detail: string; href?: string };
 
-/** The "current stats" board at the top of the page. Update these as they change. */
-export const statsAsOf = "October 2026";
+/** The six headline stats shown as boxes under the hero. */
 export const stats: Stat[] = [
-  { value: "$750K", label: "Biggest deal closed", note: "Tavus", href: "#journey-tavus" },
-  { value: "1×", label: "Product acquired", note: "TripBuddy, 2 weeks after demo", href: "#project-tripbuddy" },
-  { value: "2×", label: "Hackathon winner", note: "GenAI Genesis · Cursor Hackathon", href: "#project-shadi-mubarak" },
-  { value: "Top 3%", label: "GSSoC 2026, worldwide", note: "#1,396 of 47,923", href: "#open-source" },
-  { value: "753", label: "GitHub contributions", note: "This year", href: "https://github.com/Vedthakar" },
-  { value: "60+", label: "Pull requests", note: "Across 14 repos", href: "#open-source" },
-  { value: "5", label: "Industry roles", note: "3 internships · FDE contract · fellowship", href: "#journey" },
-  { value: "24", label: "GitHub stars", note: "swamr · Vedocker · TripBuddy", href: "#project-swamr" },
-  { value: "8", label: "Hackathons competed", note: "2 wins", href: "#projects" },
-  { value: "30", label: "Projects shipped", note: "Most impressive first", href: "#projects" },
-  { value: "6", label: "Upstream OSS repos", note: "AWS · Meta · Google …", href: "#open-source" },
-  { value: "3", label: "Firms running my product", note: "DealFlow OS · 500+ deployments", href: "#project-dealflow-os" },
-  { value: "Millions", label: "Pipeline added", note: "Tavus", href: "#journey-tavus" },
-  { value: "10+", label: "Languages shipped in", note: "Python · Go · Rust · Swift …", href: "#about" },
-  { value: "5", label: "Events judged & mentored", note: "MacHacks · GSSoC · DeerHacks …", href: "#volunteering" },
-  { value: "1", label: "Published technical article", note: "Towards AWS", href: "https://towardsaws.com/i-built-my-own-docker-and-kubernetes-system-from-scratch-and-you-can-too-759ffabe9993" },
+  { value: "$750K", label: "Biggest deal closed", detail: "Helped close it at Tavus with a solution architecture and a demo built in under 5 hours.", href: "#journey-tavus" },
+  { value: "Acquired", label: "TripBuddy", detail: "From a 24-hour hackathon build to an acquisition two weeks after the live demo.", href: "#project-tripbuddy" },
+  { value: "2×", label: "Hackathon winner", detail: "GenAI Genesis 2026 and the Cursor Hackathon, with Revenant and Shadi Mubarak.", href: "#project-shadi-mubarak" },
+  { value: "Top 3%", label: "GSSoC 2026, worldwide", detail: "Ranked 1,396 of 47,923 open-source contributors, and mentored in the program.", href: "#open-source" },
+  { value: "753", label: "GitHub contributions this year", detail: "60+ pull requests across 14 repos, including AWS Cedar and Meta's Lexical.", href: "https://github.com/Vedthakar" },
+  { value: "5", label: "Industry roles", detail: "Tavus, SEQUEN, Geotab, Savi Finance and Ascenix (YC F26), before third year.", href: "#journey" },
 ];
 
 export type Stop = {

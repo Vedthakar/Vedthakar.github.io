@@ -18,8 +18,7 @@
         "Gemini",
         "Google Maps"
       ],
-      "image": "/media/tripbuddy.jpg",
-      "fit": "contain",
+      "image": "/media/tripbuddy-title.jpg",
       "github": "",
       "live": "",
       "createdAt": "2025-10-26",
@@ -45,7 +44,7 @@
         "Python",
         "Groq"
       ],
-      "image": "/media/dealflow-os.jpg",
+      "image": "/media/dealflow-os-title.jpg",
       "github": "",
       "live": "https://nexus-flow-os.vercel.app",
       "createdAt": "2026-07-02",
@@ -71,7 +70,7 @@
         "Redis",
         "Nango"
       ],
-      "image": "/media/revenant.jpg",
+      "image": "/media/revenant-title.jpg",
       "github": "https://github.com/akashngb/revenant",
       "live": "",
       "createdAt": "2026-03-20",
@@ -96,7 +95,7 @@
         "Resend",
         "Expo"
       ],
-      "image": "/media/shadi-mubarak.jpg",
+      "image": "/media/shadi-mubarak-title.jpg",
       "github": "https://github.com/Vedthakar/Cursor-Hackathon-June",
       "live": "",
       "createdAt": "2026-06-15",
@@ -123,7 +122,7 @@
         "Obsidian"
       ],
       "video": "/media/swamr.mp4",
-      "image": "/media/swamr.jpg",
+      "image": "/media/swamr-title.jpg",
       "github": "https://github.com/Vedthakar/swamr",
       "live": "",
       "createdAt": "2026-10-03",
@@ -148,7 +147,7 @@
         "MCP"
       ],
       "video": "/media/vedocker.mp4",
-      "image": "/media/vedocker.jpg",
+      "image": "/media/vedocker-title.jpg",
       "github": "https://github.com/Vedthakar/Vedocker",
       "live": "https://towardsaws.com/i-built-my-own-docker-and-kubernetes-system-from-scratch-and-you-can-too-759ffabe9993",
       "liveLabel": "Read the article",
@@ -173,7 +172,7 @@
         "pandas"
       ],
       "video": "/media/stockbot.mp4",
-      "image": "/media/stockbot.jpg",
+      "image": "/media/stockbot-title.jpg",
       "github": "https://github.com/Vedthakar/stockbot",
       "live": "",
       "createdAt": "2026-10-04",
@@ -184,7 +183,7 @@
       "title": "Persona Swarm",
       "description": "Simulated users that find conversion and usability problems before you have the traffic to A/B test.",
       "badge": "North the Hack 2026",
-      "image": "/media/persona-swarm.jpg",
+      "image": "/media/persona-swarm-title.jpg",
       "bullets": [
         "Built a behavioural simulator that sends a cohort of seeded browser personas through a real signup flow on Browserbase, each bounded by its own patience, scroll depth and step budget.",
         "Kept the model out of the walk on purpose: browsers produce measurements, and the model reviews each session once, so findings are clustered on a fixed taxonomy with Wilson confidence intervals instead of vibes.",
@@ -222,7 +221,7 @@
         "Monte Carlo",
         "SSE"
       ],
-      "image": "/media/cinesync.jpg",
+      "image": "/media/cinesync-title.jpg",
       "github": "",
       "live": "",
       "createdAt": "2026-07-05",
@@ -246,7 +245,7 @@
         "Tailwind"
       ],
       "video": "/media/surfacer.mp4",
-      "image": "/media/surfacer.jpg",
+      "image": "/media/surfacer-title.jpg",
       "github": "",
       "live": "",
       "createdAt": "2026-10-04",
@@ -294,7 +293,7 @@
         "Polymarket API",
         "Polygon API"
       ],
-      "image": "/media/ticker-insights.jpg",
+      "image": "/media/ticker-insights-title.jpg",
       "github": "",
       "live": "",
       "createdAt": "2026-01-23",
@@ -317,8 +316,7 @@
         "Deepgram",
         "JWT"
       ],
-      "image": "/media/pawgress.jpg",
-      "fit": "contain",
+      "image": "/media/pawgress-title.jpg",
       "github": "https://github.com/Vedthakar/Pawgress",
       "live": "",
       "createdAt": "2026-10-04",
@@ -365,7 +363,7 @@
         "Playwright",
         "Resend"
       ],
-      "image": "/media/marry-me.jpg",
+      "image": "/media/marry-me-title.jpg",
       "github": "https://github.com/akashngb/mARry-me",
       "live": "",
       "createdAt": "2026-07-23",
@@ -389,12 +387,11 @@
         "Firebase",
         "Firestore"
       ],
-      "image": "/media/smart-air.jpg",
+      "image": "/media/smart-air-title.jpg",
       "github": "https://github.com/krish-p577/Smart-Air-App",
       "live": "",
       "createdAt": "2025-12-03",
       "category": "product",
-      "fit": "contain",
       "video": "/media/smart-air.mp4"
     },
     {

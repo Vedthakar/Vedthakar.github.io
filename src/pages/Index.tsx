@@ -1,7 +1,6 @@
 import About from "@/components/site/About";
 import Footer from "@/components/site/Footer";
 import Hero from "@/components/site/Hero";
-import StatsTicker from "@/components/site/StatsTicker";
 import Journey from "@/components/site/Journey";
 import Nav from "@/components/site/Nav";
 import OpenSourceSection from "@/components/site/OpenSourceSection";
@@ -13,7 +12,6 @@ const Index = () => (
     <Nav />
     <main>
       <Hero />
-      <StatsTicker />
       <Projects />
       <OpenSourceSection />
       <Journey />
