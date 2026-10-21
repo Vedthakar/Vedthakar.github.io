@@ -25,12 +25,14 @@ function RepoCard({ repo }: { repo: OpenSource }) {
         </div>
         <p className="text-sm leading-relaxed text-muted-foreground">{repo.blurb}</p>
         <div className="mt-auto flex items-center justify-between font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-foreground">
-          <span>Contributor</span>
-          <span>{open ? "Hide" : "See contributions"}</span>
+          <span>
+            {repo.prs.length} pull request{repo.prs.length > 1 ? "s" : ""}
+          </span>
+          <span>{open ? "Hide" : "See all"}</span>
         </div>
       </button>
       <div className={cn("grid transition-[grid-template-rows] duration-500 ease-out", open ? "grid-rows-[1fr]" : "grid-rows-[0fr]")}>
-        <ul className="overflow-hidden">
+        <ul className="max-h-[22rem] overflow-y-auto">
           {repo.prs.map((pr) => {
             const Icon = statusIcon[pr.status];
             return (
@@ -79,7 +81,7 @@ export default function OpenSourceSection() {
         </div>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {openSource.map((r) => (
           <RepoCard key={r.repo} repo={r} />
         ))}

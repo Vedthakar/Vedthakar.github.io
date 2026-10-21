@@ -18,7 +18,7 @@ export const stats: Stat[] = [
   { value: "Acquired", label: "TripBuddy", detail: "From a 24-hour hackathon build to an acquisition two weeks after the live demo.", href: "#project-tripbuddy" },
   { value: "2×", label: "Hackathon winner", detail: "GenAI Genesis 2026 and the Cursor Hackathon, with Revenant and Shadi Mubarak.", href: "#project-shadi-mubarak" },
   { value: "Top 3%", label: "GSSoC 2026, worldwide", detail: "Ranked 1,396 of 47,923 open-source contributors, and mentored in the program.", href: "#open-source" },
-  { value: "753", label: "GitHub contributions this year", detail: "60+ pull requests across 14 repos, including AWS Cedar and Meta's Lexical.", href: "https://github.com/Vedthakar" },
+  { value: "905", label: "GitHub contributions in the last year", detail: "Including 24 pull requests to AWS Cedar and Meta's Lexical, and 29 across open source.", href: "https://github.com/Vedthakar" },
   { value: "5", label: "Industry roles", detail: "Tavus, SEQUEN, Geotab, Savi Finance and Ascenix (YC F26), before third year.", href: "#journey" },
 ];
 
@@ -132,8 +132,17 @@ export const openSource: OpenSource[] = [
     owner: "cedar-policy",
     blurb: "AWS's open-source authorization policy language, written in Rust.",
     prs: [
+      { title: "Make entity validation errors deterministic", url: "https://github.com/cedar-policy/cedar/pull/2603", status: "merged" },
       { title: "Add help text for function argument validation errors", url: "https://github.com/cedar-policy/cedar/pull/2291", status: "merged" },
       { title: "Add JSON integer boundary tests (i64/u64 edges)", url: "https://github.com/cedar-policy/cedar/pull/2292", status: "merged" },
+      { title: "Move ValidationResult's Display, Error and Diagnostic impls into core", url: "https://github.com/cedar-policy/cedar/pull/2641", status: "open" },
+      { title: "Keep method names attached to their argument lists in the formatter", url: "https://github.com/cedar-policy/cedar/pull/2640", status: "open" },
+      { title: "Recover from scope variable parse errors at the next , or )", url: "https://github.com/cedar-policy/cedar/pull/2639", status: "open" },
+      { title: "Print only policy and template ids in Debug for PolicySet", url: "https://github.com/cedar-policy/cedar/pull/2638", status: "open" },
+      { title: "Look up action in [...] in the schema instead of scanning descendants", url: "https://github.com/cedar-policy/cedar/pull/2637", status: "open" },
+      { title: "Hash only the span of a Loc", url: "https://github.com/cedar-policy/cedar/pull/2636", status: "open" },
+      { title: "Only build the invalid ancestor error for the smallest ancestor", url: "https://github.com/cedar-policy/cedar/pull/2635", status: "open" },
+      { title: "Return None from to_cedar for JSON policies with no Cedar syntax", url: "https://github.com/cedar-policy/cedar/pull/2602", status: "open" },
     ],
   },
   {
@@ -142,7 +151,26 @@ export const openSource: OpenSource[] = [
     owner: "facebook",
     blurb: "Meta's extensible text-editor framework.",
     prs: [
+      { title: "Keep commit listeners in order when editor.read() runs during dispatch", url: "https://github.com/facebook/lexical/pull/9335", status: "merged" },
       { title: "Clarify how Yjs syncs custom node properties in collaboration", url: "https://github.com/facebook/lexical/pull/8288", status: "merged" },
+      { title: "Dragging a selection onto a check box no longer checks the item", url: "https://github.com/facebook/lexical/pull/9429", status: "open" },
+      { title: "Shortcuts in a decorator's input act on the input", url: "https://github.com/facebook/lexical/pull/9428", status: "open" },
+      { title: "Commenting on part of a link no longer marks the whole link", url: "https://github.com/facebook/lexical/pull/9427", status: "open" },
+      { title: "Enforce TabIndentationExtension maxIndent on all content, including pastes", url: "https://github.com/facebook/lexical/pull/9426", status: "open" },
+      { title: "Registering a transform no longer moves focus into an unfocused editor", url: "https://github.com/facebook/lexical/pull/9425", status: "open" },
+      { title: "$toggleLink does nothing for a collapsed selection outside a link", url: "https://github.com/facebook/lexical/pull/9424", status: "open" },
+      { title: "Keep the part of a paste that fits when it exceeds the max length", url: "https://github.com/facebook/lexical/pull/9423", status: "open" },
+      { title: "Select a horizontal rule when clicking the empty space around it", url: "https://github.com/facebook/lexical/pull/9422", status: "open" },
+    ],
+  },
+  {
+    repo: "cedar-policy/cedar-go",
+    name: "Cedar Go",
+    owner: "cedar-policy",
+    blurb: "The Go implementation of Cedar, kept in step with the Rust engine.",
+    prs: [
+      { title: "Reject records whose shared attributes differ in optionality, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/189", status: "open" },
+      { title: "Reject undeclared enum entity IDs, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/188", status: "open" },
     ],
   },
   {
@@ -161,6 +189,15 @@ export const openSource: OpenSource[] = [
     blurb: "Meta's static-site generator for documentation.",
     prs: [
       { title: "Resolve slug conflict when index/README and dirname file coexist", url: "https://github.com/facebook/docusaurus/pull/11910", status: "open" },
+    ],
+  },
+  {
+    repo: "cedar-policy/cedar-examples",
+    name: "Cedar Examples",
+    owner: "cedar-policy",
+    blurb: "Reference applications and policies for Cedar.",
+    prs: [
+      { title: "Reformat example policies for the new Cedar formatter rules", url: "https://github.com/cedar-policy/cedar-examples/pull/283", status: "open" },
     ],
   },
   {
