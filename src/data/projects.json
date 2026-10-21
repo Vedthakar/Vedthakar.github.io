@@ -104,6 +104,33 @@
       "video": "/media/shadi-mubarak.mp4"
     },
     {
+      "slug": "estate-o-bot",
+      "title": "Estate-o-bot",
+      "featured": true,
+      "description": "A rover with an iPhone on top that drives a route through Toronto, LiDAR-scans buildings and turns each scan into a 3D model for inspectors.",
+      "badge": "1st Cities · 3rd overall · Hack the Valley 11",
+      "bullets": [
+        "Won 1st place in the Cities track and 3rd place overall at Hack the Valley 11 with a rover that does city building inspections instead of a clipboard.",
+        "Built the rover's drive software: a path planner you draw on the laptop, a Raspberry Pi motor server, steering and speed calibration, and the C drive program, so the car runs a mission on its own once unplugged.",
+        "The system plans routes past the lowest-scoring of 557,694 Toronto buildings from city data, and the LiDAR scans land in a Three.js studio with height colouring and point-to-point measuring tools I built."
+      ],
+      "technologies": [
+        "Python",
+        "C",
+        "Raspberry Pi",
+        "Three.js",
+        "iPhone LiDAR",
+        "FastAPI"
+      ],
+      "youtube": "Pif22Ygrd3c",
+      "image": "/media/estate-o-bot.jpg",
+      "github": "https://github.com/Vedthakar/HTV11",
+      "live": "https://devpost.com/software/estate-o-bot",
+      "liveLabel": "Devpost",
+      "createdAt": "2026-10-05",
+      "category": "hardware"
+    },
+    {
       "slug": "swamr",
       "title": "swamr",
       "description": "One prompt spins up 150+ specialist Cursor agents that build your project in parallel.",
@@ -200,7 +227,6 @@
       "live": "",
       "createdAt": "2026-09-24",
       "category": "ai",
-      "featured": true,
       "video": "/media/persona-swarm.mp4"
     },
     {

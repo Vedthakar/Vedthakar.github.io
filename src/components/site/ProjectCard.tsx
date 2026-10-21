@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { ArrowUpRight, Github, Play, Volume2, VolumeX } from "lucide-react";
 import type { Project } from "@/data/types";
-import { playPreview, useSound } from "@/lib/sound";
+import { canPlayWithSound, playPreview, useSound } from "@/lib/sound";
 import { cn } from "@/lib/utils";
 import Poster from "./Poster";
 
@@ -18,12 +18,22 @@ export default function ProjectCard({
   const [playing, setPlaying] = useState(false);
   const sound = useSound();
 
+  const [ytMuted, setYtMuted] = useState(true);
   const start = () => {
+    if (project.youtube && !project.video) {
+      setYtMuted(!canPlayWithSound());
+      setPlaying(true);
+      return;
+    }
     const v = videoRef.current;
     if (!v) return;
     playPreview(v).then(() => setPlaying(!v.paused));
   };
   const stop = () => {
+    if (project.youtube && !project.video) {
+      setPlaying(false);
+      return;
+    }
     const v = videoRef.current;
     if (!v) return;
     v.pause();
@@ -51,7 +61,7 @@ export default function ProjectCard({
       aria-label={`${project.title}: open details`}
     >
       <div className={cn("relative overflow-hidden bg-secondary", large ? "aspect-[16/10]" : "aspect-[16/10]")}>
-        {project.image || project.video ? (
+        {project.image || project.video || project.youtube ? (
           <>
             {project.image && (
               <img
@@ -62,6 +72,14 @@ export default function ProjectCard({
                   "absolute inset-0 h-full w-full transition-transform duration-700 group-hover:scale-[1.02]",
                   project.fit === "contain" ? "object-contain p-3" : "object-cover object-top",
                 )}
+              />
+            )}
+            {project.youtube && !project.video && playing && (
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${project.youtube}?autoplay=1&mute=${ytMuted ? 1 : 0}&controls=0&loop=1&playlist=${project.youtube}&modestbranding=1&playsinline=1&rel=0`}
+                title={`${project.title} video`}
+                allow="autoplay; encrypted-media; picture-in-picture"
+                className="pointer-events-none absolute inset-0 h-full w-full border-0 bg-foreground"
               />
             )}
             {project.video && (
@@ -89,11 +107,19 @@ export default function ProjectCard({
           </span>
         )}
 
-        {project.video && (
+        {(project.video || project.youtube) && (
           <button
             type="button"
             onClick={(e) => {
               e.stopPropagation();
+              if (project.youtube && !project.video) {
+                if (sound.on && !sound.ready) setYtMuted(false);
+                else {
+                  sound.toggle();
+                  setYtMuted(sound.on); // sound.on is the pre-toggle value
+                }
+                return;
+              }
               const v = videoRef.current;
               if (sound.on && !sound.ready) {
                 // First click on the page: this click itself unlocks audio.

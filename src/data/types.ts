@@ -11,6 +11,8 @@ export type Project = {
   details?: string;
   technologies: string[];
   video?: string;
+  /** YouTube video id, used when the video is hosted on YouTube instead of /media. */
+  youtube?: string;
   image?: string;
   fit?: "cover" | "contain";
   github?: string;

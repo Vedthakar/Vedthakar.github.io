@@ -7,7 +7,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/ved-thakar-00202b247",
   resume: "/Ved_Thakar_Resume.pdf",
   intro:
-    "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won two hackathons (GenAI Genesis and the Cursor Hackathon), and ranked in the top 3% of 47,923 open-source contributors in GSSoC 2026.",
+    "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won three hackathons (GenAI Genesis, the Cursor Hackathon and Hack the Valley 11), and ranked in the top 3% of 47,923 open-source contributors in GSSoC 2026.",
 };
 
 export type Stat = { value: string; label: string; detail: string; href?: string };
@@ -16,7 +16,7 @@ export type Stat = { value: string; label: string; detail: string; href?: string
 export const stats: Stat[] = [
   { value: "$750K", label: "Biggest deal closed", detail: "Helped close it at Tavus with a solution architecture and a demo built in under 5 hours.", href: "#journey-tavus" },
   { value: "Acquired", label: "TripBuddy", detail: "From a 24-hour hackathon build to an acquisition two weeks after the live demo.", href: "#project-tripbuddy" },
-  { value: "2×", label: "Hackathon winner", detail: "GenAI Genesis 2026 and the Cursor Hackathon, with Revenant and Shadi Mubarak.", href: "#project-shadi-mubarak" },
+  { value: "3×", label: "Hackathon winner", detail: "GenAI Genesis, the Cursor Hackathon, and Hack the Valley 11 (1st in Cities, 3rd overall).", href: "#project-estate-o-bot" },
   { value: "Top 3%", label: "GSSoC 2026, worldwide", detail: "Ranked 1,396 of 47,923 open-source contributors, and mentored in the program.", href: "#open-source" },
   { value: "905", label: "GitHub contributions in the last year", detail: "Including 24 pull requests to AWS Cedar and Meta's Lexical, and 29 across open source.", href: "https://github.com/Vedthakar" },
   { value: "5", label: "Industry roles", detail: "Tavus, SEQUEN, Geotab, Savi Finance and Ascenix (YC F26), before third year.", href: "#journey" },

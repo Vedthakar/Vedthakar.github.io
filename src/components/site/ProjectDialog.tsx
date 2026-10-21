@@ -23,7 +23,15 @@ export default function ProjectDialog({
         {project && (
           <>
             <div className="relative aspect-video w-full overflow-hidden rounded-t-2xl bg-foreground">
-              {project.video ? (
+              {project.youtube && !project.video ? (
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${project.youtube}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+                  title={`${project.title} video`}
+                  allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                  allowFullScreen
+                  className="h-full w-full border-0"
+                />
+              ) : project.video ? (
                 <video
                   key={project.video}
                   src={project.video}
