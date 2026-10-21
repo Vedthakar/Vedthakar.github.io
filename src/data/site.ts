@@ -127,10 +127,10 @@ export type OpenSource = {
 
 export const openSource: OpenSource[] = [
   {
-    repo: "cedar-policy/cedar",
+    repo: "cedar-policy/cedar · cedar-go · cedar-examples",
     name: "Cedar",
     owner: "cedar-policy",
-    blurb: "AWS's open-source authorization policy language, written in Rust.",
+    blurb: "AWS's open-source authorization policy language: the Rust engine, the Go port and the reference examples.",
     prs: [
       { title: "Make entity validation errors deterministic", url: "https://github.com/cedar-policy/cedar/pull/2603", status: "merged" },
       { title: "Add help text for function argument validation errors", url: "https://github.com/cedar-policy/cedar/pull/2291", status: "merged" },
@@ -143,6 +143,9 @@ export const openSource: OpenSource[] = [
       { title: "Hash only the span of a Loc", url: "https://github.com/cedar-policy/cedar/pull/2636", status: "open" },
       { title: "Only build the invalid ancestor error for the smallest ancestor", url: "https://github.com/cedar-policy/cedar/pull/2635", status: "open" },
       { title: "Return None from to_cedar for JSON policies with no Cedar syntax", url: "https://github.com/cedar-policy/cedar/pull/2602", status: "open" },
+      { title: "Cedar Go: Reject records whose shared attributes differ in optionality, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/189", status: "open" },
+      { title: "Cedar Go: Reject undeclared enum entity IDs, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/188", status: "open" },
+      { title: "Examples: Reformat example policies for the new Cedar formatter rules", url: "https://github.com/cedar-policy/cedar-examples/pull/283", status: "open" },
     ],
   },
   {
@@ -164,16 +167,6 @@ export const openSource: OpenSource[] = [
     ],
   },
   {
-    repo: "cedar-policy/cedar-go",
-    name: "Cedar Go",
-    owner: "cedar-policy",
-    blurb: "The Go implementation of Cedar, kept in step with the Rust engine.",
-    prs: [
-      { title: "Reject records whose shared attributes differ in optionality, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/189", status: "open" },
-      { title: "Reject undeclared enum entity IDs, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/188", status: "open" },
-    ],
-  },
-  {
     repo: "google/osv.dev",
     name: "OSV.dev",
     owner: "google",
@@ -189,15 +182,6 @@ export const openSource: OpenSource[] = [
     blurb: "Meta's static-site generator for documentation.",
     prs: [
       { title: "Resolve slug conflict when index/README and dirname file coexist", url: "https://github.com/facebook/docusaurus/pull/11910", status: "open" },
-    ],
-  },
-  {
-    repo: "cedar-policy/cedar-examples",
-    name: "Cedar Examples",
-    owner: "cedar-policy",
-    blurb: "Reference applications and policies for Cedar.",
-    prs: [
-      { title: "Reformat example policies for the new Cedar formatter rules", url: "https://github.com/cedar-policy/cedar-examples/pull/283", status: "open" },
     ],
   },
   {
