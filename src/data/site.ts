@@ -7,7 +7,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/ved-thakar-00202b247",
   resume: "/Ved_Thakar_Resume.pdf",
   intro:
-    "CS & Economics at the University of Toronto. I've shipped a product that got acquired and is now used by **20,000+ people**, helped close a **$750K deal**, won **four hackathons** (the Soon Hackathon, GenAI Genesis, the Cursor Hackathon and Hack the Valley 11), ranked in the **top 3% of 47,923** open-source contributors in GSSoC 2026, and I'm the **#1 contributor from outside AWS** to AWS's Cedar over the last 3 months.",
+    "CS & Economics at the University of Toronto. I love building things and helping people, and I've built a few. Check them out below.",
 };
 
 export type Stat = { value: string; label: string; detail: string; href?: string };
@@ -18,7 +18,7 @@ export const stats: Stat[] = [
   { value: "Acquired", label: "TripBuddy", detail: "Acquired by **OnTime Bride**, and my code is now used by **20,000+ people**. A 24-hour hackathon build, acquired two weeks after the live demo.", href: "#project-tripbuddy" },
   { value: "4×", label: "Hackathon winner", detail: "**4 wins:** the Soon Hackathon, GenAI Genesis, the Cursor Hackathon, and Hack the Valley 11 (1st in Cities, 3rd overall).", href: "#project-previz-stage" },
   { value: "Top 3%", label: "GSSoC 2026, worldwide", detail: "Ranked **#1,396 of 47,923** open-source contributors, and mentored in the program.", href: "#open-source" },
-  { value: "1,000+", label: "GitHub contributions in the last year", detail: "**#1 non-AWS contributor** to AWS Cedar over the last 3 months, and **37 open-source PRs** to Cedar, Meta's Lexical, Google's OSV.dev and more (**13 merged**).", href: "https://github.com/Vedthakar" },
+  { value: "1,000+", label: "GitHub contributions in the last year", detail: "**#1 non-AWS contributor** to AWS Cedar over the last 3 months, plus PRs to Meta's Lexical, Google's OSV.dev and more.", href: "https://github.com/Vedthakar" },
   { value: "5", label: "Industry roles", detail: "Tavus, SEQUEN, Geotab, Savi Finance and Ascenix (YC F26), before third year.", href: "#journey" },
 ];
 
@@ -130,7 +130,7 @@ export const openSource: OpenSource[] = [
     repo: "cedar-policy/cedar · cedar-go · cedar-examples",
     name: "Cedar",
     owner: "cedar-policy",
-    blurb: "**#1 non-AWS contributor** to cedar-policy/cedar over the last 3 months, and **6th overall** behind five Amazon engineers. **9 PRs merged** across repos with **3,000+ stars**. Cedar is AWS's authorization policy language, the engine behind Amazon Verified Permissions and AWS Verified Access.",
+    blurb: "**#1 non-AWS contributor** to Cedar over the last 3 months, across repos with **3,000+ stars**. Cedar is AWS's authorization policy language, the engine behind Amazon Verified Permissions and AWS Verified Access.",
     prs: [
       { title: "Make entity validation errors deterministic", url: "https://github.com/cedar-policy/cedar/pull/2603", status: "merged" },
       { title: "Add help text for function argument validation errors", url: "https://github.com/cedar-policy/cedar/pull/2291", status: "merged" },
@@ -156,7 +156,7 @@ export const openSource: OpenSource[] = [
     repo: "facebook/lexical",
     name: "Lexical",
     owner: "facebook",
-    blurb: "Meta's extensible text-editor framework, with **24,000+ stars**. **2 PRs merged** into core and docs, with **12 more bug fixes** in review.",
+    blurb: "Meta's extensible text-editor framework, with **24,000+ stars**.",
     prs: [
       { title: "Keep commit listeners in order when editor.read() runs during dispatch", url: "https://github.com/facebook/lexical/pull/9335", status: "merged" },
       { title: "Clarify how Yjs syncs custom node properties in collaboration", url: "https://github.com/facebook/lexical/pull/8288", status: "merged" },
@@ -178,7 +178,7 @@ export const openSource: OpenSource[] = [
     repo: "google/osv.dev",
     name: "OSV.dev",
     owner: "google",
-    blurb: "Google's open-source vulnerability database, with **3,000+ stars**.",
+    blurb: "Google's open-source vulnerability database.",
     prs: [
       { title: "Infer introduced and fixed versions from GitHub compare URLs", url: "https://github.com/google/osv.dev/pull/5214", status: "open" },
     ],
