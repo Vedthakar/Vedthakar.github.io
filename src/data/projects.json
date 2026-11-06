@@ -53,6 +53,33 @@
       "video": "/media/dealflow-os.mp4"
     },
     {
+      "slug": "previz-stage",
+      "title": "Previz Stage",
+      "featured": true,
+      "description": "Paste a screenplay and get a walkable 3D set for every scene, with the cast on their marks speaking their lines and your phone as the camera.",
+      "badge": "Winner · Soon Hackathon 2026",
+      "posterStat": "Soon Hackathon winner",
+      "bullets": [
+        "Won the Soon Hackathon 2026 with a previsualisation tool that turns a short-film script into gaussian-splat sets, rigged 3D actors and voiced dialogue, then hands the crew a storyboard and a shot list.",
+        "Helped design the architecture: a resumable per-scene pipeline (Claude scene plan, World Labs Marble worlds, LHM avatars on Modal, TTS) behind one HTTPS server, with shared contracts and a WebSocket relay linking the laptop and phones.",
+        "Shipped features and a long run of bug fixes across the three.js viewer, the shot-list and coverage tools and the phone camera, which streams its pose to the laptop so you film the scene handheld."
+      ],
+      "technologies": [
+        "TypeScript",
+        "three.js",
+        "Gaussian splats",
+        "Claude",
+        "WebSockets",
+        "Modal"
+      ],
+      "youtube": "aAlsI_lZLNE",
+      "image": "/media/previz-stage-title.jpg",
+      "github": "https://github.com/Vedthakar/soon-hackathon",
+      "live": "",
+      "createdAt": "2026-10-25",
+      "category": "ai"
+    },
+    {
       "slug": "revenant",
       "title": "Revenant",
       "description": "AI memory for engineering teams. Ask anything about how your team works.",
