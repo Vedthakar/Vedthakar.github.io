@@ -161,7 +161,7 @@
       "slug": "swamr",
       "title": "swamr",
       "description": "One prompt spins up 150+ specialist Cursor agents that build your project in parallel.",
-      "badge": "Open source · 11★",
+      "badge": "Open source · 16★",
       "featured": true,
       "bullets": [
         "Built and published a framework that coordinates 150+ specialist agents across planning, build, test and hardening phases, running up to 20 Cursor agents at once.",
@@ -186,7 +186,7 @@
       "slug": "vedocker",
       "title": "Vedocker",
       "description": "Docker and Kubernetes rebuilt from scratch in Go. Paste a GitHub URL, get a running container.",
-      "badge": "Open source · 12★",
+      "badge": "Open source · 16★",
       "featured": true,
       "bullets": [
         "Wrote a container runtime, image store, build engine, networking and orchestration from the ground up on Linux namespaces, cgroups and iptables. No Docker Engine, containerd or Kubernetes underneath.",
@@ -213,7 +213,6 @@
       "title": "stockbot",
       "description": "A rules engine finds the trade. A local LLM gets veto power.",
       "badge": "LLM with veto power",
-      "featured": true,
       "bullets": [
         "Built an intraday trading bot where deterministic Python finds and sizes setups, and an LLM judge can only say no. It can't create a trade, change config or override a risk gate.",
         "Made the judge fail-closed: a timeout, an error or an off-format answer means veto. Every yes and every no is logged with its reason.",

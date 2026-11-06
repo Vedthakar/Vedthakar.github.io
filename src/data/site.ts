@@ -18,7 +18,7 @@ export const stats: Stat[] = [
   { value: "Acquired", label: "TripBuddy", detail: "From a 24-hour hackathon build to an acquisition two weeks after the live demo.", href: "#project-tripbuddy" },
   { value: "4×", label: "Hackathon winner", detail: "The Soon Hackathon, GenAI Genesis, the Cursor Hackathon, and Hack the Valley 11 (1st in Cities, 3rd overall).", href: "#project-previz-stage" },
   { value: "Top 3%", label: "GSSoC 2026, worldwide", detail: "Ranked 1,396 of 47,923 open-source contributors, and mentored in the program.", href: "#open-source" },
-  { value: "905", label: "GitHub contributions in the last year", detail: "Including 24 pull requests to AWS Cedar and Meta's Lexical, and 29 across open source.", href: "https://github.com/Vedthakar" },
+  { value: "1,000+", label: "GitHub contributions in the last year", detail: "Including 24 pull requests to AWS Cedar and Meta's Lexical, and 29 across open source.", href: "https://github.com/Vedthakar" },
   { value: "5", label: "Industry roles", detail: "Tavus, SEQUEN, Geotab, Savi Finance and Ascenix (YC F26), before third year.", href: "#journey" },
 ];
 
