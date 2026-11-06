@@ -4,6 +4,7 @@ import type { Project } from "@/data/types";
 import { canPlayWithSound, playPreview, useSound } from "@/lib/sound";
 import { cn } from "@/lib/utils";
 import Poster from "./Poster";
+import { rich } from "@/lib/rich";
 
 export default function ProjectCard({
   project,
@@ -172,7 +173,7 @@ export default function ProjectCard({
             )}
           </div>
         </div>
-        <p className="text-sm leading-relaxed text-muted-foreground">{project.description}</p>
+        <p className="text-sm leading-relaxed text-muted-foreground">{rich(project.description)}</p>
         <div className="mt-auto flex flex-wrap gap-1.5 pt-1">
           {project.technologies.slice(0, large ? 5 : 4).map((t) => (
             <span key={t} className="rounded-md bg-secondary px-2 py-0.5 font-mono text-[10.5px] text-muted-foreground">

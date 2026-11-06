@@ -3,11 +3,11 @@
     {
       "slug": "tripbuddy",
       "title": "TripBuddy",
-      "description": "Adaptive travel companion that re-plans your trip when plans break.",
-      "badge": "Acquired",
+      "description": "**Acquired by OnTime Bride, now used by 20,000+ people.** An adaptive travel companion that re-plans your trip when plans break.",
+      "badge": "Acquired · 20,000+ users",
       "featured": true,
       "bullets": [
-        "Led a team of four from a 24-hour NewHacks build to a product a startup acquired two weeks after the live demo, with a full codebase handover in June 2026.",
+        "Led a team of four from a 24-hour NewHacks build to a product **OnTime Bride acquired two weeks after the live demo**, with a full codebase handover in June 2026. My code now serves **20,000+ users**.",
         "Took it on a real trip and watched four first-time users fail at flows I was sure were intuitive. That proved the problem was comprehension, not performance, and justified a full rebuild.",
         "Built a linked-list itinerary engine that reshuffles flexible stops around locked flights and hotels, with Gemini checking opening hours, weather and travel time, plus Expedia PDF import."
       ],
@@ -28,14 +28,14 @@
     {
       "slug": "dealflow-os",
       "title": "DealFlow OS",
-      "description": "Startup intelligence platform for investment firms, built and run solo.",
+      "description": "**500+ production deployments across 3 firms.** A startup intelligence platform for investment firms, built and run solo.",
       "badge": "In production · 3 firms",
       "featured": true,
       "posterStat": "500+ deployments",
       "bullets": [
-        "Built and still operate the platform solo. It runs in production at three professional services firms, and I defined the usage and scoring metrics it reports on.",
+        "Built and still operate the platform solo. It runs in production at **three professional services firms**, and I defined the usage and scoring metrics it reports on.",
         "My first version let an LLM write research memos and nobody could verify the output, so I rebuilt it: memos assemble deterministically from source records and the model only polishes wording. A rate limit degrades phrasing, never a figure.",
-        "Analysed behavioural usage data to separate momentum signals from noise, then shipped dashboards on top across 500+ production deployments, fed by scheduled scraping and enrichment pipelines."
+        "Analysed behavioural usage data to separate momentum signals from noise, then shipped dashboards on top across **500+ production deployments**, fed by scheduled scraping and enrichment pipelines."
       ],
       "technologies": [
         "Next.js",
@@ -56,11 +56,11 @@
       "slug": "previz-stage",
       "title": "Previz Stage",
       "featured": true,
-      "description": "Paste a screenplay and get a walkable 3D set for every scene, with the cast on their marks speaking their lines and your phone as the camera.",
+      "description": "**Winner of the Soon Hackathon: 267 commits and 60,000+ lines in 26 hours.** Paste a screenplay and get a walkable 3D set for every scene, with the cast speaking their lines and your phone as the camera.",
       "badge": "Winner · Soon Hackathon 2026",
       "posterStat": "Soon Hackathon winner",
       "bullets": [
-        "Won the Soon Hackathon 2026 with a previsualisation tool that turns a short-film script into gaussian-splat sets, rigged 3D actors and voiced dialogue, then hands the crew a storyboard and a shot list.",
+        "**Won the Soon Hackathon 2026** with a previsualisation tool that turns a short-film script into gaussian-splat sets, rigged 3D actors and voiced dialogue, then hands the crew a storyboard and a shot list. The team shipped **267 commits and 60,000+ lines of code in 26 hours**.",
         "Helped design the architecture: a resumable per-scene pipeline (Claude scene plan, World Labs Marble worlds, LHM avatars on Modal, TTS) behind one HTTPS server, with shared contracts and a WebSocket relay linking the laptop and phones.",
         "Shipped features and a long run of bug fixes across the three.js viewer, the shot-list and coverage tools and the phone camera, which streams its pose to the laptop so you film the scene handheld."
       ],
@@ -82,11 +82,11 @@
     {
       "slug": "revenant",
       "title": "Revenant",
-      "description": "AI memory for engineering teams. Ask anything about how your team works.",
+      "description": "**Sponsor prize winner at GenAI Genesis 2026.** AI memory for engineering teams: ask anything about how your team works.",
       "badge": "Winner · GenAI Genesis 2026",
       "featured": true,
       "bullets": [
-        "Won the sponsor prize for best use of memory architecture at GenAI Genesis 2026.",
+        "Won the **sponsor prize for best use of memory architecture** at GenAI Genesis 2026.",
         "Co-built a system that embeds GitHub, Slack and Jira activity into a pgvector index and answers natural-language questions over it, so knowledge stays when people leave.",
         "Designed the schema and query paths to split a low-latency retrieval path from a batch evaluation path, so batch processing stopped blocking live requests."
       ],
@@ -107,11 +107,11 @@
     {
       "slug": "shadi-mubarak",
       "title": "Shadi Mubarak",
-      "description": "Snap photos of what you are selling, barter a price, and get paid by Stripe link and emailed invoice. Won the Cursor Hackathon.",
+      "description": "**Won the Cursor Hackathon 2026.** Snap photos of what you're selling, barter a price, and get paid by Stripe link and emailed invoice.",
       "badge": "Winner · Cursor Hackathon 2026",
       "posterStat": "Cursor Hackathon winner",
       "bullets": [
-        "Won the Cursor Hackathon 2026 with an end-to-end flow from photos to payment, built across an Expo mobile app, a web app and a FastAPI backend.",
+        "**Won the Cursor Hackathon 2026** with an end-to-end flow from photos to payment, built across an Expo mobile app, a web app and a FastAPI backend.",
         "A capture webhook takes a batch of photos, attaches a valuation to each item and writes a per-image PDF report.",
         "After bartering, a finalize call creates a real Stripe Payment Link and a PDF invoice, then emails it through Resend over plain HTTP."
       ],
@@ -134,12 +134,12 @@
       "slug": "estate-o-bot",
       "title": "Estate-o-bot",
       "featured": true,
-      "description": "A rover with an iPhone on top that drives a route through Toronto, LiDAR-scans buildings and turns each scan into a 3D model for inspectors.",
+      "description": "**1st in Cities and 3rd overall at Hack the Valley 11, with 557,694 Toronto buildings ranked.** A rover with an iPhone on top that drives a route, LiDAR-scans buildings and turns each scan into a 3D model for inspectors.",
       "badge": "1st Cities · 3rd overall · Hack the Valley 11",
       "bullets": [
-        "Won 1st place in the Cities track and 3rd place overall at Hack the Valley 11 with a rover that does city building inspections instead of a clipboard.",
+        "Won **1st place in the Cities track and 3rd place overall** at Hack the Valley 11 with a rover that does city building inspections instead of a clipboard.",
         "Built the rover's drive software: a path planner you draw on the laptop, a Raspberry Pi motor server, steering and speed calibration, and the C drive program, so the car runs a mission on its own once unplugged.",
-        "The system plans routes past the lowest-scoring of 557,694 Toronto buildings from city data, and the LiDAR scans land in a Three.js studio with height colouring and point-to-point measuring tools I built."
+        "The system plans routes past the lowest-scoring of **557,694 Toronto buildings** from city data, and the LiDAR scans land in a Three.js studio with height colouring and point-to-point measuring tools I built."
       ],
       "technologies": [
         "Python",
@@ -160,11 +160,11 @@
     {
       "slug": "swamr",
       "title": "swamr",
-      "description": "One prompt spins up 150+ specialist Cursor agents that build your project in parallel.",
+      "description": "**16★ on GitHub. 150+ specialist agents, 20 running at once.** One prompt spins up a swarm of Cursor agents that build your project in parallel.",
       "badge": "Open source · 16★",
       "featured": true,
       "bullets": [
-        "Built and published a framework that coordinates 150+ specialist agents across planning, build, test and hardening phases, running up to 20 Cursor agents at once.",
+        "Built and published a framework that coordinates **150+ specialist agents** across planning, build, test and hardening phases, running **up to 20 Cursor agents at once**.",
         "Designed mandatory human review gates so generated work stays a draft until a person validates it, plus checkpointing that resumes an interrupted run exactly where it stopped.",
         "Gave every agent a shared Obsidian memory and wired MCP servers to GitHub, Supabase and Slack, so agent #150 knows what agent #1 decided."
       ],
@@ -185,7 +185,7 @@
     {
       "slug": "vedocker",
       "title": "Vedocker",
-      "description": "Docker and Kubernetes rebuilt from scratch in Go. Paste a GitHub URL, get a running container.",
+      "description": "**16★ on GitHub. Docker and Kubernetes rebuilt from scratch in Go.** Paste a GitHub URL, get a running container.",
       "badge": "Open source · 16★",
       "featured": true,
       "bullets": [

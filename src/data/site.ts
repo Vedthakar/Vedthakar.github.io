@@ -7,7 +7,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/ved-thakar-00202b247",
   resume: "/Ved_Thakar_Resume.pdf",
   intro:
-    "CS & Economics at the University of Toronto. I've shipped a product that got acquired, helped close a $750K deal, won four hackathons (the Soon Hackathon, GenAI Genesis, the Cursor Hackathon and Hack the Valley 11), and ranked in the top 3% of 47,923 open-source contributors in GSSoC 2026.",
+    "CS & Economics at the University of Toronto. I've shipped a product that got acquired and is now used by **20,000+ people**, helped close a **$750K deal**, won **four hackathons** (the Soon Hackathon, GenAI Genesis, the Cursor Hackathon and Hack the Valley 11), ranked in the **top 3% of 47,923** open-source contributors in GSSoC 2026, and I'm the **#1 contributor from outside AWS** to AWS's Cedar over the last 3 months.",
 };
 
 export type Stat = { value: string; label: string; detail: string; href?: string };
@@ -15,10 +15,10 @@ export type Stat = { value: string; label: string; detail: string; href?: string
 /** The six headline stats shown as boxes under the hero. */
 export const stats: Stat[] = [
   { value: "$750K", label: "Biggest deal closed", detail: "Helped close it at Tavus with a solution architecture and a demo built in under 5 hours.", href: "#journey-tavus" },
-  { value: "Acquired", label: "TripBuddy", detail: "From a 24-hour hackathon build to an acquisition two weeks after the live demo.", href: "#project-tripbuddy" },
-  { value: "4×", label: "Hackathon winner", detail: "The Soon Hackathon, GenAI Genesis, the Cursor Hackathon, and Hack the Valley 11 (1st in Cities, 3rd overall).", href: "#project-previz-stage" },
-  { value: "Top 3%", label: "GSSoC 2026, worldwide", detail: "Ranked 1,396 of 47,923 open-source contributors, and mentored in the program.", href: "#open-source" },
-  { value: "1,000+", label: "GitHub contributions in the last year", detail: "Including 24 pull requests to AWS Cedar and Meta's Lexical, and 29 across open source.", href: "https://github.com/Vedthakar" },
+  { value: "Acquired", label: "TripBuddy", detail: "Acquired by **OnTime Bride**, and my code is now used by **20,000+ people**. A 24-hour hackathon build, acquired two weeks after the live demo.", href: "#project-tripbuddy" },
+  { value: "4×", label: "Hackathon winner", detail: "**4 wins:** the Soon Hackathon, GenAI Genesis, the Cursor Hackathon, and Hack the Valley 11 (1st in Cities, 3rd overall).", href: "#project-previz-stage" },
+  { value: "Top 3%", label: "GSSoC 2026, worldwide", detail: "Ranked **#1,396 of 47,923** open-source contributors, and mentored in the program.", href: "#open-source" },
+  { value: "1,000+", label: "GitHub contributions in the last year", detail: "**#1 non-AWS contributor** to AWS Cedar over the last 3 months, and **37 open-source PRs** to Cedar, Meta's Lexical, Google's OSV.dev and more (**13 merged**).", href: "https://github.com/Vedthakar" },
   { value: "5", label: "Industry roles", detail: "Tavus, SEQUEN, Geotab, Savi Finance and Ascenix (YC F26), before third year.", href: "#journey" },
 ];
 
@@ -130,7 +130,7 @@ export const openSource: OpenSource[] = [
     repo: "cedar-policy/cedar · cedar-go · cedar-examples",
     name: "Cedar",
     owner: "cedar-policy",
-    blurb: "AWS's open-source authorization policy language: the Rust engine, the Go port and the reference examples.",
+    blurb: "**#1 non-AWS contributor** to cedar-policy/cedar over the last 3 months, and **6th overall** behind five Amazon engineers. **9 PRs merged** across repos with **3,000+ stars**. Cedar is AWS's authorization policy language, the engine behind Amazon Verified Permissions and AWS Verified Access.",
     prs: [
       { title: "Make entity validation errors deterministic", url: "https://github.com/cedar-policy/cedar/pull/2603", status: "merged" },
       { title: "Add help text for function argument validation errors", url: "https://github.com/cedar-policy/cedar/pull/2291", status: "merged" },
@@ -138,13 +138,17 @@ export const openSource: OpenSource[] = [
       { title: "Move ValidationResult's Display, Error and Diagnostic impls into core", url: "https://github.com/cedar-policy/cedar/pull/2641", status: "merged" },
       { title: "Keep method names attached to their argument lists in the formatter", url: "https://github.com/cedar-policy/cedar/pull/2640", status: "merged" },
       { title: "Examples: Reformat example policies for the new Cedar formatter rules", url: "https://github.com/cedar-policy/cedar-examples/pull/283", status: "merged" },
-      { title: "Recover from scope variable parse errors at the next , or )", url: "https://github.com/cedar-policy/cedar/pull/2639", status: "open" },
+      { title: "Accept trailing commas in bracketed lists in the Cedar schema syntax (RFC 71)", url: "https://github.com/cedar-policy/cedar/pull/2651", status: "open" },
+      { title: "Say which declaration a JSON schema error is in", url: "https://github.com/cedar-policy/cedar/pull/2650", status: "open" },
+      { title: "Add APIs to get entity type attribute annotations in schemas", url: "https://github.com/cedar-policy/cedar/pull/2649", status: "open" },
+      { title: "Only reject shadowed entity types that are actually referenced in JSON schema conversion", url: "https://github.com/cedar-policy/cedar/pull/2648", status: "open" },
+      { title: "Export the check_parse JSON string functions to WASM", url: "https://github.com/cedar-policy/cedar/pull/2647", status: "open" },
       { title: "Print only policy and template ids in Debug for PolicySet", url: "https://github.com/cedar-policy/cedar/pull/2638", status: "open" },
       { title: "Look up action in [...] in the schema instead of scanning descendants", url: "https://github.com/cedar-policy/cedar/pull/2637", status: "open" },
       { title: "Hash only the span of a Loc", url: "https://github.com/cedar-policy/cedar/pull/2636", status: "open" },
-      { title: "Only build the invalid ancestor error for the smallest ancestor", url: "https://github.com/cedar-policy/cedar/pull/2635", status: "open" },
-      { title: "Return None from to_cedar for JSON policies with no Cedar syntax", url: "https://github.com/cedar-policy/cedar/pull/2602", status: "open" },
-      { title: "Cedar Go: Reject records whose shared attributes differ in optionality, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/189", status: "open" },
+      { title: "Only build the invalid ancestor error for the smallest ancestor", url: "https://github.com/cedar-policy/cedar/pull/2635", status: "merged" },
+      { title: "Return None from to_cedar for JSON policies with no Cedar syntax", url: "https://github.com/cedar-policy/cedar/pull/2602", status: "merged" },
+      { title: "Cedar Go: Reject records whose shared attributes differ in optionality, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/189", status: "merged" },
       { title: "Cedar Go: Reject undeclared enum entity IDs, matching Rust", url: "https://github.com/cedar-policy/cedar-go/pull/188", status: "open" },
     ],
   },
@@ -152,10 +156,14 @@ export const openSource: OpenSource[] = [
     repo: "facebook/lexical",
     name: "Lexical",
     owner: "facebook",
-    blurb: "Meta's extensible text-editor framework.",
+    blurb: "Meta's extensible text-editor framework, with **24,000+ stars**. **2 PRs merged** into core and docs, with **12 more bug fixes** in review.",
     prs: [
       { title: "Keep commit listeners in order when editor.read() runs during dispatch", url: "https://github.com/facebook/lexical/pull/9335", status: "merged" },
       { title: "Clarify how Yjs syncs custom node properties in collaboration", url: "https://github.com/facebook/lexical/pull/8288", status: "merged" },
+      { title: "Keep the selection under the pointer when drag-selecting over the DraggableBlock menu", url: "https://github.com/facebook/lexical/pull/9463", status: "open" },
+      { title: "Don't treat surrogate pairs (emoji) as left-to-right", url: "https://github.com/facebook/lexical/pull/9462", status: "open" },
+      { title: "Make OverflowNode inline without the line break caret regression", url: "https://github.com/facebook/lexical/pull/9461", status: "open" },
+      { title: "Import Safari's VS Code paste as one code block", url: "https://github.com/facebook/lexical/pull/9460", status: "open" },
       { title: "Dragging a selection onto a check box no longer checks the item", url: "https://github.com/facebook/lexical/pull/9429", status: "open" },
       { title: "Shortcuts in a decorator's input act on the input", url: "https://github.com/facebook/lexical/pull/9428", status: "open" },
       { title: "Commenting on part of a link no longer marks the whole link", url: "https://github.com/facebook/lexical/pull/9427", status: "open" },
@@ -170,7 +178,7 @@ export const openSource: OpenSource[] = [
     repo: "google/osv.dev",
     name: "OSV.dev",
     owner: "google",
-    blurb: "Google's open-source vulnerability database.",
+    blurb: "Google's open-source vulnerability database, with **3,000+ stars**.",
     prs: [
       { title: "Infer introduced and fixed versions from GitHub compare URLs", url: "https://github.com/google/osv.dev/pull/5214", status: "open" },
     ],

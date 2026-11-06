@@ -3,6 +3,7 @@ import { ArrowUpRight, GitMerge, GitPullRequest, GitPullRequestClosed } from "lu
 import { gssoc, openSource, type OpenSource } from "@/data/site";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
+import { rich } from "@/lib/rich";
 import SectionHeader from "./SectionHeader";
 
 const statusIcon = {
@@ -13,6 +14,7 @@ const statusIcon = {
 
 function RepoCard({ repo }: { repo: OpenSource }) {
   const [open, setOpen] = useState(false);
+  const merged = repo.prs.filter((pr) => pr.status === "merged").length;
   return (
     <article className="card-lift flex flex-col rounded-2xl border bg-card">
       <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="flex flex-1 flex-col gap-4 p-5 text-left">
@@ -23,10 +25,11 @@ function RepoCard({ repo }: { repo: OpenSource }) {
             <p className="mt-1 truncate font-mono text-[11px] text-muted-foreground">{repo.repo}</p>
           </div>
         </div>
-        <p className="text-sm leading-relaxed text-muted-foreground">{repo.blurb}</p>
+        <p className="text-sm leading-relaxed text-muted-foreground">{rich(repo.blurb)}</p>
         <div className="mt-auto flex items-center justify-between font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-foreground">
           <span>
             {repo.prs.length} pull request{repo.prs.length > 1 ? "s" : ""}
+            {merged > 0 && ` · ${merged} merged`}
           </span>
           <span>{open ? "Hide" : "See all"}</span>
         </div>

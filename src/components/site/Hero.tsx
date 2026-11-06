@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { profile, stats } from "@/data/site";
+import { rich } from "@/lib/rich";
 
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
           <br />
           <span className="italic text-muted-foreground">that ship, sell</span> and stick.
         </h1>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">{profile.intro}</p>
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">{rich(profile.intro)}</p>
         <div className="mt-10 flex flex-wrap items-center gap-3">
           <a
             href="#projects"
@@ -51,7 +52,7 @@ export default function Hero() {
             >
               <span className="font-display text-5xl leading-none">{w.value}</span>
               <span className="text-sm font-medium">{w.label}</span>
-              <span className="text-sm leading-relaxed text-muted-foreground">{w.detail}</span>
+              <span className="text-sm leading-relaxed text-muted-foreground">{rich(w.detail)}</span>
             </a>
           );
         })}

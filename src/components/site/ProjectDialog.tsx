@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Github, Hand, Star } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import type { Project } from "@/data/types";
+import { rich } from "@/lib/rich";
 import Poster from "./Poster";
 
 export default function ProjectDialog({
@@ -72,7 +73,7 @@ export default function ProjectDialog({
               <div className="space-y-2">
                 {project.badge && <p className="eyebrow">{project.badge}</p>}
                 <DialogTitle className="font-display text-4xl leading-tight">{project.title}</DialogTitle>
-                <DialogDescription className="text-base text-muted-foreground">{project.description}</DialogDescription>
+                <DialogDescription className="text-base text-muted-foreground">{rich(project.description)}</DialogDescription>
               </div>
 
               {project.bullets && project.bullets.length > 0 && (
@@ -80,7 +81,7 @@ export default function ProjectDialog({
                   {project.bullets.map((b, i) => (
                     <li key={i} className="flex gap-3 text-[15px] leading-relaxed">
                       <Star className="mt-1 h-3.5 w-3.5 shrink-0 fill-foreground" aria-hidden />
-                      <span>{b}</span>
+                      <span>{rich(b)}</span>
                     </li>
                   ))}
                 </ul>
